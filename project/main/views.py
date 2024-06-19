@@ -15,10 +15,16 @@ def search(request):
         query_embedding =embed_text(text)
         client = get_chromadb_client()
         collection = client.get_or_create_collection("liquor_collection")
+        #콜렉션 생성시  metadata={"hnsw:space": "cosine"} 를
+        #인자로 넣지않아 거리함수의 기본은 Squared L2로
+        #유클리드의 제곱을 사용한다.
+        #제곱 L2 거리는 제곱근 계산이 필요 없기 때문에 계산이 더 효율적. 
+        #특히 거리 비교가 주된 작업인 경우, 제곱 L2 거리를 사용하면 계산 속도를 높일 수 있다.
         results = collection.query(
-        query_embeddings=query_embedding.tolist(),
-        n_results=5  # 반환할 결과의 수
+            query_embeddings=query_embedding.tolist(),
+            n_results=5  # 반환할 결과의 수
         )
+        
         #print(results)
         result =results['metadatas']
         # distances와 같은 인덱스에 있는 ids와 metadatas를 내림차순으로 정렬

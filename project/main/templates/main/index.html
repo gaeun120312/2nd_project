@@ -1,0 +1,15 @@
+<!-- myapp/templates/myapp/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text List</title>
+</head>
+<body>
+    <h1>items</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item.item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

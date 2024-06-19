@@ -1,0 +1,15 @@
+<!-- myapp/templates/myapp/add_text.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Text</title>
+</head>
+<body>
+    <h1>Add Text</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="text" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

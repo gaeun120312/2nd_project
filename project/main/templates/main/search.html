@@ -1,0 +1,17 @@
+<!-- myapp/templates/myapp/add_text.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>searched items</title>
+</head>
+<body>
+    <h1>searched items</h1>
+    
+    <ul>
+        {% for product in items %}
+            <li>{{ product.metadata.item }}</li>
+            <li>{{ product.distance }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

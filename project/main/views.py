@@ -1,4 +1,5 @@
 # myapp/views.py
+import json
 from django.shortcuts import render
 from .chromadb_config import get_chromadb_client,embed_text
 
@@ -22,7 +23,7 @@ def search(request):
         #특히 거리 비교가 주된 작업인 경우, 제곱 L2 거리를 사용하면 계산 속도를 높일 수 있다.
         results = collection.query(
             query_embeddings=query_embedding.tolist(),
-            n_results=5  # 반환할 결과의 수
+            n_results=4  # 반환할 결과의 수
         )
         
         #print(results)
@@ -41,4 +42,5 @@ def search(request):
 
         # 정렬된 결과 리스트 출력/리스트로
         print(sorted_results_list)
-        return render(request, 'main/search.html', {'items': sorted_results_list})
+        j_list = json.dumps(sorted_results_list)
+        return render(request, 'main/search.html', {'items': sorted_results_list, 'j_list': j_list})

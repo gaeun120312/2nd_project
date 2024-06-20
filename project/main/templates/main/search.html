@@ -1,17 +1,73 @@
-<!-- myapp/templates/myapp/add_text.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>searched items</title>
+    <script src="{% static 'js/package/dist/chart.umd.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
 </head>
 <body>
     <h1>searched items</h1>
-    
-    <ul>
+    <section>
         {% for product in items %}
-            <li>{{ product.metadata.item }}</li>
-            <li>{{ product.distance }}</li>
-        {% endfor %}
-    </ul>
+        <div class='product_group'>
+            <div class='info'>
+                <div class='name'><h1>{{ product.metadata.item }}</h1></div>
+            
+            <table>
+                <tr>
+                    <td class='head'>price</td>
+                    <td>{{ product.metadata.price }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>company</td>
+                    <td>{{ product.metadata.company }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>category</td>
+                    <td>{{ product.metadata.category }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>volume</td>
+                    <td>{{ product.metadata.volume }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>alcohol</td>
+                    <td>{{ product.metadata.alcohol }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>material</td>
+                    <td>{{ product.metadata.material }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>distance</td>
+                    <td>{{ product.distance }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>keyword</td>
+                    <td>{{ product.metadata.keyword }}</td>
+                </tr>
+                <tr>
+                    <td class='head'>address</td>
+                    <td>{{ product.metadata.address }}</td>
+                </tr>
+            </table>
+            </div>
+            <div class='charts'>
+                <canvas  id="product_{{forloop.counter}}"></canvas>
+            </div>
+
+        </div>
+    {% endfor %}
+    </section>  
+    
+    
+  
+
+    <script type="text/javascript">
+        var datas = {{ items|safe }};
+    </script>
+    <script src="{% static 'js/search.js' %}"></script>
+
 </body>
 </html>

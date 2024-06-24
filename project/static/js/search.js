@@ -1,43 +1,25 @@
-/**
- * 주어진 선택자에 맞는 요소들의 텍스트 내용으로 배열을 생성합니다.
- * 
- * @param {String} selector - 요소를 선택하기 위한 CSS 선택자입니다.
- * @return {Array} - 선택된 요소들의 텍스트 내용을 담고 있는 배열입니다.
- */
-function mkArr(selector){
-	let arr = new Array();
-	document.querySelectorAll(selector).forEach((dom,index)=>{
-	arr[index]=dom.textContent;
-	});
-	return arr;
-}
-/**
- * 무작위 컬러 코드를 생성합니다.
- * 
- * @return {String} - 무작위 생성된 컬러 코드를 반환합니다.
- */
-function getRandomColor() {
-	return "#" + Math.floor(Math.random() * 16777215).toString(16);
-}
-/**
- * 주어진 선택자에 맞는 요소들의 수만큼 무작위 컬러 코드로 배열을 생성합니다.
- * 
- * @param {String} selector - 요소를 선택하기 위한 CSS 선택자입니다.
- * @return {Array} - 무작위 컬러 코드로 채워진 배열입니다.
- */
-function colorArr(selector){
-	let sizebase = mkArr(selector);
-	let size =sizebase.length
-	let arr =new Array();
-	for(let i=0;i<size;i++){
-		arr[i]=getRandomColor();
-	}
-	return arr
-}
+function getRandomPastelColorWithAlpha(alpha) {
+  // 파스텔톤 색상을 생성하기 위해 각 색상 컴포넌트에 최소값을 설정
+  const base = 150; // 최소값을 높게 설정하여 밝은 색상 생성
+  const range = 55; // 범위 값을 작게 설정하여 파스텔톤 유지
 
+  // 랜덤한 R, G, B 값 생성 (base 이상, base + range 이하)
+  const r = Math.floor(Math.random() * range) + base;
+  const g = Math.floor(Math.random() * range) + base;
+  const b = Math.floor(Math.random() * range) + base;
+
+  // RGBA 형식으로 반환
+  return [`rgba(${r}, ${g}, ${b}, ${alpha})`, `rgba(${r}, ${g}, ${b})`];
+}
 console.log(datas);
-function config(item){
+function changeColor(colorCode,index){
+  document.querySelector(`.name.\\3${index+1}`).style.backgroundColor=colorCode;
+}
+function config(item,index){
     taste = item['metadata']
+    colorCode = getRandomPastelColorWithAlpha(0.2);
+    console.log(colorCode);
+    changeColor(colorCode[1],index);
     return {
         type: 'radar',
         data:{
@@ -46,12 +28,12 @@ function config(item){
                 label:'맛 분포도',
                 data: [taste['body'],taste['freshness'],taste['sour'],taste['sparkling'],taste['sweet']],
                 fill: true,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgb(255, 99, 132)',
-                pointBackgroundColor: 'rgb(255, 99, 132)',
+                backgroundColor: colorCode[0],
+                borderColor: colorCode[1],
+                pointBackgroundColor: colorCode[1],
                 pointBorderColor: '#fff',
                 pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgb(255, 99, 132)'
+                pointHoverBorderColor: colorCode[1]
             }]
         },
         options: {
@@ -65,5 +47,8 @@ function config(item){
 }
 // 차트 생성
 datas.forEach((data,index)=>{
-    var object =new Chart(document.querySelector(`#product_${index+1}`).getContext('2d'),config(data))
+    var object =new Chart(document.querySelector(`#product_${index+1}`).getContext('2d'),config(data,index))
 })
+document.querySelector('#menu').addEventListener('click', function(){
+  document.querySelector('.search_box').classList.toggle('active');
+});

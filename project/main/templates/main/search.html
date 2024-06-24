@@ -4,51 +4,71 @@
 <head>
     <title>searched items</title>
     <script src="{% static 'js/package/dist/chart.umd.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/search.css' %}?after">
+    <script src="https://kit.fontawesome.com/664a7b3827.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>searched items</h1>
+    <div class='header'>
+        <h1>검색 결과</h1>
+        <div  id='menu'>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class='search_box'>
+            <form action="/search" method="post">
+                {% csrf_token %}               
+                <input type="text" id="sentence" name="sentence"
+                placeholder="검색어를 입력해주세요">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>               
+            </form>
+        </div>
+
+    </div>
+    
     <section>
         {% for product in items %}
         <div class='product_group'>
             <div class='info'>
-                <div class='name'><h1>{{ product.metadata.item }}</h1></div>
+                <div class='name {{forloop.counter}}'>
+                    <h1>{{ product.metadata.item }}</h1>
+                </div>
             
             <table>
                 <tr>
-                    <td class='head'>price</td>
+                    <td class='head'>가격</td>
                     <td>{{ product.metadata.price }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>company</td>
+                    <td class='head'>제조사</td>
                     <td>{{ product.metadata.company }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>category</td>
+                    <td class='head'>주종</td>
                     <td>{{ product.metadata.category }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>volume</td>
+                    <td class='head'>용량</td>
                     <td>{{ product.metadata.volume }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>alcohol</td>
+                    <td class='head'>도수</td>
                     <td>{{ product.metadata.alcohol }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>material</td>
+                    <td class='head'>재료</td>
                     <td>{{ product.metadata.material }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>distance</td>
+                    <td class='head'>검색일치도</td>
                     <td>{{ product.distance }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>keyword</td>
+                    <td class='head'>키워드</td>
                     <td>{{ product.metadata.keyword }}</td>
                 </tr>
                 <tr>
-                    <td class='head'>address</td>
+                    <td class='head'>주소</td>
                     <td>{{ product.metadata.address }}</td>
                 </tr>
             </table>
@@ -67,7 +87,7 @@
     <script type="text/javascript">
         var datas = {{ items|safe }};
     </script>
-    <script src="{% static 'js/search.js' %}"></script>
+    <script src="{% static 'js/search.js' %}?after"></script>
 
 </body>
 </html>

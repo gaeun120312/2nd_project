@@ -8,31 +8,81 @@
     background: none;
     transition: transform 0.5s ease;
   }
-section{
-    border: 1px solid red;
+  .header {
+    background-color: #6699cc; /* 짙은 파스텔 블루 */
+    color: white;
+    padding: 1rem 2rem;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+form{
+    width: 100%;
 }
-.product_group{
+.search_box{
     width: 50%;
     display: flex;
-    border:1px solid black;
+    flex-direction: row-reverse;
+}
+#sentence{
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.8rem;
+    width: 80%;
+}
+#menu{
+    display: none;
+}
+i{
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid #6699cc;
+    border-radius: 10px;
+}
+i:hover{
+    border-color: white;
+}
+section{
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.product_group{
+    width: 45%;
+    display: flex;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    border-radius:10px ;
+    margin: 1rem;
+    overflow: hidden;
 }
 .info{
     width: 50%;
 }
 .charts{
-    width: 50%;
-    border: 1px solid blue;
- 
-
-}
-.name{
-    padding: 0.5rem 0;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+}
+.name{
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.name h1{
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: -1px 0px rgb(0, 0, 0), 0px 1px rgb(0, 0, 0), 1px 0px rgb(0, 0, 0), 0px rgb(0, 0, 0)rgb(0, 0, 0);
 }
 /* Style for the table */
 table {
@@ -51,7 +101,8 @@ table td.head {
     font-weight: bold;
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+
+    overflow: hidden;
 }
 
 /* Style for table data cells */
@@ -64,4 +115,39 @@ table td {
 /* Hover effect for table rows */
 table tr:hover {
     background-color: #f1f1f1;
+}
+@media(max-width:1280px){
+    .product_group{
+        width: 100%;
+    }
+}
+@media(max-width:650px){
+    .header{
+        padding: 0.5rem;
+    }
+    #menu{
+        display: block;
+    }
+    section{
+        padding: 0.2rem;
+    }
+    .info,.charts{
+        width: 100%;
+    }
+    .search_box{
+        display: none;
+        width: 100%;
+        margin: 2rem 0 0.5rem;
+    }
+    .search_box.active{
+        display: block;
+    }
+    .product_group{
+        margin: 0.5rem;
+    }
+}
+@media(max-width:414px){
+    #sentence{
+        width: 70%;
+    }
 }

@@ -1,21 +1,53 @@
-<!-- myapp/templates/myapp/index.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Text List</title>
+  <!-- Google Charts 라이브러리 로드 -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script src="https://kit.fontawesome.com/664a7b3827.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'css/search.css' %}?after">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}?after">
 </head>
 <body>
-    <h1>items</h1>
-    <form action="/search" method="post">
-        {% csrf_token %}
-        <label for="sentence">Enter your sentence:</label>
-        <input type="text" id="sentence" name="sentence">
-        <button type="submit">Submit</button>
-    </form>
-    <ul>
-        {% for item in items %}
-            <li>{{ item.item }}</li>
-        {% endfor %}
-    </ul>
+    <div class='header'>
+        <h1>전통주 통계</h1>
+        <div  id='menu'>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class='search_box'>
+            <form action="/search" method="post">
+                {% csrf_token %}               
+                <input type="text" id="sentence" name="sentence"
+                placeholder="검색어를 입력해주세요">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>               
+            </form>
+        </div>
+        {% comment %} <div  class='dark_mode'>
+            <i class="fa-regular fa-moon" id='dark'></i>
+        </div> {% endcomment %}
+    </div>
+    <section>
+        <div class='s_charts'>
+            <div id="chart_div7" style="float: left;"></div>
+            <div id="chart_div1" style="float: left;"></div>
+        </div>
+      <div class='c_charts'>
+        <div id="chart_div2" style="float: left;"></div>
+        <div id="chart_div3" style="float: left;"></div>
+        <div id="chart_div4" style="float: left;"></div>
+        <div id="chart_div5" style="float: left;"></div>
+        <div id="chart_div6" style="float: left;"></div>
+        
+      </div>
+      <div id="chart_div7" style="float: left;"></div>
+
+
+    </section>
+  <script src="{% static 'js/index.js' %}?after"></script>
 </body>
 </html>

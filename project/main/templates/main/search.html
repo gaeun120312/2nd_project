@@ -13,6 +13,7 @@
         <div  id='menu'>
             <i class="fa-solid fa-bars"></i>
         </div>
+
         <div class='search_box'>
             <form action="/search" method="post">
                 {% csrf_token %}               
@@ -23,7 +24,10 @@
                 </button>               
             </form>
         </div>
-
+        <div  class='dark_mode'>
+            {% comment %} <i class="fa-solid fa-moon" id='light'></i> {% endcomment %}
+            <i class="fa-regular fa-moon" id='dark'></i>
+        </div>
     </div>
     
     <section>

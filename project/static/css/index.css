@@ -1,0 +1,19 @@
+section{
+    background-color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.s_charts{
+    display: flex;
+    flex-direction: column;
+}
+.c_charts{
+    width: 600px;
+    display: flex;
+    overflow: hidden;
+}

@@ -1,3 +1,4 @@
+/* 기본 스타일 */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,35 +7,89 @@
     text-decoration: none;
     appearance: none;
     background: none;
-    transition: transform 0.5s ease;
-  }
-  .header {
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+/* 다크 모드 스타일 */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .header {
+    background-color: #333333; /* 짙은 파스텔 블루의 다크 버전 */
+    color: #e0e0e0;
+}
+
+body.dark-mode #sentence {
+    background-color: #333333;
+    color: #e0e0e0;
+    border:1px solid #e0e0e0;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .product_group {
+    background-color: #2e2e2e;
+}
+
+body.dark-mode table {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode table td.head {
+    background-color: #3e3e3e;
+}
+
+body.dark-mode table tr:hover {
+    background-color: #444444;
+}
+
+body.dark-mode i {
+    color: #e0e0e0;
+    border-color: #333333;
+}
+
+body.dark-mode i:hover {
+    border-color: #e0e0e0;
+}
+
+/* 기존 스타일 유지 */
+.header {
     background-color: #6699cc; /* 짙은 파스텔 블루 */
     color: white;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-form{
+}
+
+form {
     width: 100%;
 }
-.search_box{
+
+.search_box {
     width: 50%;
     display: flex;
     flex-direction: row-reverse;
 }
-#sentence{
+
+#sentence {
     font-size: 1.2rem;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 0.8rem;
     width: 80%;
 }
-#menu{
+
+#menu {
     display: none;
 }
-i{
+
+i {
     margin-left: 1rem;
     font-size: 1.7rem;
     color: white;
@@ -42,10 +97,12 @@ i{
     border: 1px solid #6699cc;
     border-radius: 10px;
 }
-i:hover{
+
+i:hover {
     border-color: white;
 }
-section{
+
+section {
     background-color: #ddd;
     display: flex;
     flex-wrap: wrap;
@@ -54,36 +111,41 @@ section{
     justify-content: center;
     align-items: center;
 }
-.product_group{
+
+.product_group {
     width: 45%;
     display: flex;
     background-color: #ffffff;
     flex-wrap: wrap;
-    border-radius:10px ;
+    border-radius: 10px;
     margin: 1rem;
     overflow: hidden;
 }
-.info{
+
+.info {
     width: 50%;
 }
-.charts{
+
+.charts {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
-.name{
+
+.name {
     padding: 1rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.name h1{
+
+.name h1 {
     font-size: 2rem;
     color: #ffffff;
-    text-shadow: -1px 0px rgb(0, 0, 0), 0px 1px rgb(0, 0, 0), 1px 0px rgb(0, 0, 0), 0px rgb(0, 0, 0)rgb(0, 0, 0);
+    text-shadow: -1px 0px rgb(0, 0, 0), 0px 1px rgb(0, 0, 0), 1px 0px rgb(0, 0, 0), 0px rgb(0, 0, 0) rgb(0, 0, 0);
 }
+
 /* Style for the table */
 table {
     padding: auto;
@@ -101,13 +163,12 @@ table td.head {
     font-weight: bold;
     padding: 10px;
     text-align: left;
-
     overflow: hidden;
 }
 
 /* Style for table data cells */
 table td {
-    padding:0 1rem;
+    padding: 0 1rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
@@ -116,38 +177,57 @@ table td {
 table tr:hover {
     background-color: #f1f1f1;
 }
-@media(max-width:1280px){
-    .product_group{
+
+@media (max-width: 1280px) {
+    .product_group {
         width: 100%;
     }
 }
-@media(max-width:650px){
-    .header{
+
+@media (max-width: 650px) {
+    .dark_mode {
+        display: none;
+    }
+
+    .header {
         padding: 0.5rem;
     }
-    #menu{
+
+    #menu {
         display: block;
     }
-    section{
+
+    section {
         padding: 0.2rem;
     }
-    .info,.charts{
+
+    .info,
+    .charts {
         width: 100%;
     }
-    .search_box{
+
+    .search_box {
         display: none;
         width: 100%;
         margin: 2rem 0 0.5rem;
     }
-    .search_box.active{
+
+    .search_box.active {
         display: block;
     }
-    .product_group{
+
+    .product_group {
         margin: 0.5rem;
     }
+
+    .dark_mode.active {
+        display: block;
+    }
 }
-@media(max-width:414px){
-    #sentence{
+
+@media (max-width: 414px) {
+    #sentence {
         width: 70%;
     }
 }
+

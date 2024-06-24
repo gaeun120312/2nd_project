@@ -11,14 +11,12 @@ function getRandomPastelColorWithAlpha(alpha) {
   // RGBA 형식으로 반환
   return [`rgba(${r}, ${g}, ${b}, ${alpha})`, `rgba(${r}, ${g}, ${b})`];
 }
-console.log(datas);
 function changeColor(colorCode,index){
   document.querySelector(`.name.\\3${index+1}`).style.backgroundColor=colorCode;
 }
 function config(item,index){
     taste = item['metadata']
     colorCode = getRandomPastelColorWithAlpha(0.2);
-    console.log(colorCode);
     changeColor(colorCode[1],index);
     return {
         type: 'radar',
@@ -37,18 +35,74 @@ function config(item,index){
             }]
         },
         options: {
-          elements: {
-            line: {
-              borderWidth: 3
-            }
+          scales: {
+              r: {
+                  pointLabels: {
+                      color: 'blue', // 레이더 차트의 라벨 색상
+                      font: {
+                          size: 14
+                      }
+                  },
+                  ticks: {
+                      color: 'blue' // 레이더 차트의 축 눈금 색상
+                  },
+                  grid: {
+                      color: 'grey' // 레이더 차트의 그리드 색상
+                  },
+                  angleLines: {
+                      color: 'grey' // 레이더 차트의 각도선 색상
+                  }
+              }
+          },
+          plugins: {
+              legend: {
+                  labels: {
+                      color: 'red' // 범례 라벨 색상
+                  }
+              }
           }
-        },
       }
+  }
 }
+objects=[]
 // 차트 생성
 datas.forEach((data,index)=>{
-    var object =new Chart(document.querySelector(`#product_${index+1}`).getContext('2d'),config(data,index))
+    let object =new Chart(document.querySelector(`#product_${index+1}`).getContext('2d'),config(data,index))
+    objects.push(object);
 })
 document.querySelector('#menu').addEventListener('click', function(){
   document.querySelector('.search_box').classList.toggle('active');
+  document.querySelector('.dark_mode').classList.toggle('active');
+
+});
+document.querySelector('#dark').addEventListener('click', function(){
+  document.querySelector('body').classList.toggle('dark-mode');
+  objects.forEach((object)=>{
+    if(object.options.scales.r.pointLabels.color!='white'){
+      object.options.scales.r.pointLabels.color = 'white';
+      object.options.scales.r.ticks.color = 'blue';
+      object.options.scales.r.grid.color = 'white';
+      object.options.scales.r.angleLines.color = 'white';
+      object.options.plugins.legend.labels.color = 'white';
+  
+      // 차트 업데이트
+      object.update();
+    }else{
+        // 옵션 변경
+        object.options.scales.r.pointLabels.color = 'blue';
+        object.options.scales.r.ticks.color = 'blue';
+        object.options.scales.r.grid.color = 'grey';
+        object.options.scales.r.angleLines.color = 'grey';
+        object.options.plugins.legend.labels.color = 'red';
+    
+        // 차트 업데이트
+        object.update();
+    }
+    console.dir(object.options.scales.r)
+  })
+  if(document.querySelector('#dark').classList.contains('fa-regular')){
+    document.querySelector('#dark').classList.replace('fa-regular','fa-solid');
+  }else{
+    document.querySelector('#dark').classList.replace('fa-solid','fa-regular');
+  }
 });

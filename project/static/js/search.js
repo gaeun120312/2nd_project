@@ -34,7 +34,7 @@ function colorArr(selector){
 	}
 	return arr
 }
-['body', 'freshness', 'sour','sparkling','sweet']
+
 console.log(datas);
 function config(item){
     taste = item['metadata']

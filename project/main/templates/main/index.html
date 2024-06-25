@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class='header'>
-        <h1>전통주 통계</h1>
+        <a href="/"><h1>전통주 통계</h1></a>
         <div  id='menu'>
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -33,21 +33,26 @@
     </div>
     <section>
         <div class='s_charts'>
-            <div id="chart_div7" style="float: left;"></div>
-            <div id="chart_div1" style="float: left;"></div>
+            <div class='s_chart' id="chart_div7" style="float: left;"></div>
+            <div class='s_chart' id="chart_div1" style="float: left;"></div>
         </div>
-      <div class='c_charts'>
-        <div id="chart_div2" style="float: left;"></div>
-        <div id="chart_div3" style="float: left;"></div>
-        <div id="chart_div4" style="float: left;"></div>
-        <div id="chart_div5" style="float: left;"></div>
-        <div id="chart_div6" style="float: left;"></div>
-        
-      </div>
-      <div id="chart_div7" style="float: left;"></div>
+      {% comment %} <div class='c_charts'>
+      </div> {% endcomment %}
+        <div class="slide slide_wrap">
+          <div id="chart_div2" class="slide_item item1"></div>
+          <div id="chart_div3" class="slide_item item2"></div>
+          <div id="chart_div4" class="slide_item item3"></div> 
+          <div id="chart_div5" class="slide_item item4"></div>
+          <div id="chart_div6" class="slide_item item5"></div>
+          <div class="slide_prev_button slide_button">◀</div>
+          <div class="slide_next_button slide_button">▶</div>
+          <ul class="slide_pagination"></ul>
+        </div>
 
 
     </section>
+
   <script src="{% static 'js/index.js' %}?after"></script>
+
 </body>
 </html>

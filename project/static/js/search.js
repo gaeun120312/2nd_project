@@ -21,7 +21,7 @@ function config(item,index){
     return {
         type: 'radar',
         data:{
-            labels:['body', 'freshness', 'sour','sparkling','sweet'],
+            labels:['바디감', '청량감', '신맛','탄산','단맛'],
             datasets:[{
                 label:'맛 분포도',
                 data: [taste['body'],taste['freshness'],taste['sour'],taste['sparkling'],taste['sweet']],

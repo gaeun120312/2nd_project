@@ -1,0 +1,4133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c5baeade3745691ffc7fdce19447794b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c5baeade3745691ffc7fdce19447794b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c5baeade3745691ffc7fdce19447794b = L.map(
+                "map_c5baeade3745691ffc7fdce19447794b",
+                {
+                    center: [36.0, 127.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aab5a8d7f5bf90d5e7fece7ec9fdfa0e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var feature_group_90113e7d0c5e571152999b86111d6f25 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_cb078ee7bcafa910a191e76aafda5889 = L.marker(
+                [37.6438835, 127.0157578],
+                {}
+            ).addTo(feature_group_90113e7d0c5e571152999b86111d6f25);
+        
+    
+        var popup_d62d1f3015d205fbe15b8ea13c78eca4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e3d2ea38d5883e889b42f90fba5021f = $(`<div id="html_1e3d2ea38d5883e889b42f90fba5021f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 서울특별시 강북구 인수동 삼양로 455<br><br><b style="color:blue;">제품 정보:</b><br>걍즐겨 (디오케이브루어리)<br><br>두유노 (디오케이브루어리)</div>`)[0];
+                popup_d62d1f3015d205fbe15b8ea13c78eca4.setContent(html_1e3d2ea38d5883e889b42f90fba5021f);
+            
+        
+
+        marker_cb078ee7bcafa910a191e76aafda5889.bindPopup(popup_d62d1f3015d205fbe15b8ea13c78eca4)
+        ;
+
+        
+    
+    
+            var marker_e1dc2c1431957f80af71ce107694c46e = L.marker(
+                [37.5358183, 127.0557242],
+                {}
+            ).addTo(feature_group_90113e7d0c5e571152999b86111d6f25);
+        
+    
+        var popup_c567e93422f4d3694603961a6e3f5e88 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ad99d6c0ff250f5a0862f1fbd8c0a845 = $(`<div id="html_ad99d6c0ff250f5a0862f1fbd8c0a845" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 서울 성동구 성수동2가 648-17<br><br><b style="color:blue;">제품 정보:</b><br>나루생막걸리11.5 (한강주조)<br><br>나루생막걸리6 (한강주조)</div>`)[0];
+                popup_c567e93422f4d3694603961a6e3f5e88.setContent(html_ad99d6c0ff250f5a0862f1fbd8c0a845);
+            
+        
+
+        marker_e1dc2c1431957f80af71ce107694c46e.bindPopup(popup_c567e93422f4d3694603961a6e3f5e88)
+        ;
+
+        
+    
+    
+            var marker_a9ef27f6810f649d794f69657e269a76 = L.marker(
+                [37.4682561, 127.0391414],
+                {}
+            ).addTo(feature_group_90113e7d0c5e571152999b86111d6f25);
+        
+    
+        var popup_f7a69478b2fc77fdc019b96c61ed2549 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f16cc1cd2df43c5db9d2954ee4e795c = $(`<div id="html_9f16cc1cd2df43c5db9d2954ee4e795c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 서울 서초구 양재동 232<br><br><b style="color:blue;">제품 정보:</b><br>남산애레드와인 (예인화원)<br><br>남산애포트와인 (예인화원)</div>`)[0];
+                popup_f7a69478b2fc77fdc019b96c61ed2549.setContent(html_9f16cc1cd2df43c5db9d2954ee4e795c);
+            
+        
+
+        marker_a9ef27f6810f649d794f69657e269a76.bindPopup(popup_f7a69478b2fc77fdc019b96c61ed2549)
+        ;
+
+        
+    
+    
+            var marker_48228df40834dd696ae6deacb0022c09 = L.marker(
+                [37.6438835, 127.0157578],
+                {}
+            ).addTo(feature_group_90113e7d0c5e571152999b86111d6f25);
+        
+    
+        var popup_6c2ee0b70e025fcaff46188fdb6d7b49 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1cd63d281446222ea68b2bd29d00dd9c = $(`<div id="html_1cd63d281446222ea68b2bd29d00dd9c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 서울특별시 강북구 삼양로 455<br><br><b style="color:blue;">제품 정보:</b><br>뉴트로 (디오케이브루어리)</div>`)[0];
+                popup_6c2ee0b70e025fcaff46188fdb6d7b49.setContent(html_1cd63d281446222ea68b2bd29d00dd9c);
+            
+        
+
+        marker_48228df40834dd696ae6deacb0022c09.bindPopup(popup_6c2ee0b70e025fcaff46188fdb6d7b49)
+        ;
+
+        
+    
+    
+            var marker_4b233d572d2651520ce1bb0285acd08e = L.marker(
+                [37.5130399, 127.0431371],
+                {}
+            ).addTo(feature_group_90113e7d0c5e571152999b86111d6f25);
+        
+    
+        var popup_8cab89a16212a10ed7400853c56ef5cf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b6c6c98e342ac7bcf742987cfe31b9e = $(`<div id="html_8b6c6c98e342ac7bcf742987cfe31b9e" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 서울 강남구 삼성동 34-19<br><br><b style="color:blue;">제품 정보:</b><br>안동소주일품17 (안동소주일품)<br><br>안동소주일품21 (안동소주일품)<br><br>안동소주일품골드 (안동소주일품)</div>`)[0];
+                popup_8cab89a16212a10ed7400853c56ef5cf.setContent(html_8b6c6c98e342ac7bcf742987cfe31b9e);
+            
+        
+
+        marker_4b233d572d2651520ce1bb0285acd08e.bindPopup(popup_8cab89a16212a10ed7400853c56ef5cf)
+        ;
+
+        
+    
+    
+            var marker_168033b87a162c8542dbb547aad283e2 = L.marker(
+                [37.4826179, 127.1266544],
+                {}
+            ).addTo(feature_group_90113e7d0c5e571152999b86111d6f25);
+        
+    
+        var popup_65d1251e02220882da17faa18b5b7116 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_13c1a782a9af5914f7c33b6b01c51e78 = $(`<div id="html_13c1a782a9af5914f7c33b6b01c51e78" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 서울 송파구 문정동 83-22<br><br><b style="color:blue;">제품 정보:</b><br>지평생쌀막걸리 (지평주조)<br><br>지평생옛막걸리 (지평주조)</div>`)[0];
+                popup_65d1251e02220882da17faa18b5b7116.setContent(html_13c1a782a9af5914f7c33b6b01c51e78);
+            
+        
+
+        marker_168033b87a162c8542dbb547aad283e2.bindPopup(popup_65d1251e02220882da17faa18b5b7116)
+        ;
+
+        
+    
+    
+            var marker_1f5bb8809d6845f901b134cd03f50ead = L.marker(
+                [37.5440369, 127.0536291],
+                {}
+            ).addTo(feature_group_90113e7d0c5e571152999b86111d6f25);
+        
+    
+        var popup_91a85038868b6d483816394f3e6fd63f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e291d9d585940073a55060292687c8cb = $(`<div id="html_e291d9d585940073a55060292687c8cb" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 서울 성동구 성수동2가 314-13<br><br><b style="color:blue;">제품 정보:</b><br>풍정사계동 (농업회사법인(유)화양)<br><br>풍정사계추 (농업회사법인(유)화양)<br><br>풍정사계춘 (농업회사법인(유)화양)<br><br>풍정사계하 (농업회사법인(유)화양)</div>`)[0];
+                popup_91a85038868b6d483816394f3e6fd63f.setContent(html_e291d9d585940073a55060292687c8cb);
+            
+        
+
+        marker_1f5bb8809d6845f901b134cd03f50ead.bindPopup(popup_91a85038868b6d483816394f3e6fd63f)
+        ;
+
+        
+    
+    
+            var feature_group_2d787c5371ce6ad507f598abc3c36918 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_6c10fbe182a90502c4236154f7f9600c = L.marker(
+                [35.2504051, 129.0564293],
+                {}
+            ).addTo(feature_group_2d787c5371ce6ad507f598abc3c36918);
+        
+    
+        var popup_962e54574c1cdd3a37429aa858f11151 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ae7e2195558a55e6d5dc375d31ad3d92 = $(`<div id="html_ae7e2195558a55e6d5dc375d31ad3d92" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 부산 금정구 금성동 554-1<br><br><b style="color:blue;">제품 정보:</b><br>금정산성막걸리 ((유)금정산성토산주)</div>`)[0];
+                popup_962e54574c1cdd3a37429aa858f11151.setContent(html_ae7e2195558a55e6d5dc375d31ad3d92);
+            
+        
+
+        marker_6c10fbe182a90502c4236154f7f9600c.bindPopup(popup_962e54574c1cdd3a37429aa858f11151)
+        ;
+
+        
+    
+    
+            var marker_d336703047da5e6cc259c85908fd54fe = L.marker(
+                [35.200528, 129.0604427],
+                {}
+            ).addTo(feature_group_2d787c5371ce6ad507f598abc3c36918);
+        
+    
+        var popup_dbd82c1b0a88e064130d56f1c098668f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_04fbfa0675c76d2663d3df156599761f = $(`<div id="html_04fbfa0675c76d2663d3df156599761f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 부산 동래구 사직북로48번길 34<br><br><b style="color:blue;">제품 정보:</b><br>기다림16 (농업회사법인(주)제이케이크래프트)<br><br>기다림25 (농업회사법인(주)제이케이크래프트)<br><br>기다림34 (농업회사법인(주)제이케이크래프트)<br><br>기다림맑은술 (농업회사법인(주)제이케이크래프트)</div>`)[0];
+                popup_dbd82c1b0a88e064130d56f1c098668f.setContent(html_04fbfa0675c76d2663d3df156599761f);
+            
+        
+
+        marker_d336703047da5e6cc259c85908fd54fe.bindPopup(popup_dbd82c1b0a88e064130d56f1c098668f)
+        ;
+
+        
+    
+    
+            var marker_ede0d6d2b52bc3584a95a463dcb9995e = L.marker(
+                [35.2109737, 129.0313621],
+                {}
+            ).addTo(feature_group_2d787c5371ce6ad507f598abc3c36918);
+        
+    
+        var popup_5494890d612f4c7e355da8e809b58f6a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f38b4e9d9d25505528806b96d517bdf3 = $(`<div id="html_f38b4e9d9d25505528806b96d517bdf3" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 부산 북구 덕천로247번길 3 2F<br><br><b style="color:blue;">제품 정보:</b><br>라이스퐁당13 (농업회사법인(주)벗드림)<br><br>라이스퐁당17 (농업회사법인(주)벗드림)<br><br>볼빨간막걸리10 (농업회사법인(주)벗드림)<br><br>볼빨간막걸리7 (농업회사법인(주)벗드림)</div>`)[0];
+                popup_5494890d612f4c7e355da8e809b58f6a.setContent(html_f38b4e9d9d25505528806b96d517bdf3);
+            
+        
+
+        marker_ede0d6d2b52bc3584a95a463dcb9995e.bindPopup(popup_5494890d612f4c7e355da8e809b58f6a)
+        ;
+
+        
+    
+    
+            var marker_10fe38b79eddc4f8655278a4e767e40b = L.marker(
+                [35.0821675, 129.0423987],
+                {}
+            ).addTo(feature_group_2d787c5371ce6ad507f598abc3c36918);
+        
+    
+        var popup_083f8860dcbbf4e2442645cac3f1ef0c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_618df11d15e902a482dd6b0ebf4d55a1 = $(`<div id="html_618df11d15e902a482dd6b0ebf4d55a1" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 부산 영도구 남항새싹길 186<br><br><b style="color:blue;">제품 정보:</b><br>설하담 (리큐랩주식회사)</div>`)[0];
+                popup_083f8860dcbbf4e2442645cac3f1ef0c.setContent(html_618df11d15e902a482dd6b0ebf4d55a1);
+            
+        
+
+        marker_10fe38b79eddc4f8655278a4e767e40b.bindPopup(popup_083f8860dcbbf4e2442645cac3f1ef0c)
+        ;
+
+        
+    
+    
+            var feature_group_e3b09622a98dc7d225043e3023b8d8cb = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_522299419caba4cab99f8192eb580959 = L.marker(
+                [35.7055712, 128.4931149],
+                {}
+            ).addTo(feature_group_e3b09622a98dc7d225043e3023b8d8cb);
+        
+    
+        var popup_d82258762bd8c0e8ddbe4b004836d0b1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7badfff0c03268fef95dcd010624fd2f = $(`<div id="html_7badfff0c03268fef95dcd010624fd2f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 대구 달성군 유가읍 양리 203<br><br><b style="color:blue;">제품 정보:</b><br>하향주 (하향주가영농조합법인)<br><br>하향주증류주 (하향주가영농조합법인)</div>`)[0];
+                popup_d82258762bd8c0e8ddbe4b004836d0b1.setContent(html_7badfff0c03268fef95dcd010624fd2f);
+            
+        
+
+        marker_522299419caba4cab99f8192eb580959.bindPopup(popup_d82258762bd8c0e8ddbe4b004836d0b1)
+        ;
+
+        
+    
+    
+            var feature_group_4e0f0a6663e3fb8d6d787cd0303858d7 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_cfec2556115ee71ec4188b48f771cfe7 = L.marker(
+                [37.3890756, 126.7008214],
+                {}
+            ).addTo(feature_group_4e0f0a6663e3fb8d6d787cd0303858d7);
+        
+    
+        var popup_dc3b54f665f76910d46c8f3f61c2c9c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bfb83d8913aa4fb4eac6c20061349c6b = $(`<div id="html_bfb83d8913aa4fb4eac6c20061349c6b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 인천광역시 남동구 호구포로 50, 8층 819-1호<br><br><b style="color:blue;">제품 정보:</b><br>삼양춘생약주 (송도향전통주조)<br><br>삼양춘생탁주 (송도향전통주조)<br><br>삼양춘청주 (송도향전통주조)</div>`)[0];
+                popup_dc3b54f665f76910d46c8f3f61c2c9c5.setContent(html_bfb83d8913aa4fb4eac6c20061349c6b);
+            
+        
+
+        marker_cfec2556115ee71ec4188b48f771cfe7.bindPopup(popup_dc3b54f665f76910d46c8f3f61c2c9c5)
+        ;
+
+        
+    
+    
+            var marker_e277554a4067dff900c72b9307a2cab1 = L.marker(
+                [37.5218801, 126.7092106],
+                {}
+            ).addTo(feature_group_4e0f0a6663e3fb8d6d787cd0303858d7);
+        
+    
+        var popup_84b8c6dff1df736940b00ce7074badde = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95867aaf8a65a73df79c9539d48e399e = $(`<div id="html_95867aaf8a65a73df79c9539d48e399e" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 인천 부평구 청천동 395-20<br><br><b style="color:blue;">제품 정보:</b><br>인천생소성주 (인천탁주)</div>`)[0];
+                popup_84b8c6dff1df736940b00ce7074badde.setContent(html_95867aaf8a65a73df79c9539d48e399e);
+            
+        
+
+        marker_e277554a4067dff900c72b9307a2cab1.bindPopup(popup_84b8c6dff1df736940b00ce7074badde)
+        ;
+
+        
+    
+    
+            var feature_group_ee6507426a62b8cd0d03250f78677294 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_c79fd40699c143b2511cafa6e6c3794c = L.marker(
+                [35.158692, 126.9308029],
+                {}
+            ).addTo(feature_group_ee6507426a62b8cd0d03250f78677294);
+        
+    
+        var popup_69e95f4a193e7c2bf921d74a170cba6b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_81a1863246b798ed5ef1e0ac95f7c9df = $(`<div id="html_81a1863246b798ed5ef1e0ac95f7c9df" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 광주 동구 산수동 542-52<br><br><b style="color:blue;">제품 정보:</b><br>동정춘 (농업회사법인(주)산수)<br><br>백자주 (농업회사법인(주)산수)<br><br>호모루덴스 (농업회사법인(주)산수)</div>`)[0];
+                popup_69e95f4a193e7c2bf921d74a170cba6b.setContent(html_81a1863246b798ed5ef1e0ac95f7c9df);
+            
+        
+
+        marker_c79fd40699c143b2511cafa6e6c3794c.bindPopup(popup_69e95f4a193e7c2bf921d74a170cba6b)
+        ;
+
+        
+    
+    
+            var marker_bf0061c62ab38fc11e2396acdef3597c = L.marker(
+                [35.1353759, 126.7913764],
+                {}
+            ).addTo(feature_group_ee6507426a62b8cd0d03250f78677294);
+        
+    
+        var popup_4cdf8e965f7b0e8efb95c6df28624fc8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e89080e3a58e364b5d6db7d65d8a7283 = $(`<div id="html_e89080e3a58e364b5d6db7d65d8a7283" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 광주 광산구 송정동 971-8<br><br><b style="color:blue;">제품 정보:</b><br>월매쌀막걸리 (서울장수주식회사)<br><br>장수생막걸리 (서울장수주식회사)<br><br>장홍삼장수막걸리 (서울장수주식회사)</div>`)[0];
+                popup_4cdf8e965f7b0e8efb95c6df28624fc8.setContent(html_e89080e3a58e364b5d6db7d65d8a7283);
+            
+        
+
+        marker_bf0061c62ab38fc11e2396acdef3597c.bindPopup(popup_4cdf8e965f7b0e8efb95c6df28624fc8)
+        ;
+
+        
+    
+    
+            var feature_group_00a133d1c60ed2f76f3c306e6ee670f4 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_dd52aa8cba4c560c2b02a87359963e52 = L.marker(
+                [36.4397433, 127.434074],
+                {}
+            ).addTo(feature_group_00a133d1c60ed2f76f3c306e6ee670f4);
+        
+    
+        var popup_5accb107477b8d849157c8791d8566d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f19cb10da37481adc9c11dfbafa12401 = $(`<div id="html_f19cb10da37481adc9c11dfbafa12401" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 대전 대덕구 신탄진동 236-2<br><br><b style="color:blue;">제품 정보:</b><br>산막대덕주 (농업회사법인신탄진주조(주))<br><br>산막생유막걸리 (농업회사법인신탄진주조(주))<br><br>청춘 (농업회사법인신탄진주조(주))</div>`)[0];
+                popup_5accb107477b8d849157c8791d8566d9.setContent(html_f19cb10da37481adc9c11dfbafa12401);
+            
+        
+
+        marker_dd52aa8cba4c560c2b02a87359963e52.bindPopup(popup_5accb107477b8d849157c8791d8566d9)
+        ;
+
+        
+    
+    
+            var marker_454a07a3f80c76e8c684578775ad163b = L.marker(
+                [36.3520289, 127.4518888],
+                {}
+            ).addTo(feature_group_00a133d1c60ed2f76f3c306e6ee670f4);
+        
+    
+        var popup_89168343240824d2308e0247badf0ac1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ba3df8ffb3828757b7e5050c8de73cc4 = $(`<div id="html_ba3df8ffb3828757b7e5050c8de73cc4" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 대전 동구 가양동 44-5<br><br><b style="color:blue;">제품 정보:</b><br>석로주 (석이원주조)</div>`)[0];
+                popup_89168343240824d2308e0247badf0ac1.setContent(html_ba3df8ffb3828757b7e5050c8de73cc4);
+            
+        
+
+        marker_454a07a3f80c76e8c684578775ad163b.bindPopup(popup_89168343240824d2308e0247badf0ac1)
+        ;
+
+        
+    
+    
+            var feature_group_21f2767d4f15f3c24ca1c0b8c8c14a37 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_c59c4dbd1529d9bb39f06f02e3a3c87f = L.marker(
+                [35.552349, 129.2740489],
+                {}
+            ).addTo(feature_group_21f2767d4f15f3c24ca1c0b8c8c14a37);
+        
+    
+        var popup_297bb1b22efef934b0386550b907bf8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_17423d024b07c9b969fba7eb352a0c4f = $(`<div id="html_17423d024b07c9b969fba7eb352a0c4f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 울산 남구 무거동 1159-4<br><br><b style="color:blue;">제품 정보:</b><br>그랑꼬또레드와인 (그린영농조합법인)<br><br>그랑꼬또M56 (그린영농조합법인)<br><br>그랑꼬또M5610 (그린영농조합법인)<br><br>그랑꼬또로제와인 (그린영농조합법인)<br><br>그랑꼬또청수 (그린영농조합법인)<br><br>그랑꼬또화이트와인 (그린영농조합법인)</div>`)[0];
+                popup_297bb1b22efef934b0386550b907bf8f.setContent(html_17423d024b07c9b969fba7eb352a0c4f);
+            
+        
+
+        marker_c59c4dbd1529d9bb39f06f02e3a3c87f.bindPopup(popup_297bb1b22efef934b0386550b907bf8f)
+        ;
+
+        
+    
+    
+            var feature_group_54ef182d0706f312b2530accb866fef4 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_13d49676cd5f209ac3b2cf625fa82ef3 = L.marker(
+                [37.9451504, 127.3333548],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_49d4949592c915d8fcc99a03900a28f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_afed12c897fca41f1cfd4efa6bfec8c1 = $(`<div id="html_afed12c897fca41f1cfd4efa6bfec8c1" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 포천시 일동면 기산리 31-8<br><br><b style="color:blue;">제품 정보:</b><br>1932새싹땅콩햅쌀막걸리 ((주)1932포천일동막걸리)<br><br>1932새싹땅콩흑미막걸리 ((주)1932포천일동막걸리)</div>`)[0];
+                popup_49d4949592c915d8fcc99a03900a28f4.setContent(html_afed12c897fca41f1cfd4efa6bfec8c1);
+            
+        
+
+        marker_13d49676cd5f209ac3b2cf625fa82ef3.bindPopup(popup_49d4949592c915d8fcc99a03900a28f4)
+        ;
+
+        
+    
+    
+            var marker_aad3119d46d966a6562bf8c8cb121ef5 = L.marker(
+                [37.8198927, 127.3562949],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_73adc9bed822aa61c2494dc03bc94aa1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4756c6925347dfc3478f18d84cff8936 = $(`<div id="html_4756c6925347dfc3478f18d84cff8936" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 가평군 조종면 대보리 427-3<br><br><b style="color:blue;">제품 정보:</b><br>가평잣생막걸리 (가평우리술)<br><br>주시락톡쏘는복분자막걸리 (가평우리술)<br><br>톡쏘는알밤동동 (가평우리술)</div>`)[0];
+                popup_73adc9bed822aa61c2494dc03bc94aa1.setContent(html_4756c6925347dfc3478f18d84cff8936);
+            
+        
+
+        marker_aad3119d46d966a6562bf8c8cb121ef5.bindPopup(popup_73adc9bed822aa61c2494dc03bc94aa1)
+        ;
+
+        
+    
+    
+            var marker_e095a5882fc03cac30677facbb95377e = L.marker(
+                [37.2334604, 127.2986005],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_30830f0793bea31b7bfc4e21df9ec7f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f00f07c0ca10acb0aa4f19cae43502aa = $(`<div id="html_f00f07c0ca10acb0aa4f19cae43502aa" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 용인시 처인구 양지면 양지리 114-14<br><br><b style="color:blue;">제품 정보:</b><br>감사 (술샘)<br><br>미르25 (술샘)<br><br>미르40 (술샘)<br><br>붉은원숭이 (술샘)<br><br>술샘이화주 (술샘)<br><br>술취한원숭이 (술샘)</div>`)[0];
+                popup_30830f0793bea31b7bfc4e21df9ec7f4.setContent(html_f00f07c0ca10acb0aa4f19cae43502aa);
+            
+        
+
+        marker_e095a5882fc03cac30677facbb95377e.bindPopup(popup_30830f0793bea31b7bfc4e21df9ec7f4)
+        ;
+
+        
+    
+    
+            var marker_ec74115a6cefdf78d61a07bfe6e78578 = L.marker(
+                [37.9059608, 127.3099013],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_41e525942c2544cc3be9f6dc7c18514b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5a10b8e69f7f459f07c2ec03c13b03db = $(`<div id="html_5a10b8e69f7f459f07c2ec03c13b03db" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 포천시 화현면 화현리 511<br><br><b style="color:blue;">제품 정보:</b><br>감아락25 ((주)배상면주가)<br><br>느린마을막걸리 (배상면주가)<br><br>오매락퍽 ((주)배상면주가)</div>`)[0];
+                popup_41e525942c2544cc3be9f6dc7c18514b.setContent(html_5a10b8e69f7f459f07c2ec03c13b03db);
+            
+        
+
+        marker_ec74115a6cefdf78d61a07bfe6e78578.bindPopup(popup_41e525942c2544cc3be9f6dc7c18514b)
+        ;
+
+        
+    
+    
+            var marker_902beb4ad68ef2c85ca1fa5f31f69f33 = L.marker(
+                [37.9601015, 126.9577533],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_a7eb39221d39b1a53edb88bfae0b4dbd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a2acf2992d37bdfb4427f31be188707 = $(`<div id="html_1a2acf2992d37bdfb4427f31be188707" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 파주시 적성면 윗배우니길 441-25<br><br><b style="color:blue;">제품 정보:</b><br>감악산머루주 (산머루농원영농조합법인)<br><br>도로시머루주 (산머루농원영농조합법인)<br><br>머르드서드라이 (산머루농원영농조합법인)<br><br>머르드서스위트 (산머루농원영농조합법인)</div>`)[0];
+                popup_a7eb39221d39b1a53edb88bfae0b4dbd.setContent(html_1a2acf2992d37bdfb4427f31be188707);
+            
+        
+
+        marker_902beb4ad68ef2c85ca1fa5f31f69f33.bindPopup(popup_a7eb39221d39b1a53edb88bfae0b4dbd)
+        ;
+
+        
+    
+    
+            var marker_ba4e29dd6e2cbd63aae0ad0420ccdebe = L.marker(
+                [37.8160603, 126.8336616],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_8d0041d57883b8c4850c87dce48a9b06 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47ab87ccd7327be708e1a700d865ee23 = $(`<div id="html_47ab87ccd7327be708e1a700d865ee23" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 파주시 파주읍 부곡리 34-7<br><br><b style="color:blue;">제품 정보:</b><br>감홍로백자 (농업회사법인(주)감홍로)<br><br>감홍로청자 (농업회사법인(주)감홍로)</div>`)[0];
+                popup_8d0041d57883b8c4850c87dce48a9b06.setContent(html_47ab87ccd7327be708e1a700d865ee23);
+            
+        
+
+        marker_ba4e29dd6e2cbd63aae0ad0420ccdebe.bindPopup(popup_8d0041d57883b8c4850c87dce48a9b06)
+        ;
+
+        
+    
+    
+            var marker_cf39b4861b5f8781b81afde8a49097fa = L.marker(
+                [37.7116562, 126.5470116],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_7fe821f00133ebc286ff8668d6cf94c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ceeb84e6b1500907c2967398401bdcd3 = $(`<div id="html_ceeb84e6b1500907c2967398401bdcd3" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 김포시 월곶면 군하리 384-2<br><br><b style="color:blue;">제품 정보:</b><br>김포막걸리 (김포양조)<br><br>김포별주 (김포양조)<br><br>김포약주 (김포양조)<br><br>김포예주 (김포양조)</div>`)[0];
+                popup_7fe821f00133ebc286ff8668d6cf94c1.setContent(html_ceeb84e6b1500907c2967398401bdcd3);
+            
+        
+
+        marker_cf39b4861b5f8781b81afde8a49097fa.bindPopup(popup_7fe821f00133ebc286ff8668d6cf94c1)
+        ;
+
+        
+    
+    
+            var marker_47f8c7caa31a96c36133496383b57073 = L.marker(
+                [37.7285385, 126.6292319],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_5f714bcec2c10257dad86cd302007bd0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96b6dc5bacf542b6d8ac10ab0dc49e52 = $(`<div id="html_96b6dc5bacf542b6d8ac10ab0dc49e52" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 김포시 하성면 양택리 388-10<br><br><b style="color:blue;">제품 정보:</b><br>김포특주 (김포금쌀탁주영농조합법인)<br><br>미생막걸리 (김포금쌀탁주영농조합법인)<br><br>선호생막걸리 (김포금쌀탁주영농조합법인)</div>`)[0];
+                popup_5f714bcec2c10257dad86cd302007bd0.setContent(html_96b6dc5bacf542b6d8ac10ab0dc49e52);
+            
+        
+
+        marker_47f8c7caa31a96c36133496383b57073.bindPopup(popup_5f714bcec2c10257dad86cd302007bd0)
+        ;
+
+        
+    
+    
+            var marker_58fddcf718c0618bfe3f948bfdd3436e = L.marker(
+                [37.9451603, 127.3331931],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_8088bea9efaae77f6ddf2d8574891cef = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_16a27be405f96e2cf6b972af7f5cd3ac = $(`<div id="html_16a27be405f96e2cf6b972af7f5cd3ac" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 포천시 일동면 운악청계로 1597<br><br><b style="color:blue;">제품 정보:</b><br>담은 ((주)1932포천일동막걸리)<br><br>찰막걸리 ((주)1932포천일동막걸리)</div>`)[0];
+                popup_8088bea9efaae77f6ddf2d8574891cef.setContent(html_16a27be405f96e2cf6b972af7f5cd3ac);
+            
+        
+
+        marker_58fddcf718c0618bfe3f948bfdd3436e.bindPopup(popup_8088bea9efaae77f6ddf2d8574891cef)
+        ;
+
+        
+    
+    
+            var marker_932b0438a9aa13435760ac1d701fd7e1 = L.marker(
+                [37.1545157, 127.0691391],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_65306a3f76c7dca5d899bee2f4d9160e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d11d0fec196d713503bd3ac0eaac639 = $(`<div id="html_0d11d0fec196d713503bd3ac0eaac639" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 오산시 시장길 63<br><br><b style="color:blue;">제품 정보:</b><br>독산53 (농업회사법인오산양조(주))<br><br>오매백주 (농업회사법인오산양조(주))<br><br>오산막걸리 (농업회사법인오산양조(주))</div>`)[0];
+                popup_65306a3f76c7dca5d899bee2f4d9160e.setContent(html_0d11d0fec196d713503bd3ac0eaac639);
+            
+        
+
+        marker_932b0438a9aa13435760ac1d701fd7e1.bindPopup(popup_65306a3f76c7dca5d899bee2f4d9160e)
+        ;
+
+        
+    
+    
+            var marker_f94ad842c22da05bbd165898482cb5dd = L.marker(
+                [38.0693437, 127.3088527],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_529a1316058440f972e8fd41d044f079 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4418e945b38beaa3c94bcb3a9e7ea16a = $(`<div id="html_4418e945b38beaa3c94bcb3a9e7ea16a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 포천시 영북면 산정리 517-28<br><br><b style="color:blue;">제품 정보:</b><br>동정춘막걸리산정호수 ((주)농업회사법인술빚는전가네)<br><br>배꽃담은연생막걸리 ((주)농업회사법인술빚는전가네)</div>`)[0];
+                popup_529a1316058440f972e8fd41d044f079.setContent(html_4418e945b38beaa3c94bcb3a9e7ea16a);
+            
+        
+
+        marker_f94ad842c22da05bbd165898482cb5dd.bindPopup(popup_529a1316058440f972e8fd41d044f079)
+        ;
+
+        
+    
+    
+            var marker_8e2dbd42b26e7065bd84b3ae686dd0f4 = L.marker(
+                [37.2809697, 127.7429682],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_72c7787bf951b67c515af038b482347a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_37878a8d8a4660f473ae4c3159315834 = $(`<div id="html_37878a8d8a4660f473ae4c3159315834" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 여주시 강천면 부평로 330<br><br><b style="color:blue;">제품 정보:</b><br>려25 ((농)국순당여주명주(주))<br><br>려고구마증류소주25 ((농)국순당여주명주(주))<br><br>려고구마증류소주40 ((농)국순당여주명주(주))</div>`)[0];
+                popup_72c7787bf951b67c515af038b482347a.setContent(html_37878a8d8a4660f473ae4c3159315834);
+            
+        
+
+        marker_8e2dbd42b26e7065bd84b3ae686dd0f4.bindPopup(popup_72c7787bf951b67c515af038b482347a)
+        ;
+
+        
+    
+    
+            var marker_62445d2d938ec0fd8000100833a180cd = L.marker(
+                [37.1493379, 126.9608692],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_e3e275bc086aba1cac7b7a7015c885ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa7e21c35902fec2ed632e92014684db = $(`<div id="html_fa7e21c35902fec2ed632e92014684db" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 화성시 정남면 문학리 674-23<br><br><b style="color:blue;">제품 정보:</b><br>메로니아 (배혜정도가)<br><br>배도가로아40옐로우 (배혜정도가)<br><br>부자10 (배혜정도가)<br><br>우곡생주 (배혜정도가)<br><br>유자생막걸리 (배혜정도가)<br><br>호땅 (배혜정도가)<br><br>호랑이생막걸리 (배혜정도가)</div>`)[0];
+                popup_e3e275bc086aba1cac7b7a7015c885ad.setContent(html_fa7e21c35902fec2ed632e92014684db);
+            
+        
+
+        marker_62445d2d938ec0fd8000100833a180cd.bindPopup(popup_e3e275bc086aba1cac7b7a7015c885ad)
+        ;
+
+        
+    
+    
+            var marker_a971fe2c3afa4eb1d421524b32a14199 = L.marker(
+                [37.4538424, 127.3388273],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_adfb6e41e4d0e544fd5430a775fe6649 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e16846990e7adb344fc4af4fd3642c7c = $(`<div id="html_e16846990e7adb344fc4af4fd3642c7c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 광주시 퇴촌면 천진암로 684<br><br><b style="color:blue;">제품 정보:</b><br>명술 (대농바이오우리산삼)<br><br>호담 (대농바이오우리산삼)<br><br>호담산양산삼막걸리 (대농바이오우리산삼)<br><br>호담산양산삼주 (대농바이오우리산삼)</div>`)[0];
+                popup_adfb6e41e4d0e544fd5430a775fe6649.setContent(html_e16846990e7adb344fc4af4fd3642c7c);
+            
+        
+
+        marker_a971fe2c3afa4eb1d421524b32a14199.bindPopup(popup_adfb6e41e4d0e544fd5430a775fe6649)
+        ;
+
+        
+    
+    
+            var marker_856ee2c1a20d76f2eedf295520f53c16 = L.marker(
+                [37.700648, 126.5942752],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_dc559eb0882ff251240b83cba5b417b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1ed2bc156292b9fc234268f541ccab2 = $(`<div id="html_c1ed2bc156292b9fc234268f541ccab2" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 김포시 통진읍 서암리 203-4<br><br><b style="color:blue;">제품 정보:</b><br>문배술헤리티지23 (문배주양조원)<br><br>문배술헤리티지25 (문배주양조원)<br><br>문배술헤리티지40 (문배주양조원)</div>`)[0];
+                popup_dc559eb0882ff251240b83cba5b417b5.setContent(html_c1ed2bc156292b9fc234268f541ccab2);
+            
+        
+
+        marker_856ee2c1a20d76f2eedf295520f53c16.bindPopup(popup_dc559eb0882ff251240b83cba5b417b5)
+        ;
+
+        
+    
+    
+            var marker_95d2ab6d5d1f1485992478e1f8483256 = L.marker(
+                [37.8499992, 126.8654729],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_193ec72f2e49439a4440fd799ebd1d38 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_201f115f3f33baf94bb3064697a9fcc0 = $(`<div id="html_201f115f3f33baf94bb3064697a9fcc0" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 파주시 법원읍 사임당로 763<br><br><b style="color:blue;">제품 정보:</b><br>미인약주 (최행숙전통주가)<br><br>미인탁주 (최행숙전통주가)<br><br>아황주 (최행숙전통주가)</div>`)[0];
+                popup_193ec72f2e49439a4440fd799ebd1d38.setContent(html_201f115f3f33baf94bb3064697a9fcc0);
+            
+        
+
+        marker_95d2ab6d5d1f1485992478e1f8483256.bindPopup(popup_193ec72f2e49439a4440fd799ebd1d38)
+        ;
+
+        
+    
+    
+            var marker_5b92ecc687ae1ebf35090ebc63dd11bb = L.marker(
+                [37.1493379, 126.9608692],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_16d0e8417a43d60b469e41782e8751eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a1687c82820b67c9b4e29f9358d4a3dd = $(`<div id="html_a1687c82820b67c9b4e29f9358d4a3dd" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 화성시 정남면 서봉로 835<br><br><b style="color:blue;">제품 정보:</b><br>배도가로아19레드 (주식회사배혜정농업회사법인)<br><br>심플리애플 (주식회사배혜정농업회사법인)</div>`)[0];
+                popup_16d0e8417a43d60b469e41782e8751eb.setContent(html_a1687c82820b67c9b4e29f9358d4a3dd);
+            
+        
+
+        marker_5b92ecc687ae1ebf35090ebc63dd11bb.bindPopup(popup_16d0e8417a43d60b469e41782e8751eb)
+        ;
+
+        
+    
+    
+            var marker_fe0a714be5bf3ec56a100cceee07489e = L.marker(
+                [37.206358, 127.6088076],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_28e7a197173fc84f6290bee13aee34fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7a3a929086d4d92cb471238faa47d984 = $(`<div id="html_7a3a929086d4d92cb471238faa47d984" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 여주시 가남읍 금당리 531-2<br><br><b style="color:blue;">제품 정보:</b><br>백년향 ((주)농업회사법인추연당)<br><br>순향주 ((주)농업회사법인추연당)<br><br>여강 ((주)농업회사법인추연당)</div>`)[0];
+                popup_28e7a197173fc84f6290bee13aee34fb.setContent(html_7a3a929086d4d92cb471238faa47d984);
+            
+        
+
+        marker_fe0a714be5bf3ec56a100cceee07489e.bindPopup(popup_28e7a197173fc84f6290bee13aee34fb)
+        ;
+
+        
+    
+    
+            var marker_6269217e6e9bf36927cb1ae8d7aee195 = L.marker(
+                [37.0007415, 126.9894582],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_81f6d1cf20e1888da6cc3fde62702349 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9493141e0f60ea4286344c9a65fe62f4 = $(`<div id="html_9493141e0f60ea4286344c9a65fe62f4" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 평택시 오성면 숙성뜰길 108<br><br><b style="color:blue;">제품 정보:</b><br>술그리다생탁주 (농업회사법인(주)좋은술)<br><br>술예쁘다생탁주 (농업회사법인(주)좋은술)<br><br>천비향오양주약주 (농업회사법인(주)좋은술)<br><br>천비향오양주탁주 (농업회사법인(주)좋은술)<br><br>천비향화주 (농업회사법인(주)좋은술)</div>`)[0];
+                popup_81f6d1cf20e1888da6cc3fde62702349.setContent(html_9493141e0f60ea4286344c9a65fe62f4);
+            
+        
+
+        marker_6269217e6e9bf36927cb1ae8d7aee195.bindPopup(popup_81f6d1cf20e1888da6cc3fde62702349)
+        ;
+
+        
+    
+    
+            var marker_2e5b45b8efcc0995acd151846f8b8854 = L.marker(
+                [37.2460657, 127.6444694],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_48a6fb19be6d06c3d45ccc5a59f17879 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_01b8d05e13d09eb67f3282bdddc0d43b = $(`<div id="html_01b8d05e13d09eb67f3282bdddc0d43b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기도 여주시 점봉동 189-99<br><br><b style="color:blue;">제품 정보:</b><br>술아국화주 (농업회사법인(주)술아원)<br><br>술아막걸리 (농업회사법인(주)술아원)<br><br>술아매화주 (농업회사법인(주)술아원)<br><br>술아순곡주 (농업회사법인(주)술아원)<br><br>술아연화주 (농업회사법인(주)술아원)</div>`)[0];
+                popup_48a6fb19be6d06c3d45ccc5a59f17879.setContent(html_01b8d05e13d09eb67f3282bdddc0d43b);
+            
+        
+
+        marker_2e5b45b8efcc0995acd151846f8b8854.bindPopup(popup_48a6fb19be6d06c3d45ccc5a59f17879)
+        ;
+
+        
+    
+    
+            var marker_00b6002483b7db5f759a45435ba0e7c6 = L.marker(
+                [36.9358496, 127.2616246],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_2c78ca3b650e58755154cabff3d14a16 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_36e0cfb75105159b68b61faa8ca7b716 = $(`<div id="html_36e0cfb75105159b68b61faa8ca7b716" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 안성시 서운면 신촌리 270-9<br><br><b style="color:blue;">제품 정보:</b><br>안성맞춤생막걸리 (한주양조)<br><br>한주 (한주양조)</div>`)[0];
+                popup_2c78ca3b650e58755154cabff3d14a16.setContent(html_36e0cfb75105159b68b61faa8ca7b716);
+            
+        
+
+        marker_00b6002483b7db5f759a45435ba0e7c6.bindPopup(popup_2c78ca3b650e58755154cabff3d14a16)
+        ;
+
+        
+    
+    
+            var marker_a1fcc15ee74aa83ceb9dcaa3d6f3da70 = L.marker(
+                [38.0832705, 127.0417888],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_ead7dd081405ba5fe0a5c1638992273a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_691427da9349190ccbf68d3b5044f051 = $(`<div id="html_691427da9349190ccbf68d3b5044f051" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 연천군 군남면 삼거리 201<br><br><b style="color:blue;">제품 정보:</b><br>연천아주 (농업회사법인연천양조(주))<br><br>연천연주 (농업회사법인연천양조(주))<br><br>연천우주 (농업회사법인연천양조(주))<br><br>율무동동주 (농업회사법인연천양조(주))</div>`)[0];
+                popup_ead7dd081405ba5fe0a5c1638992273a.setContent(html_691427da9349190ccbf68d3b5044f051);
+            
+        
+
+        marker_a1fcc15ee74aa83ceb9dcaa3d6f3da70.bindPopup(popup_ead7dd081405ba5fe0a5c1638992273a)
+        ;
+
+        
+    
+    
+            var marker_b2242718cfc1f4444f64fd2674281053 = L.marker(
+                [37.1676846, 127.034491],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_e7d147fa3bb167562fa75dcdcdade6ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cee9c4af554271cababa8a689f4955e2 = $(`<div id="html_cee9c4af554271cababa8a689f4955e2" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 오산시 가장동 386-3<br><br><b style="color:blue;">제품 정보:</b><br>오미시앙스페셜 (알에프)</div>`)[0];
+                popup_e7d147fa3bb167562fa75dcdcdade6ad.setContent(html_cee9c4af554271cababa8a689f4955e2);
+            
+        
+
+        marker_b2242718cfc1f4444f64fd2674281053.bindPopup(popup_e7d147fa3bb167562fa75dcdcdade6ad)
+        ;
+
+        
+    
+    
+            var marker_4244d6deae393854b9b016e8b271805f = L.marker(
+                [38.0670099, 127.3902841],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_b2b47a902fddea8ea581a117aae187a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b7253be9ea2f94e5d221cd46e0b03fc = $(`<div id="html_4b7253be9ea2f94e5d221cd46e0b03fc" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 포천시 이동면 도평리 68<br><br><b style="color:blue;">제품 정보:</b><br>이동생쌀막걸리 (이동주조)<br><br>이동쌀막걸리 (이동주조)</div>`)[0];
+                popup_b2b47a902fddea8ea581a117aae187a2.setContent(html_4b7253be9ea2f94e5d221cd46e0b03fc);
+            
+        
+
+        marker_4244d6deae393854b9b016e8b271805f.bindPopup(popup_b2b47a902fddea8ea581a117aae187a2)
+        ;
+
+        
+    
+    
+            var marker_933b991a94d9d5dc5c93338819345c57 = L.marker(
+                [37.7631343, 127.4994087],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_6ecbf707540d703a382474a60c6b09cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e87b00928536dc9678509458775e39f6 = $(`<div id="html_e87b00928536dc9678509458775e39f6" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 가평군 가평읍 산유리 649-8<br><br><b style="color:blue;">제품 정보:</b><br>청진주 (전통주연구개발원)</div>`)[0];
+                popup_6ecbf707540d703a382474a60c6b09cc.setContent(html_e87b00928536dc9678509458775e39f6);
+            
+        
+
+        marker_933b991a94d9d5dc5c93338819345c57.bindPopup(popup_6ecbf707540d703a382474a60c6b09cc)
+        ;
+
+        
+    
+    
+            var marker_133616002eb37406d22f94795cb439dc = L.marker(
+                [37.4819403, 127.4073898],
+                {}
+            ).addTo(feature_group_54ef182d0706f312b2530accb866fef4);
+        
+    
+        var popup_592c4cde6a03b8e64c65ecffd023b915 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fc02fba960a7a4bb09bfc24d57dc664f = $(`<div id="html_fc02fba960a7a4bb09bfc24d57dc664f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경기 양평군 강하면 왕창리 48-12<br><br><b style="color:blue;">제품 정보:</b><br>허니문와인 (아이비영농조합법인)<br><br>허니비와인 (아이비영농조합법인)</div>`)[0];
+                popup_592c4cde6a03b8e64c65ecffd023b915.setContent(html_fc02fba960a7a4bb09bfc24d57dc664f);
+            
+        
+
+        marker_133616002eb37406d22f94795cb439dc.bindPopup(popup_592c4cde6a03b8e64c65ecffd023b915)
+        ;
+
+        
+    
+    
+            var feature_group_855cfa15e5772397fe0a80835fe83fac = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_68535aa96f0c574a7c11251e7eb16a6b = L.marker(
+                [37.4894608, 128.1961114],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_6cc048c5f1d1c89d22971a5851216ca4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_049dd97831e7e53a95103ecee53377f1 = $(`<div id="html_049dd97831e7e53a95103ecee53377f1" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 횡성군 둔내면 현천리 113<br><br><b style="color:blue;">제품 정보:</b><br>1000억막걸리프리바이오 ((주)국순당)<br><br>1000억유산균막걸리 ((주)국순당)<br><br>아이싱 (국순당)<br><br>옛날막걸리古 (국순당)</div>`)[0];
+                popup_6cc048c5f1d1c89d22971a5851216ca4.setContent(html_049dd97831e7e53a95103ecee53377f1);
+            
+        
+
+        marker_68535aa96f0c574a7c11251e7eb16a6b.bindPopup(popup_6cc048c5f1d1c89d22971a5851216ca4)
+        ;
+
+        
+    
+    
+            var marker_e882bcb6b845415013b5d4a5738d5189 = L.marker(
+                [37.6181195, 127.750915],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_309b16bdc66fd4cc3889bbf2d25a109a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c5ebffbfa5c27cd3e13096867bf9453 = $(`<div id="html_7c5ebffbfa5c27cd3e13096867bf9453" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 홍천군 남면 화전리 332-7<br><br><b style="color:blue;">제품 정보:</b><br>33JU (농업회사법인33가주식회사)</div>`)[0];
+                popup_309b16bdc66fd4cc3889bbf2d25a109a.setContent(html_7c5ebffbfa5c27cd3e13096867bf9453);
+            
+        
+
+        marker_e882bcb6b845415013b5d4a5738d5189.bindPopup(popup_309b16bdc66fd4cc3889bbf2d25a109a)
+        ;
+
+        
+    
+    
+            var marker_848b5244c26e2c588ae09976b4402892 = L.marker(
+                [38.20705, 127.9475711],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_3870ff4840124479083e541f59fb4a5b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b3bf75cf1923ee98c146be7d1245e120 = $(`<div id="html_b3bf75cf1923ee98c146be7d1245e120" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 양구군 방산면 칠전리 173-3<br><br><b style="color:blue;">제품 정보:</b><br>DMZ240km (솔래원)<br><br>설궁 (솔래원)<br><br>자연송이주 (솔래원)</div>`)[0];
+                popup_3870ff4840124479083e541f59fb4a5b.setContent(html_b3bf75cf1923ee98c146be7d1245e120);
+            
+        
+
+        marker_848b5244c26e2c588ae09976b4402892.bindPopup(popup_3870ff4840124479083e541f59fb4a5b)
+        ;
+
+        
+    
+    
+            var marker_f5f4cfe1646f307b0746b8d9ad60d00f = L.marker(
+                [37.6434274, 128.5666258],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_b7ef155e9a454025d45cdda3d036c815 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a14f615e5b4f41035a12ce044cefaef = $(`<div id="html_4a14f615e5b4f41035a12ce044cefaef" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 평창군 진부면 하진부리 15-25<br><br><b style="color:blue;">제품 정보:</b><br>감자술13 (오대서주양조)<br><br>서주16 (오대서주양조)</div>`)[0];
+                popup_b7ef155e9a454025d45cdda3d036c815.setContent(html_4a14f615e5b4f41035a12ce044cefaef);
+            
+        
+
+        marker_f5f4cfe1646f307b0746b8d9ad60d00f.bindPopup(popup_b7ef155e9a454025d45cdda3d036c815)
+        ;
+
+        
+    
+    
+            var marker_31e5a7a58837684f3bdb0bf4a6251149 = L.marker(
+                [38.2015417, 128.5828481],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_f8676cd6b73abc627edd201c419ff8f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2be8158823249d4c8675bb752fe57268 = $(`<div id="html_2be8158823249d4c8675bb752fe57268" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 속초시 교동 644-5<br><br><b style="color:blue;">제품 정보:</b><br>까메오막걸리 (낙천)<br><br>지장수생막걸리 (낙천)<br><br>지장수호박막걸리 (낙천)<br><br>지장수호박생막걸리 (낙천)</div>`)[0];
+                popup_f8676cd6b73abc627edd201c419ff8f7.setContent(html_2be8158823249d4c8675bb752fe57268);
+            
+        
+
+        marker_31e5a7a58837684f3bdb0bf4a6251149.bindPopup(popup_f8676cd6b73abc627edd201c419ff8f7)
+        ;
+
+        
+    
+    
+            var marker_1931fb9b4ff6cd22894d357c6ac5fad5 = L.marker(
+                [37.3934096, 128.4085855],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_8dadf9258cca9a0364c2ed276c4fd08e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f101fee54e9e3ad8d7386445810fa7d1 = $(`<div id="html_f101fee54e9e3ad8d7386445810fa7d1" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원도 평창군 평창읍 주진리 516-18<br><br><b style="color:blue;">제품 정보:</b><br>대관령복분자주 (농업회사법인(주)홍지원)<br><br>평창머루주 (농업회사법인(주)홍지원)<br><br>평창오디주 (농업회사법인(주)홍지원)</div>`)[0];
+                popup_8dadf9258cca9a0364c2ed276c4fd08e.setContent(html_f101fee54e9e3ad8d7386445810fa7d1);
+            
+        
+
+        marker_1931fb9b4ff6cd22894d357c6ac5fad5.bindPopup(popup_8dadf9258cca9a0364c2ed276c4fd08e)
+        ;
+
+        
+    
+    
+            var marker_4212d925ddf659d13abddd21f1391bb5 = L.marker(
+                [38.2111695, 127.2212255],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_bd2dd46e5574b2dc683b978bde88e894 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_afe908a2d56a704883a61954aaa9ff06 = $(`<div id="html_afe908a2d56a704883a61954aaa9ff06" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원도 철원군 동송읍 이평로34번길 20-28<br><br><b style="color:blue;">제품 정보:</b><br>대작생막걸리 (대작영농조합법인)<br><br>모을동주소주 (대작영농조합법인)<br><br>모을동주약주 (대작영농조합법인)</div>`)[0];
+                popup_bd2dd46e5574b2dc683b978bde88e894.setContent(html_afe908a2d56a704883a61954aaa9ff06);
+            
+        
+
+        marker_4212d925ddf659d13abddd21f1391bb5.bindPopup(popup_bd2dd46e5574b2dc683b978bde88e894)
+        ;
+
+        
+    
+    
+            var marker_b853670939056bbbb7c78bd3b9a40dab = L.marker(
+                [37.8265699, 128.8484392],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_9dc802455cf6dce7eee94cc6055fc0fe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f83f7a48017e8452f2dcbe540a8efd3d = $(`<div id="html_f83f7a48017e8452f2dcbe540a8efd3d" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 강릉시 사천면 석교리 972<br><br><b style="color:blue;">제품 정보:</b><br>도문대작생막걸리 (방풍도가)</div>`)[0];
+                popup_9dc802455cf6dce7eee94cc6055fc0fe.setContent(html_f83f7a48017e8452f2dcbe540a8efd3d);
+            
+        
+
+        marker_b853670939056bbbb7c78bd3b9a40dab.bindPopup(popup_9dc802455cf6dce7eee94cc6055fc0fe)
+        ;
+
+        
+    
+    
+            var marker_89661e055921f2af416f39e8e6ccb422 = L.marker(
+                [37.2708586, 128.2496258],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_77b4f1e3cd3f85b63b62a976269beb76 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_31d0d28d04a1cdbc74d0060c1a6e8f04 = $(`<div id="html_31d0d28d04a1cdbc74d0060c1a6e8f04" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 영월군 주천면 신일리 379-2<br><br><b style="color:blue;">제품 정보:</b><br>동강더덕주 (영월더덕영농조합법인)</div>`)[0];
+                popup_77b4f1e3cd3f85b63b62a976269beb76.setContent(html_31d0d28d04a1cdbc74d0060c1a6e8f04);
+            
+        
+
+        marker_89661e055921f2af416f39e8e6ccb422.bindPopup(popup_77b4f1e3cd3f85b63b62a976269beb76)
+        ;
+
+        
+    
+    
+            var marker_094402cb1947fcc424cf855534c76cea = L.marker(
+                [37.3574303, 127.9573187],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_4edf316e91c619839acb23e1e4016550 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea15830941ea77b04fcfce53ad77eb62 = $(`<div id="html_ea15830941ea77b04fcfce53ad77eb62" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 원주시 태장동 726<br><br><b style="color:blue;">제품 정보:</b><br>모월로 (협동조합주담)<br><br>모월연 (협동조합주담)<br><br>모월인 (협동조합주담)<br><br>모월청 (협동조합주담)</div>`)[0];
+                popup_4edf316e91c619839acb23e1e4016550.setContent(html_ea15830941ea77b04fcfce53ad77eb62);
+            
+        
+
+        marker_094402cb1947fcc424cf855534c76cea.bindPopup(popup_4edf316e91c619839acb23e1e4016550)
+        ;
+
+        
+    
+    
+            var marker_0926d92cfe6c44388ba26c1cbea4df50 = L.marker(
+                [37.9253697, 127.744299],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_a04dda9ed51599b256a2f5864a79319e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4a963b64899c3fb1c26d9dbda5f2c61 = $(`<div id="html_a4a963b64899c3fb1c26d9dbda5f2c61" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원도 춘천시 신북읍 율문리 553<br><br><b style="color:blue;">제품 정보:</b><br>소양강생막걸리 (소양강도가(구.천정양조장))</div>`)[0];
+                popup_a04dda9ed51599b256a2f5864a79319e.setContent(html_a4a963b64899c3fb1c26d9dbda5f2c61);
+            
+        
+
+        marker_0926d92cfe6c44388ba26c1cbea4df50.bindPopup(popup_a04dda9ed51599b256a2f5864a79319e)
+        ;
+
+        
+    
+    
+            var marker_2eac297eeb40e1480f8b15a01ceb8058 = L.marker(
+                [37.1417672, 128.5905162],
+                {}
+            ).addTo(feature_group_855cfa15e5772397fe0a80835fe83fac);
+        
+    
+        var popup_650873cc1218a7fa8e765a2135db6308 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_57c2cc4c5efafe06506c59bd99efbb71 = $(`<div id="html_57c2cc4c5efafe06506c59bd99efbb71" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 강원특별자치도 영월군 김삿갓면 예밀리 106<br><br><b style="color:blue;">제품 정보:</b><br>예밀와인레드드라이 (예밀2리영농조합법인)<br><br>예밀와인로제 (예밀2리영농조합법인)<br><br>예밀와인레드스위트 (예밀2리영농조합법인)</div>`)[0];
+                popup_650873cc1218a7fa8e765a2135db6308.setContent(html_57c2cc4c5efafe06506c59bd99efbb71);
+            
+        
+
+        marker_2eac297eeb40e1480f8b15a01ceb8058.bindPopup(popup_650873cc1218a7fa8e765a2135db6308)
+        ;
+
+        
+    
+    
+            var feature_group_061bc7e92210268d9c73f88b8bc3602a = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_8ae3e917b82a99d753a37b9513bb7a58 = L.marker(
+                [36.6404974, 127.189256],
+                {}
+            ).addTo(feature_group_061bc7e92210268d9c73f88b8bc3602a);
+        
+    
+        var popup_a35d423d5e24b589812db86b30f52dc8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd88f15c8c55693951c5fa8824076f3b = $(`<div id="html_dd88f15c8c55693951c5fa8824076f3b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 세종특별자치시 전의면 양곡리 154<br><br><b style="color:blue;">제품 정보:</b><br>금이산농원복숭아와인 (영농조합법인금이산농원)<br><br>금이산농원사과와인 (영농조합법인금이산농원)<br><br>금이산농원오가피와인 (영농조합법인금이산농원)</div>`)[0];
+                popup_a35d423d5e24b589812db86b30f52dc8.setContent(html_dd88f15c8c55693951c5fa8824076f3b);
+            
+        
+
+        marker_8ae3e917b82a99d753a37b9513bb7a58.bindPopup(popup_a35d423d5e24b589812db86b30f52dc8)
+        ;
+
+        
+    
+    
+            var feature_group_9febe48d3b981a8247826fab597c55f6 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_a1b94d5dd752b54a7978b4c79205439c = L.marker(
+                [36.5969986, 127.567578],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_a08ea324a98aa522b8a186a31eb507ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b39519023ef0b9489f0de9963d49a7a = $(`<div id="html_9b39519023ef0b9489f0de9963d49a7a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청북도 청주시 상당구 가덕면 한계길 32-5<br><br><b style="color:blue;">제품 정보:</b><br>가덕순쌀막걸리 (농업회사법인명세주가(주))<br><br>청남대블루베리생막걸리 (농업회사법인명세주가(주))<br><br>한시울 (농업회사법인명세주가(주))</div>`)[0];
+                popup_a08ea324a98aa522b8a186a31eb507ae.setContent(html_9b39519023ef0b9489f0de9963d49a7a);
+            
+        
+
+        marker_a1b94d5dd752b54a7978b4c79205439c.bindPopup(popup_a08ea324a98aa522b8a186a31eb507ae)
+        ;
+
+        
+    
+    
+            var marker_63e64b6b1af56b7e848eedaf5c418044 = L.marker(
+                [36.2395631, 127.9141492],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_7044b3f0dba313a5c50de8411fb8f96d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bd5d33efbf45829f3991a069ccef913 = $(`<div id="html_0bd5d33efbf45829f3991a069ccef913" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 영동군 황간면 황간동로 194<br><br><b style="color:blue;">제품 정보:</b><br>그랑티그르CE2002 (월류원(오드린))<br><br>그랑티그르M1988 (월류원(오드린))</div>`)[0];
+                popup_7044b3f0dba313a5c50de8411fb8f96d.setContent(html_0bd5d33efbf45829f3991a069ccef913);
+            
+        
+
+        marker_63e64b6b1af56b7e848eedaf5c418044.bindPopup(popup_7044b3f0dba313a5c50de8411fb8f96d)
+        ;
+
+        
+    
+    
+            var marker_46027eca07b1dd3d618718fcb913c29f = L.marker(
+                [36.2338411, 127.9102551],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_dd2cd099623984d725327b123614ff49 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_305f73860baa3d0c3dec4c75acbfca66 = $(`<div id="html_305f73860baa3d0c3dec4c75acbfca66" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 영동군 황간면 남성리 425-9<br><br><b style="color:blue;">제품 정보:</b><br>그랑티그르S1974 (월류원)<br><br>베베마루캠벨로제 (월류원)<br><br>베베마루캠벨로제스위트 (월류원)</div>`)[0];
+                popup_dd2cd099623984d725327b123614ff49.setContent(html_305f73860baa3d0c3dec4c75acbfca66);
+            
+        
+
+        marker_46027eca07b1dd3d618718fcb913c29f.bindPopup(popup_dd2cd099623984d725327b123614ff49)
+        ;
+
+        
+    
+    
+            var marker_2045bf6355be4bec49be8d0241a5e77f = L.marker(
+                [37.0263792, 128.3847284],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_895f683943ccc91266df727d4c749414 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2e2016992be8ae213964fc5df060a3e6 = $(`<div id="html_2e2016992be8ae213964fc5df060a3e6" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청북도 단양군 가곡면 사평3길 5<br><br><b style="color:blue;">제품 정보:</b><br>도깨비술11 (농업회사법인(주)도깨비양조장)<br><br>도깨비술7 (농업회사법인(주)도깨비양조장)<br><br>도깨비술9 (농업회사법인(주)도깨비양조장)</div>`)[0];
+                popup_895f683943ccc91266df727d4c749414.setContent(html_2e2016992be8ae213964fc5df060a3e6);
+            
+        
+
+        marker_2045bf6355be4bec49be8d0241a5e77f.bindPopup(popup_895f683943ccc91266df727d4c749414)
+        ;
+
+        
+    
+    
+            var marker_ade0036c4fceae3b9cd57fffd6ab8900 = L.marker(
+                [37.1017023, 127.9664651],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_e8c862ba2df29dbcd95802f50fb247bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29720d57a1addcbb5c6246310c0e4f8a = $(`<div id="html_29720d57a1addcbb5c6246310c0e4f8a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 충주시 산척면 송강리 958-1<br><br><b style="color:blue;">제품 정보:</b><br>동학1957 (고헌정영농조합법인)<br><br>천등산차례주 (고헌정영농조합법인)<br><br>충주백주 (고헌정영농조합법인)</div>`)[0];
+                popup_e8c862ba2df29dbcd95802f50fb247bc.setContent(html_29720d57a1addcbb5c6246310c0e4f8a);
+            
+        
+
+        marker_ade0036c4fceae3b9cd57fffd6ab8900.bindPopup(popup_e8c862ba2df29dbcd95802f50fb247bc)
+        ;
+
+        
+    
+    
+            var marker_0968f5c0c8bd31478de0c11f6e22c531 = L.marker(
+                [36.8783506, 127.9621704],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_c8b5fb0b2dbbe7864dedb9e71f0c90f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3d888c29a76a2b432b829ea52ad919d3 = $(`<div id="html_3d888c29a76a2b432b829ea52ad919d3" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 충주시 수안보면 수회리 477-2<br><br><b style="color:blue;">제품 정보:</b><br>레돔내추럴스파클링로제와인 (농업회사법인작은알자스)<br><br>레돔시드르 (농업회사법인작은알자스)</div>`)[0];
+                popup_c8b5fb0b2dbbe7864dedb9e71f0c90f1.setContent(html_3d888c29a76a2b432b829ea52ad919d3);
+            
+        
+
+        marker_0968f5c0c8bd31478de0c11f6e22c531.bindPopup(popup_c8b5fb0b2dbbe7864dedb9e71f0c90f1)
+        ;
+
+        
+    
+    
+            var marker_9a18fb9ea512c3a85a6b7e688e9e46f5 = L.marker(
+                [36.5969986, 127.567578],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_b5e08d67d7082dbf395205310f2df8c7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd2fac8d64ec8adc5ab5dca490e035f9 = $(`<div id="html_bd2fac8d64ec8adc5ab5dca490e035f9" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 청주시 상당구 가덕면 한계길 32-5<br><br><b style="color:blue;">제품 정보:</b><br>매실향기담은술 (농업회사법인명세주가(주))</div>`)[0];
+                popup_b5e08d67d7082dbf395205310f2df8c7.setContent(html_bd2fac8d64ec8adc5ab5dca490e035f9);
+            
+        
+
+        marker_9a18fb9ea512c3a85a6b7e688e9e46f5.bindPopup(popup_b5e08d67d7082dbf395205310f2df8c7)
+        ;
+
+        
+    
+    
+            var marker_66b92ce3210c724c8b1381c84381fc58 = L.marker(
+                [36.192084, 127.9367249],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_bdd902db2fce554e3620e96606cb5a23 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3de23509b5ed3eb997bd717c0f22558b = $(`<div id="html_3de23509b5ed3eb997bd717c0f22558b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 영동군 매곡면 옥전리 825<br><br><b style="color:blue;">제품 정보:</b><br>미소아이스 (도란원)<br><br>샤토미소랑 (도란원)<br><br>샤토미소레드프리미엄드라이 (도란원)<br><br>샤토미소스위트 (도란원)<br><br>샤토미소스위트로제 (도란원)<br><br>샤토미소영동 (도란원)</div>`)[0];
+                popup_bdd902db2fce554e3620e96606cb5a23.setContent(html_3de23509b5ed3eb997bd717c0f22558b);
+            
+        
+
+        marker_66b92ce3210c724c8b1381c84381fc58.bindPopup(popup_bdd902db2fce554e3620e96606cb5a23)
+        ;
+
+        
+    
+    
+            var marker_855d11eec20e32cd5392dbd71a3ce193 = L.marker(
+                [36.7142597, 127.6050897],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_e8c1a4575356f8e44f329cebfacf1124 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ba8642eb815f4ef9029f59d613910e82 = $(`<div id="html_ba8642eb815f4ef9029f59d613910e82" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청북도 청주시 청원구 내수읍 초정리 257-2<br><br><b style="color:blue;">제품 정보:</b><br>세종대왕어주약주 (농업회사법인장희도가(주))<br><br>세종대왕어주탁주 (농업회사법인장희도가(주))</div>`)[0];
+                popup_e8c1a4575356f8e44f329cebfacf1124.setContent(html_ba8642eb815f4ef9029f59d613910e82);
+            
+        
+
+        marker_855d11eec20e32cd5392dbd71a3ce193.bindPopup(popup_e8c1a4575356f8e44f329cebfacf1124)
+        ;
+
+        
+    
+    
+            var marker_1ace7d1140b6eace864bf9efc1b51f43 = L.marker(
+                [36.6769918, 127.4801157],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_efb5cc13403abdabce1c1e0e5046bbec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_77530b79ee9555f68c56f166e172f7d1 = $(`<div id="html_77530b79ee9555f68c56f166e172f7d1" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 청주시 청원구 사천동 71-1<br><br><b style="color:blue;">제품 정보:</b><br>세종쌀막걸리 (조은술세종)<br><br>세종알밤주 (조은술세종)<br><br>세종오가닉 (조은술세종)<br><br>세종청주생막걸리 (조은술세종)<br><br>우도땅콩전통주 (조은술세종)<br><br>유기농이도14 (농업회사법인조은술세종(주))<br><br>유기농이도42 (조은술세종)<br><br>이도32 (조은술세종)<br><br>조은술세종바나나주 (조은술세종)</div>`)[0];
+                popup_efb5cc13403abdabce1c1e0e5046bbec.setContent(html_77530b79ee9555f68c56f166e172f7d1);
+            
+        
+
+        marker_1ace7d1140b6eace864bf9efc1b51f43.bindPopup(popup_efb5cc13403abdabce1c1e0e5046bbec)
+        ;
+
+        
+    
+    
+            var marker_467724fa16efdefadac555b5f5fe7ad9 = L.marker(
+                [37.2150162, 128.2372592],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_605b8a5643741a9fc4e0ad32c5d481cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5be677d4f2575fb3bd103c05e5e94791 = $(`<div id="html_5be677d4f2575fb3bd103c05e5e94791" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 제천시 송학면 송한리 477-3<br><br><b style="color:blue;">제품 정보:</b><br>소나무와학 (용두산조은술)<br><br>신선주 (용두산조은술)<br><br>예주 (용두산조은술)</div>`)[0];
+                popup_605b8a5643741a9fc4e0ad32c5d481cd.setContent(html_5be677d4f2575fb3bd103c05e5e94791);
+            
+        
+
+        marker_467724fa16efdefadac555b5f5fe7ad9.bindPopup(popup_605b8a5643741a9fc4e0ad32c5d481cd)
+        ;
+
+        
+    
+    
+            var marker_f4ee621365875012da857caffaaa3ffb = L.marker(
+                [36.9221385, 128.3535304],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_54899c43dc450ee3bee58b6850af1773 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_89980d738f921f1df90b46325086da2c = $(`<div id="html_89980d738f921f1df90b46325086da2c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 단양군 대강면 장림리 111-13<br><br><b style="color:blue;">제품 정보:</b><br>소백산검은콩막걸리 (대강양조장)<br><br>소백산생막걸리 (대강양조장)<br><br>소백산생만찬주 (대강양조장)<br><br>소백산오곡진상주 (대강양조장)<br><br>소백산청동동주 (대강양조장)</div>`)[0];
+                popup_54899c43dc450ee3bee58b6850af1773.setContent(html_89980d738f921f1df90b46325086da2c);
+            
+        
+
+        marker_f4ee621365875012da857caffaaa3ffb.bindPopup(popup_54899c43dc450ee3bee58b6850af1773)
+        ;
+
+        
+    
+    
+            var marker_c8d8715db03d760a1bdc6330ccd3f220 = L.marker(
+                [36.201928, 127.7203459],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_e4ecd10d328437d72fbe45b835f022b1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c9daac0b6d3a435c0daafb4ba31e34e7 = $(`<div id="html_c9daac0b6d3a435c0daafb4ba31e34e7" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 영동군 심천면 약목리 584-2<br><br><b style="color:blue;">제품 정보:</b><br>시나브로드글로리아 (불휘농장)<br><br>시나브로레드드라이 (불휘농장)<br><br>시나브로레드스위트 (불휘농장)<br><br>시나브로로제와인 (불휘농장)<br><br>시나브로에뚜왈로제스파클링와인 (불휘농장)<br><br>시나브로에뚜왈스파클링 (불휘농장)<br><br>시나브로화이트와인 (불휘농장)</div>`)[0];
+                popup_e4ecd10d328437d72fbe45b835f022b1.setContent(html_c9daac0b6d3a435c0daafb4ba31e34e7);
+            
+        
+
+        marker_c8d8715db03d760a1bdc6330ccd3f220.bindPopup(popup_e4ecd10d328437d72fbe45b835f022b1)
+        ;
+
+        
+    
+    
+            var marker_ea4f021c51c2370556b7561b5caacabf = L.marker(
+                [36.246976, 127.6205246],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_bba7843ebd4f5692afbb41a834b90487 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5c4e935074a6ae37952029734f035edb = $(`<div id="html_5c4e935074a6ae37952029734f035edb" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 옥천군 이원면 강청리 81-4<br><br><b style="color:blue;">제품 정보:</b><br>시인의마을우리쌀막걸리 (이원양조장)<br><br>아이원막걸리 (이원양조장)<br><br>향수우리밀막걸리 (이원양조장)</div>`)[0];
+                popup_bba7843ebd4f5692afbb41a834b90487.setContent(html_5c4e935074a6ae37952029734f035edb);
+            
+        
+
+        marker_ea4f021c51c2370556b7561b5caacabf.bindPopup(popup_bba7843ebd4f5692afbb41a834b90487)
+        ;
+
+        
+    
+    
+            var marker_331ad6fb1c58fae0e341dc88864504d9 = L.marker(
+                [36.6532509, 127.5420034],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_9d379305e7364a5c259097fbd7ec7358 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f99d91097967417886058d97a6f11789 = $(`<div id="html_f99d91097967417886058d97a6f11789" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 청주시 상당구 산성동 366-2<br><br><b style="color:blue;">제품 정보:</b><br>신선주백주 (농업회사법인(주)신선)<br><br>신선주약주 (농업회사법인(주)신선)<br><br>신선주증류주 (농업회사법인(주)신선)</div>`)[0];
+                popup_9d379305e7364a5c259097fbd7ec7358.setContent(html_f99d91097967417886058d97a6f11789);
+            
+        
+
+        marker_331ad6fb1c58fae0e341dc88864504d9.bindPopup(popup_9d379305e7364a5c259097fbd7ec7358)
+        ;
+
+        
+    
+    
+            var marker_454a27f0941697eb10287422d6f345f5 = L.marker(
+                [36.1263074, 127.7443599],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_2217707282434a48f9c0a581e7b22fb3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f8cf51555b271614b4365d81fb5ebf6 = $(`<div id="html_3f8cf51555b271614b4365d81fb5ebf6" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 영동군 양강면 유점리 283<br><br><b style="color:blue;">제품 정보:</b><br>여포의꿈레드드라이 (여포와인농장)<br><br>여포의꿈레드스위트 (여포와인농장)<br><br>여포의꿈화이트 (여포와인농장)<br><br>초선의꿈로제 (여포와인농장)</div>`)[0];
+                popup_2217707282434a48f9c0a581e7b22fb3.setContent(html_3f8cf51555b271614b4365d81fb5ebf6);
+            
+        
+
+        marker_454a27f0941697eb10287422d6f345f5.bindPopup(popup_2217707282434a48f9c0a581e7b22fb3)
+        ;
+
+        
+    
+    
+            var marker_dae3416d575b94fa8d7ec6c1c3bb96ef = L.marker(
+                [36.9970655, 127.878779],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_ccb28a3406ef1e64f7b7675b497c072a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07d04fa5d448f247688ff695252c971e = $(`<div id="html_07d04fa5d448f247688ff695252c971e" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 충주시 중앙탑면 창동리 243<br><br><b style="color:blue;">제품 정보:</b><br>청명주 (중원당)</div>`)[0];
+                popup_ccb28a3406ef1e64f7b7675b497c072a.setContent(html_07d04fa5d448f247688ff695252c971e);
+            
+        
+
+        marker_dae3416d575b94fa8d7ec6c1c3bb96ef.bindPopup(popup_ccb28a3406ef1e64f7b7675b497c072a)
+        ;
+
+        
+    
+    
+            var marker_ef2179900f71b40ed3a455c4028d36bb = L.marker(
+                [36.1778706, 127.8330504],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_477c51737e1840264ecd25ab770a3de0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9fce9ff3e44b61536400d3fe5535ad28 = $(`<div id="html_9fce9ff3e44b61536400d3fe5535ad28" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 영동군 영동읍 조현길30<br><br><b style="color:blue;">제품 정보:</b><br>컨츄리산머루와인드라이 (컨츄리농원)<br><br>컨츄리산머루와인스위트 (컨츄리농원)<br><br>컨츄리와인캠벨얼리스위트 (컨츄리농원)</div>`)[0];
+                popup_477c51737e1840264ecd25ab770a3de0.setContent(html_9fce9ff3e44b61536400d3fe5535ad28);
+            
+        
+
+        marker_ef2179900f71b40ed3a455c4028d36bb.bindPopup(popup_477c51737e1840264ecd25ab770a3de0)
+        ;
+
+        
+    
+    
+            var marker_f77f58e1beff5897b717899eee7e3f11 = L.marker(
+                [36.1108214, 127.6475008],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_f7bbe7ddf4f6ae38b3654cfd9a2dcd3d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_36fdab47d957d0ec9ec90c3a39b1f532 = $(`<div id="html_36fdab47d957d0ec9ec90c3a39b1f532" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청북도 영동군 학산면 지내리 384<br><br><b style="color:blue;">제품 정보:</b><br>포엠레드드라이와인 (갈기산포도농원(주)농업회사법인)<br><br>포엠레드스위트와인 (갈기산포도농원(주)농업회사법인)<br><br>포엠로제와인 (갈기산포도농원(주)농업회사법인)<br><br>포엠화이트와인 (갈기산포도농원(주)농업회사법인)</div>`)[0];
+                popup_f7bbe7ddf4f6ae38b3654cfd9a2dcd3d.setContent(html_36fdab47d957d0ec9ec90c3a39b1f532);
+            
+        
+
+        marker_f77f58e1beff5897b717899eee7e3f11.bindPopup(popup_f7bbe7ddf4f6ae38b3654cfd9a2dcd3d)
+        ;
+
+        
+    
+    
+            var marker_9b9683a2eecb28b5aea13492b7ca03a2 = L.marker(
+                [37.1333648, 128.0888154],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_44c3517a9f9713da386536fac19c0026 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_450db47eb64501ebb08432d3a360fe59 = $(`<div id="html_450db47eb64501ebb08432d3a360fe59" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 제천시 봉양읍 원박리 276<br><br><b style="color:blue;">제품 정보:</b><br>한비동충하초술 (제천한약영농조합법인)<br><br>한비무병장수술 (제천한약영농조합법인)<br><br>한비쌀소주 (제천한약영농조합법인)<br><br>한비오가피술 (제천한약영농조합법인)</div>`)[0];
+                popup_44c3517a9f9713da386536fac19c0026.setContent(html_450db47eb64501ebb08432d3a360fe59);
+            
+        
+
+        marker_9b9683a2eecb28b5aea13492b7ca03a2.bindPopup(popup_44c3517a9f9713da386536fac19c0026)
+        ;
+
+        
+    
+    
+            var marker_4f73c2117c02fc69957b3a213dd2fe23 = L.marker(
+                [36.7199464, 127.8006909],
+                {}
+            ).addTo(feature_group_9febe48d3b981a8247826fab597c55f6);
+        
+    
+        var popup_fda41ff57b88a7dedf377b610b3e7123 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_858f1d4a709bb329ed8901d43e8c021c = $(`<div id="html_858f1d4a709bb329ed8901d43e8c021c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충북 괴산군 청천면 지촌리 86-20<br><br><b style="color:blue;">제품 정보:</b><br>홍삼명주 (자연과인삼)</div>`)[0];
+                popup_fda41ff57b88a7dedf377b610b3e7123.setContent(html_858f1d4a709bb329ed8901d43e8c021c);
+            
+        
+
+        marker_4f73c2117c02fc69957b3a213dd2fe23.bindPopup(popup_fda41ff57b88a7dedf377b610b3e7123)
+        ;
+
+        
+    
+    
+            var feature_group_3b9e976bb62767c630fc3b775f7e4d51 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_980fcea38c8297d5b9064b7df3c728a4 = L.marker(
+                [36.1778614, 127.2011308],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_7b1b8b7911520f7cfc455d728ba06d62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2479fe3f0668437f156de84d1a4e7037 = $(`<div id="html_2479fe3f0668437f156de84d1a4e7037" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청남도 논산시 양촌면 황산벌로 1075-21<br><br><b style="color:blue;">제품 정보:</b><br>감보드카 (양촌감영농조합법인)<br><br>감이슬 (양촌감영농조합법인)<br><br>추시와인 (양촌감영농조합법인)</div>`)[0];
+                popup_7b1b8b7911520f7cfc455d728ba06d62.setContent(html_2479fe3f0668437f156de84d1a4e7037);
+            
+        
+
+        marker_980fcea38c8297d5b9064b7df3c728a4.bindPopup(popup_7b1b8b7911520f7cfc455d728ba06d62)
+        ;
+
+        
+    
+    
+            var marker_b1612ded9daeb4d4bc014128d05ce280 = L.marker(
+                [36.1115802, 127.0689271],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_2bb54729153698cd53f996f214d4afe6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3039b9d0e2fa9658445557230180d1c4 = $(`<div id="html_3039b9d0e2fa9658445557230180d1c4" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청남도 논산시 연무읍 마봉로 361<br><br><b style="color:blue;">제품 정보:</b><br>강소주 (내국양조)<br><br>능이주 (내국양조)<br><br>송이주 (내국양조)<br><br>화주 (내국양조)</div>`)[0];
+                popup_2bb54729153698cd53f996f214d4afe6.setContent(html_3039b9d0e2fa9658445557230180d1c4);
+            
+        
+
+        marker_b1612ded9daeb4d4bc014128d05ce280.bindPopup(popup_2bb54729153698cd53f996f214d4afe6)
+        ;
+
+        
+    
+    
+            var marker_e3566699aaa07425b296d92e3f261045 = L.marker(
+                [36.4694626, 126.8416478],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_d165b502a9e9dfe556ba15b7dafc4b50 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5d86785cc2a261ea33deed371b2cafc6 = $(`<div id="html_5d86785cc2a261ea33deed371b2cafc6" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청남도 청양군 대치면 방죽골길 46-19<br><br><b style="color:blue;">제품 정보:</b><br>겨울소주25 (두이술공방)<br><br>구기홍주14 (두이술공방)<br><br>술공방9 (두이술공방)</div>`)[0];
+                popup_d165b502a9e9dfe556ba15b7dafc4b50.setContent(html_5d86785cc2a261ea33deed371b2cafc6);
+            
+        
+
+        marker_e3566699aaa07425b296d92e3f261045.bindPopup(popup_d165b502a9e9dfe556ba15b7dafc4b50)
+        ;
+
+        
+    
+    
+            var marker_a9c48c6fb00a5df7832af477d269cd85 = L.marker(
+                [36.4174208, 127.0916325],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_39b3be9cf331bef08596f9d6a9e6c679 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c19d0b32836d780b697f7ff20d65a5a5 = $(`<div id="html_c19d0b32836d780b697f7ff20d65a5a5" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 공주시 봉정동 390<br><br><b style="color:blue;">제품 정보:</b><br>계룡백일주12년 (계룡백일주)<br><br>계룡백일주16 (계룡백일주)<br><br>계룡백일주30 (계룡백일주)<br><br>계룡백일주40 (계룡백일주)</div>`)[0];
+                popup_39b3be9cf331bef08596f9d6a9e6c679.setContent(html_c19d0b32836d780b697f7ff20d65a5a5);
+            
+        
+
+        marker_a9c48c6fb00a5df7832af477d269cd85.bindPopup(popup_39b3be9cf331bef08596f9d6a9e6c679)
+        ;
+
+        
+    
+    
+            var marker_3dc93f557c17d1e37716c1740a58e251 = L.marker(
+                [36.412773, 127.1515945],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_967191f42f689dbd3fffdefcf686c4e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4c73da9fb223414485c6a10e4400676 = $(`<div id="html_a4c73da9fb223414485c6a10e4400676" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 공주시 계룡면 화은리 124-3<br><br><b style="color:blue;">제품 정보:</b><br>계룡산산삼주금수강산21 (농업회사법인한국산삼(주))<br><br>계룡산산삼주금수강산40 (농업회사법인한국산삼(주))</div>`)[0];
+                popup_967191f42f689dbd3fffdefcf686c4e2.setContent(html_a4c73da9fb223414485c6a10e4400676);
+            
+        
+
+        marker_3dc93f557c17d1e37716c1740a58e251.bindPopup(popup_967191f42f689dbd3fffdefcf686c4e2)
+        ;
+
+        
+    
+    
+            var marker_9f6bf90e831dc76020eb28af52c27667 = L.marker(
+                [36.4982436, 127.0288145],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_bca3dfbdc0bc1f9fde169ff33268c30b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_084b3137bcf4660cde36ad97eb966871 = $(`<div id="html_084b3137bcf4660cde36ad97eb966871" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 공주시 사곡면 호계리 522-4<br><br><b style="color:blue;">제품 정보:</b><br>공주애오디와인 (농업회사법인사곡양조원)<br><br>밤꽃향기 (농업회사법인사곡양조원)<br><br>왕율주 (농업회사법인사곡양조원)<br><br>진쾌남 (농업회사법인사곡양조원)</div>`)[0];
+                popup_bca3dfbdc0bc1f9fde169ff33268c30b.setContent(html_084b3137bcf4660cde36ad97eb966871);
+            
+        
+
+        marker_9f6bf90e831dc76020eb28af52c27667.bindPopup(popup_bca3dfbdc0bc1f9fde169ff33268c30b)
+        ;
+
+        
+    
+    
+            var marker_3fcdbee47f4d4f1a9ef1f12667222a85 = L.marker(
+                [36.1279716, 127.4664626],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_174c213fd574957d6891fedca89f2b8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_85fd71611a26d74b98d9144f9923f67a = $(`<div id="html_85fd71611a26d74b98d9144f9923f67a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 금산군 금성면 파초리 260<br><br><b style="color:blue;">제품 정보:</b><br>금산인삼주 (농업회사법인(주)금산인삼주)<br><br>금산인삼주수삼단본23 (농업회사법인(주)금산인삼주)<br><br>금산인삼주수삼단본43 (농업회사법인(주)금산인삼주)<br><br>명인홍삼주 (농업회사법인(주)금산인삼주)</div>`)[0];
+                popup_174c213fd574957d6891fedca89f2b8c.setContent(html_85fd71611a26d74b98d9144f9923f67a);
+            
+        
+
+        marker_3fcdbee47f4d4f1a9ef1f12667222a85.bindPopup(popup_174c213fd574957d6891fedca89f2b8c)
+        ;
+
+        
+    
+    
+            var marker_97c73fcd1e4c22223171c9ca67ca2e46 = L.marker(
+                [36.0892796, 126.8012748],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_b4a6983fce88eb042d1772be7901e584 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_073a648199d25575c8212eb85ecb316a = $(`<div id="html_073a648199d25575c8212eb85ecb316a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 서천군 한산면 호암리 147-4<br><br><b style="color:blue;">제품 정보:</b><br>녹천소곡화주 (녹천주조장)<br><br>녹천한산소곡주살균 (녹천주조장)<br><br>녹천한산소곡주생 (녹천주조장)</div>`)[0];
+                popup_b4a6983fce88eb042d1772be7901e584.setContent(html_073a648199d25575c8212eb85ecb316a);
+            
+        
+
+        marker_97c73fcd1e4c22223171c9ca67ca2e46.bindPopup(popup_b4a6983fce88eb042d1772be7901e584)
+        ;
+
+        
+    
+    
+            var marker_d2f74457733c41e48d5b9ec8a13ce0a5 = L.marker(
+                [36.1353838, 127.1640642],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_48b1d23ff68606858c6906a7117135de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19b8be20c2f1f27b8abe8cbd07956f0f = $(`<div id="html_19b8be20c2f1f27b8abe8cbd07956f0f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청남도 논산시 가야곡면 매죽헌로 809 <br><br><b style="color:blue;">제품 정보:</b><br>대윤가야곡왕주 (농업회사법인대윤가야곡주조(주))<br><br>설레온 (농업회사법인대윤가야곡주조(주))<br><br>예화 (농업회사법인대윤가야곡주조(주))</div>`)[0];
+                popup_48b1d23ff68606858c6906a7117135de.setContent(html_19b8be20c2f1f27b8abe8cbd07956f0f);
+            
+        
+
+        marker_d2f74457733c41e48d5b9ec8a13ce0a5.bindPopup(popup_48b1d23ff68606858c6906a7117135de)
+        ;
+
+        
+    
+    
+            var marker_a7b53648d912e0c374e04efc7a9caadc = L.marker(
+                [36.9135823, 127.2025526],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_458e5452047c92fbb2a3ca88d97545ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_70abe95aed3aac58a1acc73fb7b40587 = $(`<div id="html_70abe95aed3aac58a1acc73fb7b40587" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 천안시 서북구 입장면 신두리 42-4<br><br><b style="color:blue;">제품 정보:</b><br>두레앙22 (농업회사법인(주)두레양조)<br><br>두레앙브랜디 (농업회사법인(주)두레양조)<br><br>두레앙와인 (농업회사법인(주)두레양조)<br><br>두레앙증류주 (농업회사법인(주)두레양조)</div>`)[0];
+                popup_458e5452047c92fbb2a3ca88d97545ed.setContent(html_70abe95aed3aac58a1acc73fb7b40587);
+            
+        
+
+        marker_a7b53648d912e0c374e04efc7a9caadc.bindPopup(popup_458e5452047c92fbb2a3ca88d97545ed)
+        ;
+
+        
+    
+    
+            var marker_e14e6e0357f7cf46b222fed298663945 = L.marker(
+                [36.115075, 126.7665833],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_944fef45bd7c7d166120bb2799de3d93 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d52a3c92abcd68bd33d4e8893ee2319b = $(`<div id="html_d52a3c92abcd68bd33d4e8893ee2319b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 서천군 시초면 시초동로 88-1<br><br><b style="color:blue;">제품 정보:</b><br>마주소곡주 (옥순가소곡주마주)<br><br>마주소곡화주 (옥순가소곡주마주)</div>`)[0];
+                popup_944fef45bd7c7d166120bb2799de3d93.setContent(html_d52a3c92abcd68bd33d4e8893ee2319b);
+            
+        
+
+        marker_e14e6e0357f7cf46b222fed298663945.bindPopup(popup_944fef45bd7c7d166120bb2799de3d93)
+        ;
+
+        
+    
+    
+            var marker_ee187829af8058795ae36bc9e23ebf5b = L.marker(
+                [36.8127843, 126.6628955],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_915bbe4aabd0cd9fd7f0d026d776392c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_219ba2597b57cfcc3ccd98ee1b093032 = $(`<div id="html_219ba2597b57cfcc3ccd98ee1b093032" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 당진시 면천면 성하로 250<br><br><b style="color:blue;">제품 정보:</b><br>면천두견주 ((주)면천두견주)</div>`)[0];
+                popup_915bbe4aabd0cd9fd7f0d026d776392c.setContent(html_219ba2597b57cfcc3ccd98ee1b093032);
+            
+        
+
+        marker_ee187829af8058795ae36bc9e23ebf5b.bindPopup(popup_915bbe4aabd0cd9fd7f0d026d776392c)
+        ;
+
+        
+    
+    
+            var marker_d60bce0fb60f456ab34a3b1fa72b3d67 = L.marker(
+                [36.8836712, 126.7747623],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_f5bf890f218dd9a4b4207623d8416eb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cb9bdf4ad0719675e2588e0c99f484e6 = $(`<div id="html_cb9bdf4ad0719675e2588e0c99f484e6" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 당진시 신평면 금천리 350-1<br><br><b style="color:blue;">제품 정보:</b><br>백련맑은술 (신평양조장)<br><br>백련생막걸리Misty (신평양조장)<br><br>백련생막걸리Snow (신평양조장)</div>`)[0];
+                popup_f5bf890f218dd9a4b4207623d8416eb8.setContent(html_cb9bdf4ad0719675e2588e0c99f484e6);
+            
+        
+
+        marker_d60bce0fb60f456ab34a3b1fa72b3d67.bindPopup(popup_f5bf890f218dd9a4b4207623d8416eb8)
+        ;
+
+        
+    
+    
+            var marker_90a76b2ef6fe5d3ccc2ba85bda7240b8 = L.marker(
+                [36.0796686, 126.801905],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_d702115df7610036dd79fc83a4fa531f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_74c61c6fa718d20169997f3039e657be = $(`<div id="html_74c61c6fa718d20169997f3039e657be" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 서천군 한산면 지현리 55<br><br><b style="color:blue;">제품 정보:</b><br>불소곡주 (한산소곡주)<br><br>한산소곡주 (한산소곡주)</div>`)[0];
+                popup_d702115df7610036dd79fc83a4fa531f.setContent(html_74c61c6fa718d20169997f3039e657be);
+            
+        
+
+        marker_90a76b2ef6fe5d3ccc2ba85bda7240b8.bindPopup(popup_d702115df7610036dd79fc83a4fa531f)
+        ;
+
+        
+    
+    
+            var marker_4f0246266f1da9fef332ae39c88c7cb0 = L.marker(
+                [36.138081, 127.234325],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_a48d4f7ea4474e26890ff8286d8bb515 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7e36d98ac5ded1a13580c29100d3ec78 = $(`<div id="html_7e36d98ac5ded1a13580c29100d3ec78" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 논산시 양촌면 인천리 380-4<br><br><b style="color:blue;">제품 정보:</b><br>양촌생동동주 (양촌양조)<br><br>양촌생막걸리 (양촌양조)<br><br>우렁이쌀손막걸리 (양촌양조)</div>`)[0];
+                popup_a48d4f7ea4474e26890ff8286d8bb515.setContent(html_7e36d98ac5ded1a13580c29100d3ec78);
+            
+        
+
+        marker_4f0246266f1da9fef332ae39c88c7cb0.bindPopup(popup_a48d4f7ea4474e26890ff8286d8bb515)
+        ;
+
+        
+    
+    
+            var marker_79310e6801c06ae205de04ccca247d78 = L.marker(
+                [36.0860221, 126.8093609],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_35595a2e7a3fb3e11956b6417a72b73e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6cbbd4eb66a3a199c557f9cd19b449f5 = $(`<div id="html_6cbbd4eb66a3a199c557f9cd19b449f5" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 서천군 한산면 동산리 403-3<br><br><b style="color:blue;">제품 정보:</b><br>예담은한산소곡주 (한산예담은소곡주)<br><br>예담은한산소곡화주 (한산예담은소곡주)</div>`)[0];
+                popup_35595a2e7a3fb3e11956b6417a72b73e.setContent(html_6cbbd4eb66a3a199c557f9cd19b449f5);
+            
+        
+
+        marker_79310e6801c06ae205de04ccca247d78.bindPopup(popup_35595a2e7a3fb3e11956b6417a72b73e)
+        ;
+
+        
+    
+    
+            var marker_6805af0d3c222493a50798ca8929204a = L.marker(
+                [36.0859114, 126.8064134],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_7183ee2d67c1b1d1533e7055c0e9cb7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6103e700d94506b8840300c6f7a97881 = $(`<div id="html_6103e700d94506b8840300c6f7a97881" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 서천군 한산면 지현리 3-1<br><br><b style="color:blue;">제품 정보:</b><br>원조소곡화주 (원조소곡주)<br><br>원조한산소곡주 (원조소곡주)</div>`)[0];
+                popup_7183ee2d67c1b1d1533e7055c0e9cb7a.setContent(html_6103e700d94506b8840300c6f7a97881);
+            
+        
+
+        marker_6805af0d3c222493a50798ca8929204a.bindPopup(popup_7183ee2d67c1b1d1533e7055c0e9cb7a)
+        ;
+
+        
+    
+    
+            var marker_0c550da556bf44adadb8625c629cc1df = L.marker(
+                [36.7600147, 126.8836356],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_871a52dabb0dfdaa1b1080c6ff2c6d17 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e314a7a11b5a3b5a45714a51db95dc7b = $(`<div id="html_e314a7a11b5a3b5a45714a51db95dc7b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 아산시 도고면 기곡로77번길 30-7<br><br><b style="color:blue;">제품 정보:</b><br>이상헌약주 (이가수불)<br><br>이상헌탁주 (이가수불)</div>`)[0];
+                popup_871a52dabb0dfdaa1b1080c6ff2c6d17.setContent(html_e314a7a11b5a3b5a45714a51db95dc7b);
+            
+        
+
+        marker_0c550da556bf44adadb8625c629cc1df.bindPopup(popup_871a52dabb0dfdaa1b1080c6ff2c6d17)
+        ;
+
+        
+    
+    
+            var marker_c46201edab478734fcff6f8703b6ba2d = L.marker(
+                [36.9145569, 127.2201854],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_0ed376b2b5e9c3a162e7e506629143ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b76994082edc1508544e7abc6f8c2a42 = $(`<div id="html_b76994082edc1508544e7abc6f8c2a42" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 천안시 서북구 입장면 하장리 51-2<br><br><b style="color:blue;">제품 정보:</b><br>입장탁주 (농업회사법인입장주조㈜)<br><br>천안연미주 (농업회사법인입장주조㈜)</div>`)[0];
+                popup_0ed376b2b5e9c3a162e7e506629143ec.setContent(html_b76994082edc1508544e7abc6f8c2a42);
+            
+        
+
+        marker_c46201edab478734fcff6f8703b6ba2d.bindPopup(popup_0ed376b2b5e9c3a162e7e506629143ec)
+        ;
+
+        
+    
+    
+            var marker_ee7f4a65b870ebadee66a7e8253f50d2 = L.marker(
+                [36.5629027, 126.8593711],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_9c338e6981babeee70d8f6d7a298c724 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4de4643a501e7d8c8f607022655eb181 = $(`<div id="html_4de4643a501e7d8c8f607022655eb181" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 청양군 운곡면 광암리 321-11<br><br><b style="color:blue;">제품 정보:</b><br>청양둔송구기주 (청양둔송구기주)</div>`)[0];
+                popup_9c338e6981babeee70d8f6d7a298c724.setContent(html_4de4643a501e7d8c8f607022655eb181);
+            
+        
+
+        marker_ee7f4a65b870ebadee66a7e8253f50d2.bindPopup(popup_9c338e6981babeee70d8f6d7a298c724)
+        ;
+
+        
+    
+    
+            var marker_9ef226b1601f6d43d9a5f836cd9c972d = L.marker(
+                [36.7618663, 126.6980299],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_374363cf4c6deb4177cad1040b077f3e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_298164419aa337e4a5cc94268dd066c3 = $(`<div id="html_298164419aa337e4a5cc94268dd066c3" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청남도 예산군 고덕면 대몽로 107-25<br><br><b style="color:blue;">제품 정보:</b><br>추사40 (예산사과와인(주))<br><br>추사로제 (예산사과와인(주))<br><br>추사블루 (예산사과와인(주))<br><br>추사애플와인 (예산사과와인(주))</div>`)[0];
+                popup_374363cf4c6deb4177cad1040b077f3e.setContent(html_298164419aa337e4a5cc94268dd066c3);
+            
+        
+
+        marker_9ef226b1601f6d43d9a5f836cd9c972d.bindPopup(popup_374363cf4c6deb4177cad1040b077f3e)
+        ;
+
+        
+    
+    
+            var marker_7b910a6340ec764830a4f6e920f18264 = L.marker(
+                [36.7618663, 126.6980299],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_e3adb49919eda5f44e6597566c2cdf64 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_547f04ef5ba23ab9a9581b289e821c10 = $(`<div id="html_547f04ef5ba23ab9a9581b289e821c10" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충남 예산군 고덕면 대천리 501<br><br><b style="color:blue;">제품 정보:</b><br>추사백25 (예산사과와인)</div>`)[0];
+                popup_e3adb49919eda5f44e6597566c2cdf64.setContent(html_547f04ef5ba23ab9a9581b289e821c10);
+            
+        
+
+        marker_7b910a6340ec764830a4f6e920f18264.bindPopup(popup_e3adb49919eda5f44e6597566c2cdf64)
+        ;
+
+        
+    
+    
+            var marker_f3132e5adad96e5a5f5e7e8e17d7ce92 = L.marker(
+                [36.6974786, 126.5360688],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_e6cd9d7288dd859ac2170c704d14ccd1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1edbc9e353c4e471cdc41c905e41d606 = $(`<div id="html_1edbc9e353c4e471cdc41c905e41d606" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청남도 서산시 고북면 산직마을길 85<br><br><b style="color:blue;">제품 정보:</b><br>해미읍성딸기와인 (농업회사법인해미읍성딸기와인(주))<br><br>해미읍성매실와인 (농업회사법인해미읍성딸기와인(주))<br><br>해미읍성모과와인 (농업회사법인해미읍성딸기와인(주))<br><br>해미읍성살구와인 (농업회사법인해미읍성딸기와인(주))</div>`)[0];
+                popup_e6cd9d7288dd859ac2170c704d14ccd1.setContent(html_1edbc9e353c4e471cdc41c905e41d606);
+            
+        
+
+        marker_f3132e5adad96e5a5f5e7e8e17d7ce92.bindPopup(popup_e6cd9d7288dd859ac2170c704d14ccd1)
+        ;
+
+        
+    
+    
+            var marker_15518fdb117ed39dcc089ef6c5e94ba1 = L.marker(
+                [36.5937805, 126.5118273],
+                {}
+            ).addTo(feature_group_3b9e976bb62767c630fc3b775f7e4d51);
+        
+    
+        var popup_4a2720df966aca1c65afecc8fda4d9a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_118fea3fb2f9840a65b1fd6619c25eb5 = $(`<div id="html_118fea3fb2f9840a65b1fd6619c25eb5" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 충청남도 홍성군 서부면 광리 10-1<br><br><b style="color:blue;">제품 정보:</b><br>황금보리소주17 (황금보리(유)농업회사법인)<br><br>황금보리소주25 (황금보리(유)농업회사법인)<br><br>황금보리소주40 (황금보리(유)농업회사법인)</div>`)[0];
+                popup_4a2720df966aca1c65afecc8fda4d9a1.setContent(html_118fea3fb2f9840a65b1fd6619c25eb5);
+            
+        
+
+        marker_15518fdb117ed39dcc089ef6c5e94ba1.bindPopup(popup_4a2720df966aca1c65afecc8fda4d9a1)
+        ;
+
+        
+    
+    
+            var feature_group_f39377b907718f98ca2a887b3fa5ace3 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_13eb2304e9a68f44845bf19647660cbc = L.marker(
+                [35.3838616, 127.3795202],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_bb56442a413aa7bcf06610a03c088797 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f083702a2471a729027d7bfd6d7c5d9 = $(`<div id="html_6f083702a2471a729027d7bfd6d7c5d9" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라북도 남원시 시묘길 122<br><br><b style="color:blue;">제품 정보:</b><br>강쇠 (농업회사법인(유)술소리)</div>`)[0];
+                popup_bb56442a413aa7bcf06610a03c088797.setContent(html_6f083702a2471a729027d7bfd6d7c5d9);
+            
+        
+
+        marker_13eb2304e9a68f44845bf19647660cbc.bindPopup(popup_bb56442a413aa7bcf06610a03c088797)
+        ;
+
+        
+    
+    
+            var marker_d702b3cbdaa03f1bec13fe72321938dd = L.marker(
+                [35.819288, 127.1530935],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_9d239b2fd679871d0ad9b8bab552f3b1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8e3e71b6292b797b52bba3b8101ad9d3 = $(`<div id="html_8e3e71b6292b797b52bba3b8101ad9d3" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 전주시 완산구 풍남동2가 29-2<br><br><b style="color:blue;">제품 정보:</b><br>경기전 (농업회사법인동문거리양조장(주)(전주술로시티))<br><br>오목대 (농업회사법인동문거리양조장(주)(전주술로시티))<br><br>풍남문 (농업회사법인동문거리양조장(주)(전주술로시티))</div>`)[0];
+                popup_9d239b2fd679871d0ad9b8bab552f3b1.setContent(html_8e3e71b6292b797b52bba3b8101ad9d3);
+            
+        
+
+        marker_d702b3cbdaa03f1bec13fe72321938dd.bindPopup(popup_9d239b2fd679871d0ad9b8bab552f3b1)
+        ;
+
+        
+    
+    
+            var marker_61387e096b8422586ee351590d9249ec = L.marker(
+                [35.4777256, 126.622949],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_9c5832f171db142966a5641e5341d68d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_27805f7cf39abbd71a453ec3894a639a = $(`<div id="html_27805f7cf39abbd71a453ec3894a639a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 고창군 아산면 계산리 837<br><br><b style="color:blue;">제품 정보:</b><br>고구마아락 (농업회사법인배상면주가고창LB)</div>`)[0];
+                popup_9c5832f171db142966a5641e5341d68d.setContent(html_27805f7cf39abbd71a453ec3894a639a);
+            
+        
+
+        marker_61387e096b8422586ee351590d9249ec.bindPopup(popup_9c5832f171db142966a5641e5341d68d)
+        ;
+
+        
+    
+    
+            var marker_55eea1c54404589eb04cf30950d38cb6 = L.marker(
+                [35.5263781, 126.5618414],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_427fbc60625ac96d50f4ec936969aa30 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4cbc4c642df615f44d4584d218dfffe3 = $(`<div id="html_4cbc4c642df615f44d4584d218dfffe3" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 고창군 심원면 월산리 119-11<br><br><b style="color:blue;">제품 정보:</b><br>고창선운산땡큐복분자주 (농업회사법인고창선운산(유))<br><br>고창선운산땡큐블루베리주 (농업회사법인고창선운산(유))<br><br>고창선운산복분자주특1호 (농업회사법인고창선운산(유))<br><br>쿨샷7.5 (농업회사법인고창선운산(유))</div>`)[0];
+                popup_427fbc60625ac96d50f4ec936969aa30.setContent(html_4cbc4c642df615f44d4584d218dfffe3);
+            
+        
+
+        marker_55eea1c54404589eb04cf30950d38cb6.bindPopup(popup_427fbc60625ac96d50f4ec936969aa30)
+        ;
+
+        
+    
+    
+            var marker_a8da93195b4c83e4d9cb403419fd6944 = L.marker(
+                [35.6303962, 126.9145114],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_1b2ff798f69c2ec5f827f430c81f2597 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_06fc59768cf4fdf9a9cceac2f3745272 = $(`<div id="html_06fc59768cf4fdf9a9cceac2f3745272" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 정읍시 북면 장학리 470<br><br><b style="color:blue;">제품 정보:</b><br>내장산복분자주 (내장산복분자영농조합)</div>`)[0];
+                popup_1b2ff798f69c2ec5f827f430c81f2597.setContent(html_06fc59768cf4fdf9a9cceac2f3745272);
+            
+        
+
+        marker_a8da93195b4c83e4d9cb403419fd6944.bindPopup(popup_1b2ff798f69c2ec5f827f430c81f2597)
+        ;
+
+        
+    
+    
+            var marker_769360b59e70ddc8034491fde6048d2f = L.marker(
+                [35.8166576, 127.1212886],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_f68efd05864d352ac29902f70128c600 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f5c3c55ca5a47ca20f3db833dcc38f2 = $(`<div id="html_4f5c3c55ca5a47ca20f3db833dcc38f2" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북 전주시 완산구 중산중앙로 27<br><br><b style="color:blue;">제품 정보:</b><br>두리향 (케이소주(전주가양주연구소))<br><br>방문주약주 (케이소주(전주가양주연구소))<br><br>방문주탁주 (케이소주(전주가양주연구소))<br><br>석탄주약주 (케이소주(전주가양주연구소))<br><br>석탄주탁주 (케이소주(전주가양주연구소))</div>`)[0];
+                popup_f68efd05864d352ac29902f70128c600.setContent(html_4f5c3c55ca5a47ca20f3db833dcc38f2);
+            
+        
+
+        marker_769360b59e70ddc8034491fde6048d2f.bindPopup(popup_f68efd05864d352ac29902f70128c600)
+        ;
+
+        
+    
+    
+            var marker_13e4980fa7b9fae66a39eb5de918e402 = L.marker(
+                [35.7391253, 126.7216186],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_f57b878e553b58c0b70c1723a20cab41 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1da895b951fc085b2e84bf089c60c755 = $(`<div id="html_1da895b951fc085b2e84bf089c60c755" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북 부안군 행안면 역리 1121-9<br><br><b style="color:blue;">제품 정보:</b><br>맑은술해밀 (내변산양조장)</div>`)[0];
+                popup_f57b878e553b58c0b70c1723a20cab41.setContent(html_1da895b951fc085b2e84bf089c60c755);
+            
+        
+
+        marker_13e4980fa7b9fae66a39eb5de918e402.bindPopup(popup_f57b878e553b58c0b70c1723a20cab41)
+        ;
+
+        
+    
+    
+            var marker_d76eb4c935f1edbbe29b048368196717 = L.marker(
+                [35.9485075, 127.6689435],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_04a9f7ff5a053b0359f714f2be71f224 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea22901c50cb941655444e455e8f3b1a = $(`<div id="html_ea22901c50cb941655444e455e8f3b1a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북 무주군 적상면 사천리 205<br><br><b style="color:blue;">제품 정보:</b><br>머루이야기 (농업회사법인산들벗(주))<br><br>블루베리이야기 (농업회사법인산들벗(주))</div>`)[0];
+                popup_04a9f7ff5a053b0359f714f2be71f224.setContent(html_ea22901c50cb941655444e455e8f3b1a);
+            
+        
+
+        marker_d76eb4c935f1edbbe29b048368196717.bindPopup(popup_04a9f7ff5a053b0359f714f2be71f224)
+        ;
+
+        
+    
+    
+            var marker_9d43d33dd2ee3ba401f7160477209100 = L.marker(
+                [35.8759726, 127.6796767],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_309c6ca370bf9d891b8f13708379841f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ec012c06f78f3b1b1d75c1105fb75f0 = $(`<div id="html_1ec012c06f78f3b1b1d75c1105fb75f0" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북 무주군 안성면 사전리 79<br><br><b style="color:blue;">제품 정보:</b><br>메밀로 (농업회사법인두루(주))</div>`)[0];
+                popup_309c6ca370bf9d891b8f13708379841f.setContent(html_1ec012c06f78f3b1b1d75c1105fb75f0);
+            
+        
+
+        marker_9d43d33dd2ee3ba401f7160477209100.bindPopup(popup_309c6ca370bf9d891b8f13708379841f)
+        ;
+
+        
+    
+    
+            var marker_c3b9f3693f9e359bad894d802023225d = L.marker(
+                [35.5402236, 126.5728518],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_4dfba0227c7b49d5ebb6ecf7a7c8d256 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a1447eb7f0c132c3674160fbd4b28df = $(`<div id="html_3a1447eb7f0c132c3674160fbd4b28df" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북 고창군 선운대로 2197<br><br><b style="color:blue;">제품 정보:</b><br>명작복분자 ((농)국순당고창명주(주))<br><br>선운산의아침복분자막걸리 ((농)국순당고창명주(주))<br><br>자연담은복분자막걸리 ((농)국순당고창명주(주))</div>`)[0];
+                popup_4dfba0227c7b49d5ebb6ecf7a7c8d256.setContent(html_3a1447eb7f0c132c3674160fbd4b28df);
+            
+        
+
+        marker_c3b9f3693f9e359bad894d802023225d.bindPopup(popup_4dfba0227c7b49d5ebb6ecf7a7c8d256)
+        ;
+
+        
+    
+    
+            var marker_e9ac5ebc742d4438ec093cfdbc0f715d = L.marker(
+                [35.8148934, 127.630562],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_09f4331a4123542da443725f0bdc6879 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_92afb7468e7ca55ba29f6430d8824c4c = $(`<div id="html_92afb7468e7ca55ba29f6430d8824c4c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 무주군 안성면 공진리 1217<br><br><b style="color:blue;">제품 정보:</b><br>무주구천동머루와인 (덕유양조)<br><br>무주구천동산머루주 (덕유양조)<br><br>천마몽 (덕유양조)</div>`)[0];
+                popup_09f4331a4123542da443725f0bdc6879.setContent(html_92afb7468e7ca55ba29f6430d8824c4c);
+            
+        
+
+        marker_e9ac5ebc742d4438ec093cfdbc0f715d.bindPopup(popup_09f4331a4123542da443725f0bdc6879)
+        ;
+
+        
+    
+    
+            var marker_88f215e78c4defa4c5925742972812be = L.marker(
+                [35.4777256, 126.622949],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_d631fbe03630963969893c11f9f37400 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d49abbd341a42af73d1d9aa5d485676 = $(`<div id="html_2d49abbd341a42af73d1d9aa5d485676" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북 고창군 아산면 계산리 837<br><br><b style="color:blue;">제품 정보:</b><br>복분자아락 (농업회사법인배상면주가고창LB)<br><br>복분자음 (농업회사법인배상면주가고창LB)</div>`)[0];
+                popup_d631fbe03630963969893c11f9f37400.setContent(html_2d49abbd341a42af73d1d9aa5d485676);
+            
+        
+
+        marker_88f215e78c4defa4c5925742972812be.bindPopup(popup_d631fbe03630963969893c11f9f37400)
+        ;
+
+        
+    
+    
+            var marker_02d9d95754f2ff2b33d11b99c375e987 = L.marker(
+                [35.7391253, 126.7216186],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_a9361850b4fe74443d782b1f1cbb1332 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a1772ba4447371d0b7109a6f1e04e1a = $(`<div id="html_3a1772ba4447371d0b7109a6f1e04e1a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북 부안군 행안면 부안농공단지길 14-11<br><br><b style="color:blue;">제품 정보:</b><br>부안참뽕막걸리 (내변산(동진주조))<br><br>부안참뽕와인 (내변산(동진주조))<br><br>줄포생막걸리 (내변산(동진주조))<br><br>펀치쌀바나나 (내변산(동진주조))</div>`)[0];
+                popup_a9361850b4fe74443d782b1f1cbb1332.setContent(html_3a1772ba4447371d0b7109a6f1e04e1a);
+            
+        
+
+        marker_02d9d95754f2ff2b33d11b99c375e987.bindPopup(popup_a9361850b4fe74443d782b1f1cbb1332)
+        ;
+
+        
+    
+    
+            var marker_f9326bfdcb761acbfd5040e66e3eeaec = L.marker(
+                [35.8759726, 127.6796767],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_1d3e049228394e8118c19943be995385 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3db0ea9c07a086088233c4eb574b5b5a = $(`<div id="html_3db0ea9c07a086088233c4eb574b5b5a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 무주군 안성면 사전리 79<br><br><b style="color:blue;">제품 정보:</b><br>삼선 (농업회사법인두루(주))<br><br>술헤는밤 (농업회사법인두루(주))<br><br>애석 (농업회사법인두루(주))</div>`)[0];
+                popup_1d3e049228394e8118c19943be995385.setContent(html_3db0ea9c07a086088233c4eb574b5b5a);
+            
+        
+
+        marker_f9326bfdcb761acbfd5040e66e3eeaec.bindPopup(popup_1d3e049228394e8118c19943be995385)
+        ;
+
+        
+    
+    
+            var marker_bf71560eeb06a30bd412893fb7129dd4 = L.marker(
+                [35.5109725, 126.6463039],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_c53ccb32ee7b636513cea8ed0f30542e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb153e2a88a4cf2ce71d3616fd59e760 = $(`<div id="html_eb153e2a88a4cf2ce71d3616fd59e760" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 고창군 부안면 용산리 44-10<br><br><b style="color:blue;">제품 정보:</b><br>샹스프랑보아즈 ((주)선운산복분자주흥진)<br><br>선운산복분자와인 ((주)선운산복분자주흥진)<br><br>선운산복분자주 ((주)선운산복분자주흥진)<br><br>선운산복분자주프리미엄 ((주)선운산복분자주흥진)</div>`)[0];
+                popup_c53ccb32ee7b636513cea8ed0f30542e.setContent(html_eb153e2a88a4cf2ce71d3616fd59e760);
+            
+        
+
+        marker_bf71560eeb06a30bd412893fb7129dd4.bindPopup(popup_c53ccb32ee7b636513cea8ed0f30542e)
+        ;
+
+        
+    
+    
+            var marker_69520fe094947fe1a914258016604215 = L.marker(
+                [35.6514211, 126.9448892],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_cb6797a8f2fa84721821cffaefb634a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e4843c658f74f611bdd1974c097f0bb4 = $(`<div id="html_e4843c658f74f611bdd1974c097f0bb4" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라북도 정읍시 태인면 태흥리 392-1<br><br><b style="color:blue;">제품 정보:</b><br>송명섭막걸리 (태인합동주조)<br><br>죽력고 (태인합동주조)</div>`)[0];
+                popup_cb6797a8f2fa84721821cffaefb634a1.setContent(html_e4843c658f74f611bdd1974c097f0bb4);
+            
+        
+
+        marker_69520fe094947fe1a914258016604215.bindPopup(popup_cb6797a8f2fa84721821cffaefb634a1)
+        ;
+
+        
+    
+    
+            var marker_8166151aeda0fc0be3c151c70f835631 = L.marker(
+                [35.6980284, 127.1212964],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_fcfbf13b8efe0d5d62e8abf53bff9675 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e9b228806c9c4ec2de82b4d7b065b1b = $(`<div id="html_5e9b228806c9c4ec2de82b4d7b065b1b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 완주군 구이면 계곡리 64-1<br><br><b style="color:blue;">제품 정보:</b><br>송화백일주 (송화양조사)</div>`)[0];
+                popup_fcfbf13b8efe0d5d62e8abf53bff9675.setContent(html_5e9b228806c9c4ec2de82b4d7b065b1b);
+            
+        
+
+        marker_8166151aeda0fc0be3c151c70f835631.bindPopup(popup_fcfbf13b8efe0d5d62e8abf53bff9675)
+        ;
+
+        
+    
+    
+            var marker_3653b2394801432c6549b2dc6c60bed0 = L.marker(
+                [35.4372005, 127.5240519],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_1211b93373d8ea99a3af6794c0aa2012 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c68612ad6fbd6227c4cd196f231eb065 = $(`<div id="html_c68612ad6fbd6227c4cd196f231eb065" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 남원시 운봉읍 서천리 622<br><br><b style="color:blue;">제품 정보:</b><br>야관문막걸리 (지리산그린영농조합운봉주조)<br><br>지리산정담생막걸리 (지리산그린영농조합운봉주조)<br><br>지리산허브잎술 (지리산그린영농조합운봉주조)</div>`)[0];
+                popup_1211b93373d8ea99a3af6794c0aa2012.setContent(html_c68612ad6fbd6227c4cd196f231eb065);
+            
+        
+
+        marker_3653b2394801432c6549b2dc6c60bed0.bindPopup(popup_1211b93373d8ea99a3af6794c0aa2012)
+        ;
+
+        
+    
+    
+            var marker_e17180a49fa93a1d8fece2d5c3cf6c6c = L.marker(
+                [35.5402236, 126.5728518],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_f9383f83c7ccda206968adc6a2f63f39 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_768c747fb531d8f72597bf295dd9ab72 = $(`<div id="html_768c747fb531d8f72597bf295dd9ab72" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 고창군 심원면 하전리 135<br><br><b style="color:blue;">제품 정보:</b><br>오디랑 (국순당고창명주)</div>`)[0];
+                popup_f9383f83c7ccda206968adc6a2f63f39.setContent(html_768c747fb531d8f72597bf295dd9ab72);
+            
+        
+
+        marker_e17180a49fa93a1d8fece2d5c3cf6c6c.bindPopup(popup_f9383f83c7ccda206968adc6a2f63f39)
+        ;
+
+        
+    
+    
+            var marker_e276a5d5a3cae0150da22736091064d8 = L.marker(
+                [35.8735231, 127.026968],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_0dbac0e431e2fee068302bec21c469dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a8aea3caaa5b1079418e8af513815e10 = $(`<div id="html_a8aea3caaa5b1079418e8af513815e10" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 전주시 덕진구 원동 617-5<br><br><b style="color:blue;">제품 정보:</b><br>이강주19 (전주이강주)<br><br>이강주25 (전주이강주)</div>`)[0];
+                popup_0dbac0e431e2fee068302bec21c469dd.setContent(html_a8aea3caaa5b1079418e8af513815e10);
+            
+        
+
+        marker_e276a5d5a3cae0150da22736091064d8.bindPopup(popup_0dbac0e431e2fee068302bec21c469dd)
+        ;
+
+        
+    
+    
+            var marker_8ba9b0ff1a44a4aa00d2463faef62889 = L.marker(
+                [35.7147294, 127.5802722],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_8fc00660bf2b1b0d429fa1cddecb9746 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ccab4595000043ee1190f5c24877035 = $(`<div id="html_1ccab4595000043ee1190f5c24877035" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라북도 장수군 계남면 침곡로11-26<br><br><b style="color:blue;">제품 정보:</b><br>장수오미자주 (농업회사법인(주)알에프)</div>`)[0];
+                popup_8fc00660bf2b1b0d429fa1cddecb9746.setContent(html_1ccab4595000043ee1190f5c24877035);
+            
+        
+
+        marker_8ba9b0ff1a44a4aa00d2463faef62889.bindPopup(popup_8fc00660bf2b1b0d429fa1cddecb9746)
+        ;
+
+        
+    
+    
+            var marker_5262b5143c98da8bab61f8ecefbb6d16 = L.marker(
+                [35.3838616, 127.3795202],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_c465a7f0b52d3939cb4373f954a616ba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9e1016bcde2690f13f61243c0026a08 = $(`<div id="html_e9e1016bcde2690f13f61243c0026a08" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라북도 남원시 시묘길 122(노암동)<br><br><b style="color:blue;">제품 정보:</b><br>주몽복분자주 (농업회사법인(유)술소리)<br><br>황진이 (농업회사법인(유)술소리)</div>`)[0];
+                popup_c465a7f0b52d3939cb4373f954a616ba.setContent(html_e9e1016bcde2690f13f61243c0026a08);
+            
+        
+
+        marker_5262b5143c98da8bab61f8ecefbb6d16.bindPopup(popup_c465a7f0b52d3939cb4373f954a616ba)
+        ;
+
+        
+    
+    
+            var marker_3df86cd2cb7426911fef9d54f79fc6bc = L.marker(
+                [35.3739643, 127.1418081],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_6500613f0c81fb5bb85a844a1f266b9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47cbcb84185016e6997cbb75b5eb0f3d = $(`<div id="html_47cbcb84185016e6997cbb75b5eb0f3d" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라북도 순창군 순창읍 순화리 194번지<br><br><b style="color:blue;">제품 정보:</b><br>지란지교무화과탁주 ((유)친구들의술지란지교)</div>`)[0];
+                popup_6500613f0c81fb5bb85a844a1f266b9c.setContent(html_47cbcb84185016e6997cbb75b5eb0f3d);
+            
+        
+
+        marker_3df86cd2cb7426911fef9d54f79fc6bc.bindPopup(popup_6500613f0c81fb5bb85a844a1f266b9c)
+        ;
+
+        
+    
+    
+            var marker_2fa47ddb05484794fecd729f5675be60 = L.marker(
+                [35.3739643, 127.1418081],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_8006b77caab563fb0edaf9a1e5a6312a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df35809eccb37cc1eceb0619a5e1ee6d = $(`<div id="html_df35809eccb37cc1eceb0619a5e1ee6d" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라북도 순창군 순창읍 순화리 194번지 KR<br><br><b style="color:blue;">제품 정보:</b><br>지란지교약주 ((유)친구들의술지란지교)<br><br>지란지교탁주 ((유)친구들의술지란지교)</div>`)[0];
+                popup_8006b77caab563fb0edaf9a1e5a6312a.setContent(html_df35809eccb37cc1eceb0619a5e1ee6d);
+            
+        
+
+        marker_2fa47ddb05484794fecd729f5675be60.bindPopup(popup_8006b77caab563fb0edaf9a1e5a6312a)
+        ;
+
+        
+    
+    
+            var marker_cdc5c3c25ebad55672766ffb117e9401 = L.marker(
+                [35.7726885, 127.3804172],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_cbdcee2b664fc3c070534e527bfa7a0a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78e4f8a941ce5f6b35a8752ea7a065b2 = $(`<div id="html_78e4f8a941ce5f6b35a8752ea7a065b2" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 진안군 진안읍 연장리 1785<br><br><b style="color:blue;">제품 정보:</b><br>진심홍삼인삼주19 (태평주가)<br><br>진심홍삼인삼주38 (태평주가)<br><br>진심홍삼주19 (태평주가)</div>`)[0];
+                popup_cbdcee2b664fc3c070534e527bfa7a0a.setContent(html_78e4f8a941ce5f6b35a8752ea7a065b2);
+            
+        
+
+        marker_cdc5c3c25ebad55672766ffb117e9401.bindPopup(popup_cbdcee2b664fc3c070534e527bfa7a0a)
+        ;
+
+        
+    
+    
+            var marker_8f2878508f7d5d9168535dd50c7ebc4a = L.marker(
+                [35.6806941, 127.1149688],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_2defd3829edafe9e54dcd4aabd46b3cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_371d28cda62ec8735645269b6b7bcccc = $(`<div id="html_371d28cda62ec8735645269b6b7bcccc" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 완주군 구이면 계곡리 272-2<br><br><b style="color:blue;">제품 정보:</b><br>천년전주생막걸리 ((유)산에들에농업회사법인)<br><br>천지주가햅쌀생막걸리 ((유)산에들에농업회사법인)</div>`)[0];
+                popup_2defd3829edafe9e54dcd4aabd46b3cc.setContent(html_371d28cda62ec8735645269b6b7bcccc);
+            
+        
+
+        marker_8f2878508f7d5d9168535dd50c7ebc4a.bindPopup(popup_2defd3829edafe9e54dcd4aabd46b3cc)
+        ;
+
+        
+    
+    
+            var marker_985b409a4cbc4f00cae315670b7b9d70 = L.marker(
+                [35.9485075, 127.6689435],
+                {}
+            ).addTo(feature_group_f39377b907718f98ca2a887b3fa5ace3);
+        
+    
+        var popup_81306945466b88f6fdbfd7349501e4be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b29768f9b1e796aa3239b21a574b344 = $(`<div id="html_4b29768f9b1e796aa3239b21a574b344" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전북특별자치도 무주군 적상면 사천리 205<br><br><b style="color:blue;">제품 정보:</b><br>천마이야기 (농업회사법인산들벗(주))</div>`)[0];
+                popup_81306945466b88f6fdbfd7349501e4be.setContent(html_4b29768f9b1e796aa3239b21a574b344);
+            
+        
+
+        marker_985b409a4cbc4f00cae315670b7b9d70.bindPopup(popup_81306945466b88f6fdbfd7349501e4be)
+        ;
+
+        
+    
+    
+            var feature_group_67835ed94c6301e71465b28411408c5b = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_cbb47092f9480295fca8188b97668d26 = L.marker(
+                [35.3376325, 126.8153694],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_0af001de7ca22903fb82d13b065f7923 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cadb166e50873d1b7d5f374d9078b522 = $(`<div id="html_cadb166e50873d1b7d5f374d9078b522" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 장성군 장성읍 전고개로 240<br><br><b style="color:blue;">제품 정보:</b><br>52C (농업회사법인(주)청산녹수)<br><br>g12골디락스 (농업회사법인(주)청산녹수)<br><br>청산녹수꿀막걸리 (농업회사법인(주)청산녹수)<br><br>청산녹수사미인주 (농업회사법인(주)청산녹수)<br><br>청산녹수생탁주 (농업회사법인(주)청산녹수)<br><br>편백숲산소막걸리 (농업회사법인(주)청산녹수)<br><br>편백숲산소막걸리딸기스파클링 (농업회사법인(주)청산녹수)<br><br>편백숲산소막걸리순수령 (농업회사법인(주)청산녹수)</div>`)[0];
+                popup_0af001de7ca22903fb82d13b065f7923.setContent(html_cadb166e50873d1b7d5f374d9078b522);
+            
+        
+
+        marker_cbb47092f9480295fca8188b97668d26.bindPopup(popup_0af001de7ca22903fb82d13b065f7923)
+        ;
+
+        
+    
+    
+            var marker_68178c9ee1f9a4559447d1b40d8896bf = L.marker(
+                [35.3663894, 126.9853624],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_a9d2d12146238145323ef172b5663d24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f378f2159375da2939b77f810c77a553 = $(`<div id="html_f378f2159375da2939b77f810c77a553" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 담양군 용면 추성리 662-5<br><br><b style="color:blue;">제품 정보:</b><br>담양죽력고 (추성고을)<br><br>대통대잎술 (추성고을)<br><br>르깔롱 (추성고을)<br><br>추성주 (추성고을)<br><br>타미앙스 (추성고을)<br><br>티나Tina (추성고을)</div>`)[0];
+                popup_a9d2d12146238145323ef172b5663d24.setContent(html_f378f2159375da2939b77f810c77a553);
+            
+        
+
+        marker_68178c9ee1f9a4559447d1b40d8896bf.bindPopup(popup_a9d2d12146238145323ef172b5663d24)
+        ;
+
+        
+    
+    
+            var marker_c0d07cb949b13e1af504e5e3fd6f6a91 = L.marker(
+                [35.3207067, 126.9635412],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_471223b1ab36499ae6d11aa93dfdf271 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e945c342ad361c964d3a779b38282937 = $(`<div id="html_e945c342ad361c964d3a779b38282937" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라남도 담양군 담양읍 외다길 30<br><br><b style="color:blue;">제품 정보:</b><br>대대포생막걸리 (농업회사법인(주)죽향도가)<br><br>대잎생동동주 (농업회사법인(주)죽향도가)<br><br>죽향생막걸리 (농업회사법인(주)죽향도가)<br><br>천년담주 (농업회사법인(주)죽향도가)</div>`)[0];
+                popup_471223b1ab36499ae6d11aa93dfdf271.setContent(html_e945c342ad361c964d3a779b38282937);
+            
+        
+
+        marker_c0d07cb949b13e1af504e5e3fd6f6a91.bindPopup(popup_471223b1ab36499ae6d11aa93dfdf271)
+        ;
+
+        
+    
+    
+            var marker_f148bc398c7ce868272cb9349b95afd9 = L.marker(
+                [34.6958856, 127.7777729],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_2c2772acf7e2ada23e0be55dc21ca526 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_921437af10028b688e8ea27a812ab2a8 = $(`<div id="html_921437af10028b688e8ea27a812ab2a8" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 여수시 돌산읍 평사리 1584<br><br><b style="color:blue;">제품 정보:</b><br>동몽 (예술)<br><br>만강에비친달 (예술)<br><br>홍천강탁주 (예술)</div>`)[0];
+                popup_2c2772acf7e2ada23e0be55dc21ca526.setContent(html_921437af10028b688e8ea27a812ab2a8);
+            
+        
+
+        marker_f148bc398c7ce868272cb9349b95afd9.bindPopup(popup_2c2772acf7e2ada23e0be55dc21ca526)
+        ;
+
+        
+    
+    
+            var marker_2cb5fdad43468fc5368b05436305291e = L.marker(
+                [35.0600802, 126.3822268],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_c3f096483ea2109a8910367d95f51775 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eae39e4f898b2134b45f5de3c11f1643 = $(`<div id="html_eae39e4f898b2134b45f5de3c11f1643" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라남도 무안군 현경면 봉월로 124<br><br><b style="color:blue;">제품 정보:</b><br>막시모40 (농업회사법인(주)착한농부)<br><br>예천주복만월24 (농업회사법인(주)착한농부)<br><br>예천주복만월40 (농업회사법인(주)착한농부)<br><br>예천주사월24 (농업회사법인(주)착한농부)<br><br>예천주사월36.5 (농업회사법인(주)착한농부)</div>`)[0];
+                popup_c3f096483ea2109a8910367d95f51775.setContent(html_eae39e4f898b2134b45f5de3c11f1643);
+            
+        
+
+        marker_2cb5fdad43468fc5368b05436305291e.bindPopup(popup_c3f096483ea2109a8910367d95f51775)
+        ;
+
+        
+    
+    
+            var marker_7e7117f31b6b7fe2d44070b1cbfc452f = L.marker(
+                [35.042273, 127.6199456],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_9b12d7bdff743fd964b7ca673864b5c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29030a6fd5fdab89616b5deb85036688 = $(`<div id="html_29030a6fd5fdab89616b5deb85036688" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 광양시 옥룡면 죽천리 715-1<br><br><b style="color:blue;">제품 정보:</b><br>매실막걸리 (농업회사법인(주)백운주가)<br><br>백운복분자와인 (농업회사법인(주)백운주가)<br><br>백운복분자주 (농업회사법인(주)백운주가)</div>`)[0];
+                popup_9b12d7bdff743fd964b7ca673864b5c4.setContent(html_29030a6fd5fdab89616b5deb85036688);
+            
+        
+
+        marker_7e7117f31b6b7fe2d44070b1cbfc452f.bindPopup(popup_9b12d7bdff743fd964b7ca673864b5c4)
+        ;
+
+        
+    
+    
+            var marker_c9a6b5d3d083f2a84f546d1458c6e2e4 = L.marker(
+                [35.0881332, 127.7055677],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_6aa380c3fe318ea92dcf3523b3f92ed7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b508d406eaa2963d22a422dc51a3187 = $(`<div id="html_5b508d406eaa2963d22a422dc51a3187" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 광양시 다압면 도사리 998<br><br><b style="color:blue;">제품 정보:</b><br>매실원주15 (더한주류)<br><br>서울의밤 (더한주류)<br><br>원매 (더한주류)<br><br>원매프리미엄 (더한주류)<br><br>천매 (더한주류)</div>`)[0];
+                popup_6aa380c3fe318ea92dcf3523b3f92ed7.setContent(html_5b508d406eaa2963d22a422dc51a3187);
+            
+        
+
+        marker_c9a6b5d3d083f2a84f546d1458c6e2e4.bindPopup(popup_6aa380c3fe318ea92dcf3523b3f92ed7)
+        ;
+
+        
+    
+    
+            var marker_f02667b21722b1d626c82117a3589db3 = L.marker(
+                [34.4991993, 126.9006329],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_4ea15ffa2ab2dd50bb728f0a48229736 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf266e56adb82a5259969af55c60b16d = $(`<div id="html_bf266e56adb82a5259969af55c60b16d" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 장흥군 대덕읍 연지리 554-2<br><br><b style="color:blue;">제품 정보:</b><br>명품진도홍주 (대대로영농조합법인)<br><br>진도홍주루비콘 (대대로영농조합법인)</div>`)[0];
+                popup_4ea15ffa2ab2dd50bb728f0a48229736.setContent(html_bf266e56adb82a5259969af55c60b16d);
+            
+        
+
+        marker_f02667b21722b1d626c82117a3589db3.bindPopup(popup_4ea15ffa2ab2dd50bb728f0a48229736)
+        ;
+
+        
+    
+    
+            var marker_4e622968a7807b8bb19188a667161eff = L.marker(
+                [34.7160681, 126.8146646],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_0375430c5a17cbdd72d76fbe8466b500 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_213cf301e38b01573043641ff222eae6 = $(`<div id="html_213cf301e38b01573043641ff222eae6" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 강진군 병영면 성남리 140-10<br><br><b style="color:blue;">제품 정보:</b><br>병영설성동동주 (병영양조장)<br><br>병영설성생막걸리 (병영양조장)<br><br>병영설성사또 (병영양조장)<br><br>병영소주 (병영주조장)<br><br>설성만월막걸리 (병영주조장)<br><br>청세주 (병영주조장)</div>`)[0];
+                popup_0375430c5a17cbdd72d76fbe8466b500.setContent(html_213cf301e38b01573043641ff222eae6);
+            
+        
+
+        marker_4e622968a7807b8bb19188a667161eff.bindPopup(popup_0375430c5a17cbdd72d76fbe8466b500)
+        ;
+
+        
+    
+    
+            var marker_c12fd71e48acbdd3abadd993570f6113 = L.marker(
+                [35.3207067, 126.9635412],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_769fc2a7c9e03827034d988f22e382a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_623575b097a410ba94f8af90e278de5c = $(`<div id="html_623575b097a410ba94f8af90e278de5c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 담양군 담양읍 외다길 30<br><br><b style="color:blue;">제품 정보:</b><br>봉하쌀생막걸리 (농업회사법인(주)죽향도가)</div>`)[0];
+                popup_769fc2a7c9e03827034d988f22e382a2.setContent(html_623575b097a410ba94f8af90e278de5c);
+            
+        
+
+        marker_c12fd71e48acbdd3abadd993570f6113.bindPopup(popup_769fc2a7c9e03827034d988f22e382a2)
+        ;
+
+        
+    
+    
+            var marker_0352d8e524306ead24536e6f3f6b1e94 = L.marker(
+                [34.659077, 126.9624532],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_8ce8209aaa4254dac1fbcde972cb9b87 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_70ce888aede25a9f0868062abb835846 = $(`<div id="html_70ce888aede25a9f0868062abb835846" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 장흥군 안양면 당암리 883<br><br><b style="color:blue;">제품 정보:</b><br>안양동동주 (안양주조장)<br><br>햇찹쌀이하늘수 (안양주조장)</div>`)[0];
+                popup_8ce8209aaa4254dac1fbcde972cb9b87.setContent(html_70ce888aede25a9f0868062abb835846);
+            
+        
+
+        marker_0352d8e524306ead24536e6f3f6b1e94.bindPopup(popup_8ce8209aaa4254dac1fbcde972cb9b87)
+        ;
+
+        
+    
+    
+            var marker_fcb4391399180ced4d6793c3ba022b1b = L.marker(
+                [35.1711852, 126.5078622],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_fe39d279cecfcf968f24147118df5672 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c23ae5fd11f32ffc9322e190ef13bbb5 = $(`<div id="html_c23ae5fd11f32ffc9322e190ef13bbb5" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라남도 함평군 신광면 삼덕리 298-1<br><br><b style="color:blue;">제품 정보:</b><br>자희향국화주 (자희자양)<br><br>자희향나비생탁주 (자희자양)<br><br>자희향탁주 (자희자양)</div>`)[0];
+                popup_fe39d279cecfcf968f24147118df5672.setContent(html_c23ae5fd11f32ffc9322e190ef13bbb5);
+            
+        
+
+        marker_fcb4391399180ced4d6793c3ba022b1b.bindPopup(popup_fe39d279cecfcf968f24147118df5672)
+        ;
+
+        
+    
+    
+            var marker_146a2c63a31689046928db4f60a152de = L.marker(
+                [35.0718739, 126.7343169],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_d0db0675b98e8783590b6af31aab80ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_86e3699442944b182bfb8cf8e837ef0d = $(`<div id="html_86e3699442944b182bfb8cf8e837ef0d" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 나주시 노안면 금동리 57-6<br><br><b style="color:blue;">제품 정보:</b><br>정고집나주배약주15 (남도탁주)<br><br>정고집나주배약주9 (남도탁주)<br><br>정고집나주쌀생막걸리 (남도탁주)<br><br>정고집옛날생동동주 (남도탁주)</div>`)[0];
+                popup_d0db0675b98e8783590b6af31aab80ee.setContent(html_86e3699442944b182bfb8cf8e837ef0d);
+            
+        
+
+        marker_146a2c63a31689046928db4f60a152de.bindPopup(popup_d0db0675b98e8783590b6af31aab80ee)
+        ;
+
+        
+    
+    
+            var marker_56dd86f4b759db54e3cf1f756660526a = L.marker(
+                [35.3008301, 126.5798416],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_316f9d08e5e8120378e7453779813566 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1b2ae82f4f344f11b52314cc124a04da = $(`<div id="html_1b2ae82f4f344f11b52314cc124a04da" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전라남도 영광군 대마면 월산리 411-3<br><br><b style="color:blue;">제품 정보:</b><br>톡한잔골드 (농업회사법인(유)대마주조)<br><br>톡한잔소주 (농업회사법인(유)대마주조)</div>`)[0];
+                popup_316f9d08e5e8120378e7453779813566.setContent(html_1b2ae82f4f344f11b52314cc124a04da);
+            
+        
+
+        marker_56dd86f4b759db54e3cf1f756660526a.bindPopup(popup_316f9d08e5e8120378e7453779813566)
+        ;
+
+        
+    
+    
+            var marker_97605be507d389283d625897a7236af0 = L.marker(
+                [34.5174566, 126.5381423],
+                {}
+            ).addTo(feature_group_67835ed94c6301e71465b28411408c5b);
+        
+    
+        var popup_c8b9ced7cf661a254b4abdba81bed14a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ad9b318dffbb340a4acd5d69ebbf2608 = $(`<div id="html_ad9b318dffbb340a4acd5d69ebbf2608" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 전남 해남군 화산면 해창리 6-2<br><br><b style="color:blue;">제품 정보:</b><br>해창12도생막걸리 (해창주조장)<br><br>해창9도생막걸리 (해창주조장)<br><br>해창찹쌀생막걸리 (해창주조장)</div>`)[0];
+                popup_c8b9ced7cf661a254b4abdba81bed14a.setContent(html_ad9b318dffbb340a4acd5d69ebbf2608);
+            
+        
+
+        marker_97605be507d389283d625897a7236af0.bindPopup(popup_c8b9ced7cf661a254b4abdba81bed14a)
+        ;
+
+        
+    
+    
+            var feature_group_89e14e6b34433086135a6d44693baf2e = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_64fd7847ac1f4c791996476243b0140c = L.marker(
+                [36.4371405, 128.7231836],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_b127fea8539e545357f859166d11e10b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea07b2246652b7c9a94c176e4442bff4 = $(`<div id="html_ea07b2246652b7c9a94c176e4442bff4" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경상북도 의성군 단촌면 후평리 69<br><br><b style="color:blue;">제품 정보:</b><br>The찾을수록시리즈 ((주)한국애플리즈)</div>`)[0];
+                popup_b127fea8539e545357f859166d11e10b.setContent(html_ea07b2246652b7c9a94c176e4442bff4);
+            
+        
+
+        marker_64fd7847ac1f4c791996476243b0140c.bindPopup(popup_b127fea8539e545357f859166d11e10b)
+        ;
+
+        
+    
+    
+            var marker_290782bd0e45810795d3bd08d5bac344 = L.marker(
+                [35.7939718, 129.2434814],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_aa2b9ad27a2c668a14d73e725b0cf7d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_160cdf99e8dc11d251c603f625aac2fe = $(`<div id="html_160cdf99e8dc11d251c603f625aac2fe" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경상북도 경주시 남산동 1011-1번지<br><br><b style="color:blue;">제품 정보:</b><br>가을빛레드와인 (예인화원)</div>`)[0];
+                popup_aa2b9ad27a2c668a14d73e725b0cf7d3.setContent(html_160cdf99e8dc11d251c603f625aac2fe);
+            
+        
+
+        marker_290782bd0e45810795d3bd08d5bac344.bindPopup(popup_aa2b9ad27a2c668a14d73e725b0cf7d3)
+        ;
+
+        
+    
+    
+            var marker_b45f3bf1cfbaf56a32450c61190597b0 = L.marker(
+                [35.6357135, 128.603648],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_8e54dbbeb8211bbe559edcfca1c9c78d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d59e1c3a032c127192cbca178a17925b = $(`<div id="html_d59e1c3a032c127192cbca178a17925b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 청도군 풍각면 봉기리 1117<br><br><b style="color:blue;">제품 정보:</b><br>감그린레귤러 (청도감와인(주))<br><br>감그린스페셜 (청도감와인(주))<br><br>감그린아이스와인 (청도감와인(주))</div>`)[0];
+                popup_8e54dbbeb8211bbe559edcfca1c9c78d.setContent(html_d59e1c3a032c127192cbca178a17925b);
+            
+        
+
+        marker_b45f3bf1cfbaf56a32450c61190597b0.bindPopup(popup_8e54dbbeb8211bbe559edcfca1c9c78d)
+        ;
+
+        
+    
+    
+            var marker_12eb2266e15ec5be7720d0850f19d5db = L.marker(
+                [35.9840161, 129.000423],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_95178414b5c3a1c4bd9ed3f84505cd6f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4cb76e5c8fbdaf8898be3107ee796976 = $(`<div id="html_4cb76e5c8fbdaf8898be3107ee796976" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 영천시 고경면 용전리 388<br><br><b style="color:blue;">제품 정보:</b><br>고도리레드와인스위트 (고도리와이너리)<br><br>고도리복숭아와인 (고도리와이너리)<br><br>고도리화이트와인드라이 (고도리와이너리)<br><br>고도리화이트와인스위트 (고도리와이너리)</div>`)[0];
+                popup_95178414b5c3a1c4bd9ed3f84505cd6f.setContent(html_4cb76e5c8fbdaf8898be3107ee796976);
+            
+        
+
+        marker_12eb2266e15ec5be7720d0850f19d5db.bindPopup(popup_95178414b5c3a1c4bd9ed3f84505cd6f)
+        ;
+
+        
+    
+    
+            var marker_e449d05737a288f2a0fdcbe2f18bfff0 = L.marker(
+                [36.7360948, 128.0911095],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_12cd2cc30bfd8d7d0294c3f67d049faa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ad86c4be0c318888054e2dc29d4ae102 = $(`<div id="html_ad86c4be0c318888054e2dc29d4ae102" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 문경시 문경읍 진안리 83<br><br><b style="color:blue;">제품 정보:</b><br>고운달백자 (농업회사법인(주)제이엘)<br><br>고운달오크 (농업회사법인(주)제이엘)<br><br>문경바람백자25 (농업회사법인(주)제이엘)<br><br>문경바람백자40 (농업회사법인(주)제이엘)<br><br>문경바람오크 (농업회사법인(주)제이엘)<br><br>오미로제프리미어와인 (농업회사법인(주)제이엘)</div>`)[0];
+                popup_12cd2cc30bfd8d7d0294c3f67d049faa.setContent(html_ad86c4be0c318888054e2dc29d4ae102);
+            
+        
+
+        marker_e449d05737a288f2a0fdcbe2f18bfff0.bindPopup(popup_12cd2cc30bfd8d7d0294c3f67d049faa)
+        ;
+
+        
+    
+    
+            var marker_0c32c06a0844de451dc2dac4482ca72b = L.marker(
+                [36.7723739, 128.3135458],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_db329a5180276b47ca1471a6ad4e9e57 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_848bc57dc62c9afaf2ae9301f69abffb = $(`<div id="html_848bc57dc62c9afaf2ae9301f69abffb" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 문경시 동로면 노은리 192<br><br><b style="color:blue;">제품 정보:</b><br>구름을벗삼아 (문경주조)<br><br>맑은문희주 (문경주조)<br><br>문경주조오미자생막걸리 (문경주조)<br><br>문희문경오미자수제전통주 (문경주조(전통술체험관))<br><br>문희햇찹쌀수제전통주 (문경주조)<br><br>오희스파클링막걸리 (문경주조)</div>`)[0];
+                popup_db329a5180276b47ca1471a6ad4e9e57.setContent(html_848bc57dc62c9afaf2ae9301f69abffb);
+            
+        
+
+        marker_0c32c06a0844de451dc2dac4482ca72b.bindPopup(popup_db329a5180276b47ca1471a6ad4e9e57)
+        ;
+
+        
+    
+    
+            var marker_afcbdd4721983a41cc7f89a700e756dd = L.marker(
+                [36.1272966, 128.01907],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_f4a2990b52753692a739e99c000720d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_778c874782671431824c084abdcc2740 = $(`<div id="html_778c874782671431824c084abdcc2740" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 김천시 대항면 향천리 791-1<br><br><b style="color:blue;">제품 정보:</b><br>김천과하주16 (김천과하주)<br><br>김천과하주23 (김천과하주)</div>`)[0];
+                popup_f4a2990b52753692a739e99c000720d3.setContent(html_778c874782671431824c084abdcc2740);
+            
+        
+
+        marker_afcbdd4721983a41cc7f89a700e756dd.bindPopup(popup_f4a2990b52753692a739e99c000720d3)
+        ;
+
+        
+    
+    
+            var marker_a843de22ddb06c367fdb7ecdec7052d4 = L.marker(
+                [36.0456692, 128.9948787],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_98a91e07409f60b89f2022b11024017c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_50ee598181fe7bd471a670362365bd81 = $(`<div id="html_50ee598181fe7bd471a670362365bd81" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 영천시 포은로 842-50<br><br><b style="color:blue;">제품 정보:</b><br>당당하리 (농업회사법인(주)세찬제조사)<br><br>백이주 (농업회사법인(주)세찬제조사)</div>`)[0];
+                popup_98a91e07409f60b89f2022b11024017c.setContent(html_50ee598181fe7bd471a670362365bd81);
+            
+        
+
+        marker_a843de22ddb06c367fdb7ecdec7052d4.bindPopup(popup_98a91e07409f60b89f2022b11024017c)
+        ;
+
+        
+    
+    
+            var marker_0c5f90d0aad8a3bff4b4969b51496754 = L.marker(
+                [35.989227, 129.4387363],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_3739f37c2bbacc3f340149c7e872e4d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_16117d89b0e2d95261277e430854a8e4 = $(`<div id="html_16117d89b0e2d95261277e430854a8e4" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 포항시 남구 동해면 도구리 626<br><br><b style="color:blue;">제품 정보:</b><br>도구막걸리 (동해명주)<br><br>동해동동주 (동해명주)<br><br>영일만친구막걸리 (동해명주)</div>`)[0];
+                popup_3739f37c2bbacc3f340149c7e872e4d3.setContent(html_16117d89b0e2d95261277e430854a8e4);
+            
+        
+
+        marker_0c5f90d0aad8a3bff4b4969b51496754.bindPopup(popup_3739f37c2bbacc3f340149c7e872e4d3)
+        ;
+
+        
+    
+    
+            var marker_79b958ac75fff3e4e4ec69d0eee4a3bf = L.marker(
+                [36.5029251, 128.6593611],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_c831c5e6cdfa2200bc3e5d0b22ed583b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07cce332f2e43bc55afdccdd2b3064ca = $(`<div id="html_07cce332f2e43bc55afdccdd2b3064ca" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 안동시 남후면 광음리 1111-2<br><br><b style="color:blue;">제품 정보:</b><br>로얄안동소주18년 (농업회사법인유토피아(주))</div>`)[0];
+                popup_c831c5e6cdfa2200bc3e5d0b22ed583b.setContent(html_07cce332f2e43bc55afdccdd2b3064ca);
+            
+        
+
+        marker_79b958ac75fff3e4e4ec69d0eee4a3bf.bindPopup(popup_c831c5e6cdfa2200bc3e5d0b22ed583b)
+        ;
+
+        
+    
+    
+            var marker_58985a73fa5966cf9fca64891a448872 = L.marker(
+                [36.6038142, 128.5411432],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_3c13e2eb9977836172aa53195fd9abde = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_358ffb50069904947fb37a4aae3c498f = $(`<div id="html_358ffb50069904947fb37a4aae3c498f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 안동시 풍산읍 괴정리 1002<br><br><b style="color:blue;">제품 정보:</b><br>명인안동소주22 (명인안동소주)<br><br>명인안동소주양반탈 (명인안동소주)<br><br>명인안동소주호리병 (명인안동소주)</div>`)[0];
+                popup_3c13e2eb9977836172aa53195fd9abde.setContent(html_358ffb50069904947fb37a4aae3c498f);
+            
+        
+
+        marker_58985a73fa5966cf9fca64891a448872.bindPopup(popup_3c13e2eb9977836172aa53195fd9abde)
+        ;
+
+        
+    
+    
+            var marker_dec7146bfddf725b20789599d9458a8f = L.marker(
+                [36.9626096, 129.3954227],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_a44f569952f47ecb70facbc594fbd0df = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_703d7af675298e3dfc77b31560baab30 = $(`<div id="html_703d7af675298e3dfc77b31560baab30" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 울진군 근남면 노음리 329-11<br><br><b style="color:blue;">제품 정보:</b><br>미소생막걸리 (울진술도가)<br><br>왕피천을품은미소생막걸리 (울진술도가)</div>`)[0];
+                popup_a44f569952f47ecb70facbc594fbd0df.setContent(html_703d7af675298e3dfc77b31560baab30);
+            
+        
+
+        marker_dec7146bfddf725b20789599d9458a8f.bindPopup(popup_a44f569952f47ecb70facbc594fbd0df)
+        ;
+
+        
+    
+    
+            var marker_bf7257f682dfbb26974169769a101239 = L.marker(
+                [36.5496832, 128.7087808],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_0353f48f3c39b7ca72e3ccfc6f4125cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_427bcacf3e15fdf1d66a0a150ac01330 = $(`<div id="html_427bcacf3e15fdf1d66a0a150ac01330" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 안동시 수상동 280<br><br><b style="color:blue;">제품 정보:</b><br>민속주안동소주 (민속주안동소주)</div>`)[0];
+                popup_0353f48f3c39b7ca72e3ccfc6f4125cb.setContent(html_427bcacf3e15fdf1d66a0a150ac01330);
+            
+        
+
+        marker_bf7257f682dfbb26974169769a101239.bindPopup(popup_0353f48f3c39b7ca72e3ccfc6f4125cb)
+        ;
+
+        
+    
+    
+            var marker_3b2df4806f2df1b0d233279304609185 = L.marker(
+                [36.4763678, 128.659414],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_7e0b1d3aa074603458db2edf8f316e07 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_86f8d9bf8e73a23c9a2ad433f4553f50 = $(`<div id="html_86f8d9bf8e73a23c9a2ad433f4553f50" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 안동시 일직면 운산리 132-7<br><br><b style="color:blue;">제품 정보:</b><br>바랑탁 (농업회사법인(주)금계당)<br><br>별바랑 (농업회사법인(주)금계당)</div>`)[0];
+                popup_7e0b1d3aa074603458db2edf8f316e07.setContent(html_86f8d9bf8e73a23c9a2ad433f4553f50);
+            
+        
+
+        marker_3b2df4806f2df1b0d233279304609185.bindPopup(popup_7e0b1d3aa074603458db2edf8f316e07)
+        ;
+
+        
+    
+    
+            var marker_93810b8cd033ae839cd021751b597c06 = L.marker(
+                [35.9070862, 128.8829427],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_c22328f38fc68dc204c8f4613cb67b79 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a6eb19d043a66e2f2183521111b18a8a = $(`<div id="html_a6eb19d043a66e2f2183521111b18a8a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 영천시 금호읍 원기리 414-2<br><br><b style="color:blue;">제품 정보:</b><br>뱅꼬레레드와인 ((주)한국와인)<br><br>뱅꼬레로제와인 ((주)한국와인)<br><br>뱅꼬레아이스와인 ((주)한국와인)<br><br>뱅꼬레화이트와인 ((주)한국와인)<br><br>스타베리오디와인 ((주)한국와인)</div>`)[0];
+                popup_c22328f38fc68dc204c8f4613cb67b79.setContent(html_a6eb19d043a66e2f2183521111b18a8a);
+            
+        
+
+        marker_93810b8cd033ae839cd021751b597c06.bindPopup(popup_c22328f38fc68dc204c8f4613cb67b79)
+        ;
+
+        
+    
+    
+            var marker_2fad40212d41b01ab2c2a3b2e222e519 = L.marker(
+                [35.9969271, 128.4090573],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_652ffeeaa8a8d80040ff0b0f85d90a31 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07824efc46179e521b48b1cff9343843 = $(`<div id="html_07824efc46179e521b48b1cff9343843" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 칠곡군 왜관읍 석전리 631<br><br><b style="color:blue;">제품 정보:</b><br>설련주 (영농조합법인석전상온전통주가)</div>`)[0];
+                popup_652ffeeaa8a8d80040ff0b0f85d90a31.setContent(html_07824efc46179e521b48b1cff9343843);
+            
+        
+
+        marker_2fad40212d41b01ab2c2a3b2e222e519.bindPopup(popup_652ffeeaa8a8d80040ff0b0f85d90a31)
+        ;
+
+        
+    
+    
+            var marker_29eae2ab0af2b7593ffde5eeb269bc84 = L.marker(
+                [36.5863262, 128.6073509],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_049b9470f4be65af2dc1765ccee75e3c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_63710fec65e925a34f90f3c3c6c087e1 = $(`<div id="html_63710fec65e925a34f90f3c3c6c087e1" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 안동시 풍산읍 노리 988-2<br><br><b style="color:blue;">제품 정보:</b><br>안동소주느낌19.8 (농업회사법인명품안동소주(주))<br><br>안동소주느낌30 (농업회사법인명품안동소주(주))<br><br>안동소주필Feel (농업회사법인명품안동소주(주))</div>`)[0];
+                popup_049b9470f4be65af2dc1765ccee75e3c.setContent(html_63710fec65e925a34f90f3c3c6c087e1);
+            
+        
+
+        marker_29eae2ab0af2b7593ffde5eeb269bc84.bindPopup(popup_049b9470f4be65af2dc1765ccee75e3c)
+        ;
+
+        
+    
+    
+            var marker_93bf82abd331b203f7bdc7438f3f0051 = L.marker(
+                [36.4371405, 128.7231836],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_079fbcf3faa2afaa5d373211ae1a58b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a54a8a005b0ca11ff0ca369a430310aa = $(`<div id="html_a54a8a005b0ca11ff0ca369a430310aa" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 의성군 단촌면 후평리 69<br><br><b style="color:blue;">제품 정보:</b><br>애피소드상그리아 ((주)한국애플리즈)<br><br>애피소드애플 ((주)한국애플리즈)<br><br>애피소드호프 ((주)한국애플리즈)<br><br>한스오차드사과와인 ((주)한국애플리즈)</div>`)[0];
+                popup_079fbcf3faa2afaa5d373211ae1a58b5.setContent(html_a54a8a005b0ca11ff0ca369a430310aa);
+            
+        
+
+        marker_93bf82abd331b203f7bdc7438f3f0051.bindPopup(popup_079fbcf3faa2afaa5d373211ae1a58b5)
+        ;
+
+        
+    
+    
+            var marker_393df52f00db2f2eeaca6894561b838a = L.marker(
+                [36.5314454, 128.0697258],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_7b46255fb29bd5b2921de11c05f68efd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0f3c96972b9de208c9bd54d28d225c6b = $(`<div id="html_0f3c96972b9de208c9bd54d28d225c6b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 상주시 은척면 봉중리 311<br><br><b style="color:blue;">제품 정보:</b><br>은자골곶감생탁배기 (은척양조장)<br><br>은자골생탁배기 (은척양조장)</div>`)[0];
+                popup_7b46255fb29bd5b2921de11c05f68efd.setContent(html_0f3c96972b9de208c9bd54d28d225c6b);
+            
+        
+
+        marker_393df52f00db2f2eeaca6894561b838a.bindPopup(popup_7b46255fb29bd5b2921de11c05f68efd)
+        ;
+
+        
+    
+    
+            var marker_2de81031a6c5d7345831191c332bea81 = L.marker(
+                [36.1382785, 128.0798619],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_0bd4373b84ae351fa1f4701a6e74090b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dfed40f43d5321fbb766027aea9a830f = $(`<div id="html_dfed40f43d5321fbb766027aea9a830f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경상북도 김천시 대학로 214<br><br><b style="color:blue;">제품 정보:</b><br>자두와인레드 (자두사랑)<br><br>자두와인화이트 (자두사랑)</div>`)[0];
+                popup_0bd4373b84ae351fa1f4701a6e74090b.setContent(html_dfed40f43d5321fbb766027aea9a830f);
+            
+        
+
+        marker_2de81031a6c5d7345831191c332bea81.bindPopup(popup_0bd4373b84ae351fa1f4701a6e74090b)
+        ;
+
+        
+    
+    
+            var marker_636ffc70f9d44df042fa4655ade98c69 = L.marker(
+                [36.3347428, 128.1305064],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_6aa387e8c89dd26e0d6587028bf14b16 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0f8d047f8f398162fdcb7509da66e6ca = $(`<div id="html_0f8d047f8f398162fdcb7509da66e6ca" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경상북도 상주시 청리면 남상주로 1108-3<br><br><b style="color:blue;">제품 정보:</b><br>젤코바스페셜 (농업회사법인(주)젤코바와이너리)<br><br>젤코바캠벨와인 (농업회사법인(주)젤코바와이너리)<br><br>젤코바프리미엄와인 (농업회사법인(주)젤코바와이너리)</div>`)[0];
+                popup_6aa387e8c89dd26e0d6587028bf14b16.setContent(html_0f8d047f8f398162fdcb7509da66e6ca);
+            
+        
+
+        marker_636ffc70f9d44df042fa4655ade98c69.bindPopup(popup_6aa387e8c89dd26e0d6587028bf14b16)
+        ;
+
+        
+    
+    
+            var marker_57d284f92d8736fb3f5e84d297ac357d = L.marker(
+                [36.3448679, 129.0636416],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_10d38d2ef53a412573bef3095329ff3a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_58233f97e78a571fc4248ad008b81a90 = $(`<div id="html_58233f97e78a571fc4248ad008b81a90" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 청송군 부남면 대전리 638-7<br><br><b style="color:blue;">제품 정보:</b><br>주산지막걸리 (청송양조장)<br><br>청송얼음골동동주 (청송양조장)<br><br>청송주왕사과막걸리 (청송양조장)</div>`)[0];
+                popup_10d38d2ef53a412573bef3095329ff3a.setContent(html_58233f97e78a571fc4248ad008b81a90);
+            
+        
+
+        marker_57d284f92d8736fb3f5e84d297ac357d.bindPopup(popup_10d38d2ef53a412573bef3095329ff3a)
+        ;
+
+        
+    
+    
+            var marker_527eae3f84bc46e57f4d8f827c901bd2 = L.marker(
+                [36.7655747, 128.8802243],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_a9dd6dba87151d4e81007c8df3b2f896 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a25f06f26f9b0013d4f9b6232fa4df5 = $(`<div id="html_4a25f06f26f9b0013d4f9b6232fa4df5" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 안동시 도산면 가송리 688<br><br><b style="color:blue;">제품 정보:</b><br>진맥소주22 (농업회사법인(주)밀과노닐다)<br><br>진맥소주40 (농업회사법인(주)밀과노닐다)<br><br>진맥소주53 (농업회사법인(주)밀과노닐다)</div>`)[0];
+                popup_a9dd6dba87151d4e81007c8df3b2f896.setContent(html_4a25f06f26f9b0013d4f9b6232fa4df5);
+            
+        
+
+        marker_527eae3f84bc46e57f4d8f827c901bd2.bindPopup(popup_a9dd6dba87151d4e81007c8df3b2f896)
+        ;
+
+        
+    
+    
+            var marker_d0d33efb5a337844061e8929d6592a1e = L.marker(
+                [36.3795093, 129.3746284],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_ef5806111ce6cc0f215aeff76596c52a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_400bfe08babf5de7de92af35044a1e50 = $(`<div id="html_400bfe08babf5de7de92af35044a1e50" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 영덕군 강구면 소월1길 16-10<br><br><b style="color:blue;">제품 정보:</b><br>천년주 (농업회사법인(주)영덕주조)<br><br>해방주18.8 (농업회사법인(주)영덕주조)<br><br>해방주38 (농업회사법인(주)영덕주조)<br><br>해파랑 (농업회사법인(주)영덕주조)</div>`)[0];
+                popup_ef5806111ce6cc0f215aeff76596c52a.setContent(html_400bfe08babf5de7de92af35044a1e50);
+            
+        
+
+        marker_d0d33efb5a337844061e8929d6592a1e.bindPopup(popup_ef5806111ce6cc0f215aeff76596c52a)
+        ;
+
+        
+    
+    
+            var marker_14d51497e5cfffdef55bf6e9be136a53 = L.marker(
+                [36.1900524, 129.0329758],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_ff83f701321e1f369b8fb636c897be15 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_85602aa280b7a2f75c9a2934bf5fa811 = $(`<div id="html_85602aa280b7a2f75c9a2934bf5fa811" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경상북도 영천시 봉계리 50<br><br><b style="color:blue;">제품 정보:</b><br>코이버펑크머스캣베일리에이 (코이버펑크)<br><br>코이버펑크샤르도네세미용블랜드 (코이버펑크)<br><br>코이버펑크카베르네소비뇽 (코이버펑크)</div>`)[0];
+                popup_ff83f701321e1f369b8fb636c897be15.setContent(html_85602aa280b7a2f75c9a2934bf5fa811);
+            
+        
+
+        marker_14d51497e5cfffdef55bf6e9be136a53.bindPopup(popup_ff83f701321e1f369b8fb636c897be15)
+        ;
+
+        
+    
+    
+            var marker_fc99b991594adfd1b02027a198701229 = L.marker(
+                [35.8757686, 128.0459455],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_174fbfebcf484a22f6dabc59da2f1f08 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ba9ba5d54580025b8c79b8331a1b69e = $(`<div id="html_3ba9ba5d54580025b8c79b8331a1b69e" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 김천시 증산면 금곡리 279-14<br><br><b style="color:blue;">제품 정보:</b><br>크라테레드와인드라이 (수도산와이너리)<br><br>크라테레드와인스위트 (수도산와이너리)<br><br>크라테로제와인 (수도산와이너리)</div>`)[0];
+                popup_174fbfebcf484a22f6dabc59da2f1f08.setContent(html_3ba9ba5d54580025b8c79b8331a1b69e);
+            
+        
+
+        marker_fc99b991594adfd1b02027a198701229.bindPopup(popup_174fbfebcf484a22f6dabc59da2f1f08)
+        ;
+
+        
+    
+    
+            var marker_27f89fb8838ba970cc0bbf762755c77b = L.marker(
+                [35.9969271, 128.4090573],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_1a23c231e1cb64a9db024c73638a1260 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6a34eb33cc94a9b5964057ee13c8ec54 = $(`<div id="html_6a34eb33cc94a9b5964057ee13c8ec54" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 칠곡군 왜관읍 동산2길 19<br><br><b style="color:blue;">제품 정보:</b><br>홍로 (영농조합법인석전상온전통주가)</div>`)[0];
+                popup_1a23c231e1cb64a9db024c73638a1260.setContent(html_6a34eb33cc94a9b5964057ee13c8ec54);
+            
+        
+
+        marker_27f89fb8838ba970cc0bbf762755c77b.bindPopup(popup_1a23c231e1cb64a9db024c73638a1260)
+        ;
+
+        
+    
+    
+            var marker_38904f7eb08578aee21d9aa36b2d939c = L.marker(
+                [36.602291, 128.5401019],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_1ac125080005a758a0ed84812876029a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f32032333d6844cd591c367e3cf7bbb = $(`<div id="html_9f32032333d6844cd591c367e3cf7bbb" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 안동시 풍산읍 괴정리 993<br><br><b style="color:blue;">제품 정보:</b><br>회곡생동동주 (회곡양조장)<br><br>회곡생막걸리 (회곡양조장)</div>`)[0];
+                popup_1ac125080005a758a0ed84812876029a.setContent(html_9f32032333d6844cd591c367e3cf7bbb);
+            
+        
+
+        marker_38904f7eb08578aee21d9aa36b2d939c.bindPopup(popup_1ac125080005a758a0ed84812876029a)
+        ;
+
+        
+    
+    
+            var marker_5ad735410ba34f4c0af1aaead556ef19 = L.marker(
+                [36.6464515, 128.0609169],
+                {}
+            ).addTo(feature_group_89e14e6b34433086135a6d44693baf2e);
+        
+    
+        var popup_8e63fd01f90757a4c7b142b9dd1ff378 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b7f80af456690826f1f0d8c4afe15c6c = $(`<div id="html_b7f80af456690826f1f0d8c4afe15c6c" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경북 문경시 가은읍 왕능리 275-26<br><br><b style="color:blue;">제품 정보:</b><br>희양산막걸리15 (두술도가)<br><br>희양산막걸리9 (두술도가)</div>`)[0];
+                popup_8e63fd01f90757a4c7b142b9dd1ff378.setContent(html_b7f80af456690826f1f0d8c4afe15c6c);
+            
+        
+
+        marker_5ad735410ba34f4c0af1aaead556ef19.bindPopup(popup_8e63fd01f90757a4c7b142b9dd1ff378)
+        ;
+
+        
+    
+    
+            var feature_group_2c7b5e929c6372ca2ef2863be73158e0 = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_bc766ad4bf8d76783fc8c0e4e8494ccd = L.marker(
+                [35.5662144, 127.7753986],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_3dd7ca86651c94f1ffc273dc14b67e5a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_906c4773b8d95b3cebc1d49ff2256153 = $(`<div id="html_906c4773b8d95b3cebc1d49ff2256153" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경상남도 함양군 지곡면 지곡창촌길 3<br><br><b style="color:blue;">제품 정보:</b><br>녹파주 (농업회사법인(주)솔송주)</div>`)[0];
+                popup_3dd7ca86651c94f1ffc273dc14b67e5a.setContent(html_906c4773b8d95b3cebc1d49ff2256153);
+            
+        
+
+        marker_bc766ad4bf8d76783fc8c0e4e8494ccd.bindPopup(popup_3dd7ca86651c94f1ffc273dc14b67e5a)
+        ;
+
+        
+    
+    
+            var marker_67c262cd964225aaf2191748bb070731 = L.marker(
+                [34.9865343, 128.0554163],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_05c674a643e52a9f24518256b3c3d692 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9861d2a050d3fc3e8084a1814dcb9b0a = $(`<div id="html_9861d2a050d3fc3e8084a1814dcb9b0a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 사천시 노룡동 539-3<br><br><b style="color:blue;">제품 정보:</b><br>다래와인3004 (영농조합법인오름주가)<br><br>다래와인7004D (영농조합법인오름주가)<br><br>다래와인7004S (영농조합법인오름주가)</div>`)[0];
+                popup_05c674a643e52a9f24518256b3c3d692.setContent(html_9861d2a050d3fc3e8084a1814dcb9b0a);
+            
+        
+
+        marker_67c262cd964225aaf2191748bb070731.bindPopup(popup_05c674a643e52a9f24518256b3c3d692)
+        ;
+
+        
+    
+    
+            var marker_90aa2843d7fcf21ef25a8dd32db9e179 = L.marker(
+                [34.7274149, 127.8938298],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_2ba1ca0812e268186e38e0ae1c9e16e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95fa5a790bd581806ff6053e6472cae0 = $(`<div id="html_95fa5a790bd581806ff6053e6472cae0" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 남해군 남면 홍현리 895<br><br><b style="color:blue;">제품 정보:</b><br>다랭이팜생막걸리 (다랭이팜)<br><br>다랭이팜생막걸리흑미 (다랭이팜)<br><br>다랭이팜유자막걸리 (다랭이팜)</div>`)[0];
+                popup_2ba1ca0812e268186e38e0ae1c9e16e0.setContent(html_95fa5a790bd581806ff6053e6472cae0);
+            
+        
+
+        marker_90aa2843d7fcf21ef25a8dd32db9e179.bindPopup(popup_2ba1ca0812e268186e38e0ae1c9e16e0)
+        ;
+
+        
+    
+    
+            var marker_7c7b5d1c4107835ba6d1aa29906535a0 = L.marker(
+                [35.5662144, 127.7753986],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_3e6b8b1f6beaf8bfdbb800c4859f9a8a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_288017a641b3101c3f2f3707b94666ac = $(`<div id="html_288017a641b3101c3f2f3707b94666ac" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 함양군 지곡면 창평리 520-1<br><br><b style="color:blue;">제품 정보:</b><br>담솔 (명가원영농조합법인)<br><br>명가원복분자술 (명가원영농조합법인)<br><br>솔송주 (명가원영농조합법인)</div>`)[0];
+                popup_3e6b8b1f6beaf8bfdbb800c4859f9a8a.setContent(html_288017a641b3101c3f2f3707b94666ac);
+            
+        
+
+        marker_7c7b5d1c4107835ba6d1aa29906535a0.bindPopup(popup_3e6b8b1f6beaf8bfdbb800c4859f9a8a)
+        ;
+
+        
+    
+    
+            var marker_80ce517f0755457b20b14a2be0738a81 = L.marker(
+                [35.5379308, 128.4604436],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_11103503c01684d8499dae0dc7137167 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5d1d1b7228a6d3ddfbe2af24ecd9c878 = $(`<div id="html_5d1d1b7228a6d3ddfbe2af24ecd9c878" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 창녕군 대지면 대지농공단지길 40, 대지농공단지<br><br><b style="color:blue;">제품 정보:</b><br>맑은내일Winery단감명작 (농업회사법인우포의아침주식회사)<br><br>맑은내일발효막걸리 (농업회사법인우포의아침(주))<br><br>맑은내일우포 (농업회사법인우포의아침(주))<br><br>운암1945 (농업회사법인우포의아침주식회사)<br><br>조선주조사 (농업회사법인우포의아침(주))<br><br>창원생탁주 (농업회사법인우포의아침(주))</div>`)[0];
+                popup_11103503c01684d8499dae0dc7137167.setContent(html_5d1d1b7228a6d3ddfbe2af24ecd9c878);
+            
+        
+
+        marker_80ce517f0755457b20b14a2be0738a81.bindPopup(popup_11103503c01684d8499dae0dc7137167)
+        ;
+
+        
+    
+    
+            var marker_ac576294a3f54e0155bdee2b8ccb9525 = L.marker(
+                [35.1976241, 128.7987423],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_4fc51623fcd2ec5c5d6e69536994f62b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28b92b7edcebc1d1abd75373131e1f5a = $(`<div id="html_28b92b7edcebc1d1abd75373131e1f5a" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 김해시 삼문동 97-5<br><br><b style="color:blue;">제품 정보:</b><br>복순도가손막걸리 (김정식)</div>`)[0];
+                popup_4fc51623fcd2ec5c5d6e69536994f62b.setContent(html_28b92b7edcebc1d1abd75373131e1f5a);
+            
+        
+
+        marker_ac576294a3f54e0155bdee2b8ccb9525.bindPopup(popup_4fc51623fcd2ec5c5d6e69536994f62b)
+        ;
+
+        
+    
+    
+            var marker_fa5904daf67653fe950336f9be71f862 = L.marker(
+                [35.6792458, 127.9111302],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_0a41550669b828ec808d05328d033b05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_77d09c82ad7f77893d48c888c5edb814 = $(`<div id="html_77d09c82ad7f77893d48c888c5edb814" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 거창군 거창읍 김천리 255<br><br><b style="color:blue;">제품 정보:</b><br>산내울복분자주 (거창사과원예농협)<br><br>산내울사과애주 (거창사과원예농협)<br><br>산내울오미자주 (거창사과원예농협)</div>`)[0];
+                popup_0a41550669b828ec808d05328d033b05.setContent(html_77d09c82ad7f77893d48c888c5edb814);
+            
+        
+
+        marker_fa5904daf67653fe950336f9be71f862.bindPopup(popup_0a41550669b828ec808d05328d033b05)
+        ;
+
+        
+    
+    
+            var marker_8be8817368984efe6e5f0d222104bf80 = L.marker(
+                [34.9078202, 128.516574],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_b5132a5289a61e6f6afb31ee007cec73 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32189dda665b8c4f000d3e91f6dd525e = $(`<div id="html_32189dda665b8c4f000d3e91f6dd525e" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 거제시 사등면 지석리 991-1<br><br><b style="color:blue;">제품 정보:</b><br>성포생막걸리 (성포양조장)<br><br>유자동동주 (성포양조장)<br><br>행운막걸리 (성포양조장)<br><br>행운주 (성포양조장)</div>`)[0];
+                popup_b5132a5289a61e6f6afb31ee007cec73.setContent(html_32189dda665b8c4f000d3e91f6dd525e);
+            
+        
+
+        marker_8be8817368984efe6e5f0d222104bf80.bindPopup(popup_b5132a5289a61e6f6afb31ee007cec73)
+        ;
+
+        
+    
+    
+            var marker_c8dd1156d6dab5ab600ac05ca3b800c1 = L.marker(
+                [35.4229946, 129.0602477],
+                {}
+            ).addTo(feature_group_2c7b5e929c6372ca2ef2863be73158e0);
+        
+    
+        var popup_39e701422fbdb5bddf2feb3260c846bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39dc32e15111797d6dcbb500ab81f39f = $(`<div id="html_39dc32e15111797d6dcbb500ab81f39f" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 경남 양산시 상북면 충렬로 941<br><br><b style="color:blue;">제품 정보:</b><br>이화백주 (이화백주순탁주)</div>`)[0];
+                popup_39e701422fbdb5bddf2feb3260c846bb.setContent(html_39dc32e15111797d6dcbb500ab81f39f);
+            
+        
+
+        marker_c8dd1156d6dab5ab600ac05ca3b800c1.bindPopup(popup_39e701422fbdb5bddf2feb3260c846bb)
+        ;
+
+        
+    
+    
+            var feature_group_8b73cbeb09b2ffdb84377dae558032cc = L.featureGroup(
+                {}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+    
+            var marker_8654609c9efabda7ae95eda73564e498 = L.marker(
+                [33.4102243, 126.3758566],
+                {}
+            ).addTo(feature_group_8b73cbeb09b2ffdb84377dae558032cc);
+        
+    
+        var popup_335b865c1520e0dcb6ed313a3ebf451e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1da629299473da94e3e140a7ce1e14eb = $(`<div id="html_1da629299473da94e3e140a7ce1e14eb" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 제주특별자치도 제주시 애월읍 상가리 1997-1<br><br><b style="color:blue;">제품 정보:</b><br>고소리술 (제주샘영농조합법인)<br><br>니모메 (제주샘영농조합법인)<br><br>세우리 (제주샘영농조합법인)<br><br>오메기술 (제주샘영농조합법인)</div>`)[0];
+                popup_335b865c1520e0dcb6ed313a3ebf451e.setContent(html_1da629299473da94e3e140a7ce1e14eb);
+            
+        
+
+        marker_8654609c9efabda7ae95eda73564e498.bindPopup(popup_335b865c1520e0dcb6ed313a3ebf451e)
+        ;
+
+        
+    
+    
+            var marker_b67ec920c5bf07cd5a4f7bcacd0f70ac = L.marker(
+                [33.2865823, 126.6250017],
+                {}
+            ).addTo(feature_group_8b73cbeb09b2ffdb84377dae558032cc);
+        
+    
+        var popup_01b8af63d687047fd5d03be4bb31532e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f456308b41a9ecf5ab4a97859723b7d = $(`<div id="html_8f456308b41a9ecf5ab4a97859723b7d" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 제주특별자치도 서귀포시 남원읍 신례천로 46<br><br><b style="color:blue;">제품 정보:</b><br>귀감 (농업회사법인(주)시트러스)<br><br>마셔블랑 (농업회사법인(주)시트러스)<br><br>신례명주 (농업회사법인(주)시트러스)<br><br>혼디주 (농업회사법인(주)시트러스)</div>`)[0];
+                popup_01b8af63d687047fd5d03be4bb31532e.setContent(html_8f456308b41a9ecf5ab4a97859723b7d);
+            
+        
+
+        marker_b67ec920c5bf07cd5a4f7bcacd0f70ac.bindPopup(popup_01b8af63d687047fd5d03be4bb31532e)
+        ;
+
+        
+    
+    
+            var marker_a4bafe135dab67a1c43a6ff674536613 = L.marker(
+                [33.3045151, 126.2588775],
+                {}
+            ).addTo(feature_group_8b73cbeb09b2ffdb84377dae558032cc);
+        
+    
+        var popup_12aa1c59296b97a6168fbddc66fcbb5d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_01571d591ae49c89572309fd510e5ee9 = $(`<div id="html_01571d591ae49c89572309fd510e5ee9" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 제주특별자치도 제주시 한경면 청수리 148-1<br><br><b style="color:blue;">제품 정보:</b><br>녹고의눈물 (농업회사법인(주)토향)</div>`)[0];
+                popup_12aa1c59296b97a6168fbddc66fcbb5d.setContent(html_01571d591ae49c89572309fd510e5ee9);
+            
+        
+
+        marker_a4bafe135dab67a1c43a6ff674536613.bindPopup(popup_12aa1c59296b97a6168fbddc66fcbb5d)
+        ;
+
+        
+    
+    
+            var marker_32f16bb72a2a6dd3b50538cf5024a331 = L.marker(
+                [33.3025428, 126.1823011],
+                {}
+            ).addTo(feature_group_8b73cbeb09b2ffdb84377dae558032cc);
+        
+    
+        var popup_d0ced1ae445e9f63b14edcdf453fb7f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5bacc85fa031fcc6220468966b017dcb = $(`<div id="html_5bacc85fa031fcc6220468966b017dcb" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 제주특별자치도 제주시 한경면 고산리 2885-1<br><br><b style="color:blue;">제품 정보:</b><br>어우야 (왕지케양조장(제주본초협동조합))<br><br>황칠주 (왕지케양조장(제주본초협동조합))<br><br>흑돈주 (왕지케양조장(제주본초협동조합))</div>`)[0];
+                popup_d0ced1ae445e9f63b14edcdf453fb7f7.setContent(html_5bacc85fa031fcc6220468966b017dcb);
+            
+        
+
+        marker_32f16bb72a2a6dd3b50538cf5024a331.bindPopup(popup_d0ced1ae445e9f63b14edcdf453fb7f7)
+        ;
+
+        
+    
+    
+            var marker_c07eab4d2db9cbc127b598895a84b86c = L.marker(
+                [33.3849217, 126.7938338],
+                {}
+            ).addTo(feature_group_8b73cbeb09b2ffdb84377dae558032cc);
+        
+    
+        var popup_c8c2bd7c98d143a887a212952587539e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7919f39286f89a8ac7981efd47d2e61b = $(`<div id="html_7919f39286f89a8ac7981efd47d2e61b" style="width: 100.0%; height: 100.0%;"><b style="color:blue;">주소:</b> 제주특별자치도 서귀포시 표선면 성읍리 1410-1<br><br><b style="color:blue;">제품 정보:</b><br>오메기맑은술 (제주술익는집)<br><br>제주고소리술 (제주술익는집)</div>`)[0];
+                popup_c8c2bd7c98d143a887a212952587539e.setContent(html_7919f39286f89a8ac7981efd47d2e61b);
+            
+        
+
+        marker_c07eab4d2db9cbc127b598895a84b86c.bindPopup(popup_c8c2bd7c98d143a887a212952587539e)
+        ;
+
+        
+    
+    
+            var layer_control_a0609ae1cab6d39fe1d6b31ecd07c214 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_aab5a8d7f5bf90d5e7fece7ec9fdfa0e,
+                },
+                overlays :  {
+                    "\uc11c\uc6b8" : feature_group_90113e7d0c5e571152999b86111d6f25,
+                    "\ubd80\uc0b0" : feature_group_2d787c5371ce6ad507f598abc3c36918,
+                    "\ub300\uad6c" : feature_group_e3b09622a98dc7d225043e3023b8d8cb,
+                    "\uc778\ucc9c" : feature_group_4e0f0a6663e3fb8d6d787cd0303858d7,
+                    "\uad11\uc8fc" : feature_group_ee6507426a62b8cd0d03250f78677294,
+                    "\ub300\uc804" : feature_group_00a133d1c60ed2f76f3c306e6ee670f4,
+                    "\uc6b8\uc0b0" : feature_group_21f2767d4f15f3c24ca1c0b8c8c14a37,
+                    "\uacbd\uae30\ub3c4" : feature_group_54ef182d0706f312b2530accb866fef4,
+                    "\uac15\uc6d0\ub3c4" : feature_group_855cfa15e5772397fe0a80835fe83fac,
+                    "\uc138\uc885" : feature_group_061bc7e92210268d9c73f88b8bc3602a,
+                    "\ucda9\uccad\ubd81\ub3c4" : feature_group_9febe48d3b981a8247826fab597c55f6,
+                    "\ucda9\uccad\ub0a8\ub3c4" : feature_group_3b9e976bb62767c630fc3b775f7e4d51,
+                    "\uc804\ub77c\ubd81\ub3c4" : feature_group_f39377b907718f98ca2a887b3fa5ace3,
+                    "\uc804\ub77c\ub0a8\ub3c4" : feature_group_67835ed94c6301e71465b28411408c5b,
+                    "\uacbd\uc0c1\ubd81\ub3c4" : feature_group_89e14e6b34433086135a6d44693baf2e,
+                    "\uacbd\uc0c1\ub0a8\ub3c4" : feature_group_2c7b5e929c6372ca2ef2863be73158e0,
+                    "\uc81c\uc8fc\ub3c4" : feature_group_8b73cbeb09b2ffdb84377dae558032cc,
+                },
+            };
+            L.control.layers(
+                layer_control_a0609ae1cab6d39fe1d6b31ecd07c214.base_layers,
+                layer_control_a0609ae1cab6d39fe1d6b31ecd07c214.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c5baeade3745691ffc7fdce19447794b);
+        
+</script>
+</html>

@@ -28,7 +28,9 @@
       var options1 = {
         title: '지역별 전통주 생산량',
         width: 600,
-        height: 300
+        height: 300,
+        colors: ['#b9ea9f'] 
+        
       };
 
       var chart1 = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
@@ -141,7 +143,8 @@
       var options7 = {
         title: '주종 별 도수 평균',
         width: 600,
-        height: 300
+        height: 300,
+        colors:['#ffc0cb']
       };
 
       var chart7 = new google.visualization.ColumnChart(document.getElementById('chart_div7'));
@@ -353,4 +356,8 @@ slide.addEventListener("mouseout", () => {
   loopInterval = setInterval(() => {
     nextMove();
   }, 3000);
+});
+document.querySelector('.map_i').addEventListener('click',function(){
+  console.log('www')
+  document.querySelector('.map').classList.toggle('active');
 });

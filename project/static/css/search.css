@@ -9,7 +9,9 @@
     background: none;
     transition: transform 0.1s ease, background-color 0.1s ease;
 }
-
+body{
+    z-index: 0;
+}
 /* 다크 모드 스타일 */
 body.dark-mode {
     background-color: #121212;
@@ -103,6 +105,7 @@ i:hover {
 }
 
 section {
+    height: 100%;
     background-color: #ddd;
     display: flex;
     flex-wrap: wrap;
@@ -232,4 +235,50 @@ table tr:hover {
 }
 a{
     color:white;
+}
+.map_i{
+    padding: 5px;
+    z-index: 1000;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    background-color: #6699cc;
+    border-radius: 10px;
+}
+.map_i>i{
+    margin: 0;
+}
+.map_i::before{
+    content: "제조사 위치";
+    position: absolute;
+    top: 5px;
+    left: -120px;
+    width: 7rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 0;
+    border-radius: 10px;
+    display: none;
+}
+.map_i:hover::before{
+    display: flex;
+}
+.map{
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0,0,0,0.5);
+    display: none;
+}
+.map.active{
+    display: flex;
 }

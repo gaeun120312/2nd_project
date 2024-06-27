@@ -361,3 +361,8 @@ document.querySelector('.map_i').addEventListener('click',function(){
   console.log('www')
   document.querySelector('.map').classList.toggle('active');
 });
+document.querySelector('form').addEventListener('submit', function(event){
+  event.preventDefault();
+  document.querySelector('.load_bg').classList.toggle('active');
+  event.target.submit();
+});
